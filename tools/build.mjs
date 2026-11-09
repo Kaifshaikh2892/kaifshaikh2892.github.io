@@ -11,10 +11,16 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import crypto from 'node:crypto';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const POSTS_DIR = path.join(ROOT, 'content', 'posts');
 const LOGO_MANIFEST = JSON.parse(fs.readFileSync(path.join(ROOT, 'assets', 'img', 'logos', 'manifest.json'), 'utf8'));
+
+// Version des assets : évite qu'un vieux CSS en cache casse une page neuve.
+const assetHash = (rel) => crypto.createHash('sha1').update(fs.readFileSync(path.join(ROOT, rel))).digest('hex').slice(0, 10);
+const CSS_V = assetHash('assets/css/style.css');
+const JS_V = assetHash('assets/js/app.js');
 
 const SITE = {
   name: 'ARIBAZ',
@@ -25,7 +31,12 @@ const SITE = {
     "Des astuces concrètes pour un numérique plus simple, plus sûr et plus propre : outils gratuits, vie privée, filtrage familial et productivité.",
   whatsapp: 'https://whatsapp.com/channel/0029VavhmewLtOjKNl2a3f1S',
   github: 'https://github.com/arielbaz',
-  email: '',
+  email: 'arielelbaz20@gmail.com',
+  phone: '+972 55 773 1349',
+  phoneRaw: '972557731349',
+  waDirect: 'https://wa.me/972557731349',
+  city: 'Jérusalem',
+  intro: "Bonjour ARIBAZ, besoin d'un coup de main : ",
 };
 
 const CATEGORIES = [
@@ -280,6 +291,7 @@ function nav(active) {
   const links = [
     ['/', 'Actus', 'home'],
     ['/services.html', 'Services', 'services'],
+    ['/contact.html', 'Contact', 'contact'],
     ['/apropos.html', 'À propos', 'apropos'],
   ];
   return `<a class="skip-link" href="#contenu">Aller au contenu</a>
@@ -316,7 +328,9 @@ function footer() {
         <div class="footer-col">
           <h4>Explorer</h4>
           <a href="/">Toutes les actus</a>
+          <a href="/services.html">Services</a>
           <a href="/apropos.html">À propos</a>
+          <a href="/contact.html">Contact</a>
           <a href="/feed.xml">Flux RSS</a>
         </div>
         <div class="footer-col">
@@ -326,6 +340,8 @@ function footer() {
         <div class="footer-col">
           <h4>Suivre</h4>
           <a href="${SITE.whatsapp}" target="_blank" rel="noopener">Chaîne WhatsApp</a>
+          <a href="${SITE.waDirect}" target="_blank" rel="noopener">WhatsApp direct</a>
+          <a href="mailto:${SITE.email}">${SITE.email}</a>
           <a href="${SITE.github}" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
@@ -712,14 +728,14 @@ function servicesPage() {
       <div class="section-head"><div><h2>Parlons de ton projet</h2><p>Décris-moi le problème en deux lignes, je te dis si je peux aider.</p></div></div>
       <div class="contact-grid">
         <div class="contact-card wa">
-          <h3>${icon('whatsapp')} La chaîne WhatsApp</h3>
-          <p>Les actus, les coulisses, et le moyen le plus rapide de me joindre. Deux à quatre messages par mois.</p>
-          <a class="btn btn-wa" href="${SITE.whatsapp}" target="_blank" rel="noopener">Rejoindre la chaîne ${icon('arrow-up-right')}</a>
+          <h3>${icon('whatsapp')} WhatsApp — le plus rapide</h3>
+          <p>Une photo du problème, deux lignes d'explication, et je te dis quoi faire. ${SITE.phone}</p>
+          <a class="btn btn-wa" href="${SITE.waDirect}?text=${encodeURIComponent(SITE.intro)}" target="_blank" rel="noopener">Écrire sur WhatsApp ${icon('arrow-up-right')}</a>
         </div>
         <div class="contact-card">
-          <h3>Demander un devis</h3>
-          <p>Réparation, site, carte de mariage, filtrage, réseau. Explique ton besoin, je réponds sous 24 h ouvrées.</p>
-          <a class="btn btn-primary" href="mailto:?subject=${encodeURIComponent('Demande de devis — ARIBAZ')}&body=${encodeURIComponent('Bonjour ARIBAZ,\n\nVoici mon besoin :\n\n\n\nMon matériel / contexte :\n\n\n\nMerci !')}">Écrire le message ${icon('arrow')}</a>
+          <h3>${icon('link')} Email</h3>
+          <p>Pour un devis détaillé, des photos ou un cahier des charges. Réponse sous 24 h ouvrées.</p>
+          <a class="btn btn-primary" href="mailto:${SITE.email}?subject=${encodeURIComponent('Demande de devis — ARIBAZ')}">${SITE.email}</a>
         </div>
       </div>
     </div>
@@ -810,6 +826,87 @@ ${footer()}
   return head({ title, description: desc, url: '/apropos.html' }) + body;
 }
 
+
+function contactPage() {
+  const title = `Contact — ${SITE.name}`;
+  const desc = "Une réparation, un site, une carte de mariage, un projet de filtrage : écris-moi sur WhatsApp ou par email, réponse sous 24 h.";
+  const body = `${nav('contact')}
+<main id="contenu">
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow"><span class="dot"></span>Contact</span>
+      <h1 class="display" style="max-width:16ch">Un projet, une panne, <span class="gradient-text">une idée ?</span></h1>
+      <p class="lede" style="margin-inline:0">Deux lignes suffisent pour commencer. Je réponds moi-même, sous 24 h ouvrées — et franchement, si je ne peux pas t'aider, je te le dis tout de suite.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:10px">
+    <div class="wrap">
+      <div class="contact-grid" style="grid-template-columns:1fr 1.15fr">
+        <div class="stack-lg">
+          <div class="contact-card wa">
+            <h3>${icon('whatsapp')} WhatsApp</h3>
+            <p>Le canal le plus rapide : une photo, une description, et on avance.</p>
+            <a class="btn btn-wa" href="${SITE.waDirect}?text=${encodeURIComponent(SITE.intro)}" target="_blank" rel="noopener">${SITE.phone} ${icon('arrow-up-right')}</a>
+          </div>
+          <div class="contact-card">
+            <h3>${icon('link')} Email</h3>
+            <p>Pour les devis détaillés, les documents et les projets qui demandent un cahier des charges.</p>
+            <a class="btn btn-ghost" href="mailto:${SITE.email}">${SITE.email}</a>
+          </div>
+          <div class="contact-card">
+            <h3>${icon('clock')} En pratique</h3>
+            <p style="margin:0">${SITE.city} · interventions sur place et à distance (France, Israël, partout où il y a un réseau).<br>Réponse sous 24 h ouvrées · devis gratuit · français, hébreu, anglais.</p>
+          </div>
+        </div>
+
+        <form class="contact-form" data-contact-form data-wa="${SITE.waDirect}" data-mail="${SITE.email}" novalidate>
+          <h2 style="margin:0 0 6px;font-size:24px;letter-spacing:-0.025em">Préparer ma demande</h2>
+          <p class="muted" style="margin:0 0 18px;font-size:14.5px">Tu écris ici, on t'ouvre WhatsApp ou ton email avec le message déjà rédigé. Rien ne passe par un serveur.</p>
+
+          <label class="field">
+            <span>Ton nom</span>
+            <input type="text" name="name" autocomplete="name" placeholder="Ariel, Sarah…">
+          </label>
+
+          <label class="field">
+            <span>Ton besoin</span>
+            <select name="need">
+              <option>Réparation d'un ordinateur</option>
+              <option>Micro-soudure / carte mère</option>
+              <option>Création de site web</option>
+              <option>Carte de mariage numérique</option>
+              <option>Filtrage internet / contrôle parental</option>
+              <option>Réseau, Wi-Fi, serveur</option>
+              <option>Sonorisation / audio</option>
+              <option>Autre</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>Le message</span>
+            <textarea name="message" rows="5" placeholder="Le matériel, le symptôme, le délai… le plus simple possible."></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button class="btn btn-wa" type="submit" data-send="wa">${icon('whatsapp')} Envoyer sur WhatsApp</button>
+            <button class="btn btn-ghost" type="submit" data-send="mail">Par email</button>
+          </div>
+          <p class="form-hint" data-form-hint hidden></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  ${ctaBand()}
+</main>
+${footer()}
+<script src="/assets/js/app.js" defer></script>
+</body>
+</html>`;
+  return head({ title, description: desc, url: '/contact.html' }) + body;
+}
+
 function notFoundPage() {
   return head({ title: `Page introuvable — ${SITE.name}`, description: 'Cette page n\u2019existe pas (ou plus).', url: '/404.html' }) + `${nav('')}
 <main id="contenu">
@@ -859,6 +956,7 @@ function sitemap() {
   const urls = [
     { loc: '/', pri: '1.0', mod: posts[0].date },
     { loc: '/services.html', pri: '0.7', mod: posts[0].date },
+    { loc: '/contact.html', pri: '0.6', mod: posts[0].date },
     { loc: '/apropos.html', pri: '0.5', mod: posts[0].date },
     ...posts.map((p) => ({ loc: `/articles/${p.slug}.html`, pri: '0.8', mod: p.date })),
   ];
@@ -872,6 +970,11 @@ ${urls.map((u) => `  <url><loc>${SITE.url}${u.loc}</loc><lastmod>${u.mod}</lastm
 /* Écriture                                                                   */
 /* -------------------------------------------------------------------------- */
 function write(rel, content) {
+  if (rel.endsWith('.html')) {
+    content = content
+      .replaceAll('/assets/css/style.css', `/assets/css/style.css?v=${CSS_V}`)
+      .replaceAll('/assets/js/app.js', `/assets/js/app.js?v=${JS_V}`);
+  }
   const dest = path.join(ROOT, rel);
   fs.mkdirSync(path.dirname(dest), { recursive: true });
   fs.writeFileSync(dest, content);
@@ -888,6 +991,7 @@ posts.forEach((p, idx) => {
 });
 write('apropos.html', aboutPage());
 write('services.html', servicesPage());
+write('contact.html', contactPage());
 write('404.html', notFoundPage());
 write('feed.xml', feed());
 write('sitemap.xml', sitemap());

@@ -239,6 +239,36 @@
     window.addEventListener('resize', update);
   }
 
+
+  /* ---------- Formulaire de contact ---------- */
+  var cform = document.querySelector('[data-contact-form]');
+  if (cform) {
+    var hint = cform.querySelector('[data-form-hint]');
+    cform.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var btn = e.submitter || cform.querySelector('[data-send]');
+      var mode = btn && btn.dataset.send === 'mail' ? 'mail' : 'wa';
+      var name = (cform.elements.name.value || '').trim();
+      var need = cform.elements.need.value || 'Projet';
+      var msg = (cform.elements.message.value || '').trim();
+      if (!msg) {
+        cform.elements.message.focus();
+        if (hint) { hint.hidden = false; hint.textContent = 'Ajoute deux lignes de message pour que je puisse t\'aider.'; }
+        return;
+      }
+      var text = 'Bonjour ARIBAZ,' + (name ? '\nJe m\'appelle ' + name + '.' : '') + '\nBesoin : ' + need + '\n\n' + msg;
+      if (mode === 'mail') {
+        location.href = 'mailto:' + (cform.dataset.mail || '') +
+          '?subject=' + encodeURIComponent('Demande — ' + need) +
+          '&body=' + encodeURIComponent(text);
+        if (hint) { hint.hidden = false; hint.textContent = 'Ton application mail s\'ouvre avec le message pré-rempli.'; }
+      } else {
+        window.open((cform.dataset.wa || 'https://wa.me/') + '?text=' + encodeURIComponent(text), '_blank', 'noopener');
+        if (hint) { hint.hidden = false; hint.textContent = 'WhatsApp s\'ouvre avec le message pré-rempli : il ne reste qu\'à envoyer.'; }
+      }
+    });
+  }
+
   /* ---------- Partage ---------- */
   document.addEventListener('click', function (e) {
     var btn = e.target.closest('[data-share]');
