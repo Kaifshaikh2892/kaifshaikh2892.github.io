@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Handy : dicte ton texte, l'IA s'occupe du reste (et en local) — ARIBAZ</title>
+<meta name="description" content="Une dictée vocale qui tourne sur ta machine, sans internet et sans envoyer ta voix à un serveur. Français, hébreu, anglais.">
+<link rel="canonical" href="https://arielbaz.github.io/articles/handy.html">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ARIBAZ">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Handy : dicte ton texte, l'IA s'occupe du reste (et en local) — ARIBAZ">
+<meta property="og:description" content="Une dictée vocale qui tourne sur ta machine, sans internet et sans envoyer ta voix à un serveur. Français, hébreu, anglais.">
+<meta property="og:url" content="https://arielbaz.github.io/articles/handy.html">
+<meta property="og:image" content="https://arielbaz.github.io/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Handy : dicte ton texte, l'IA s'occupe du reste (et en local) — ARIBAZ">
+<meta name="twitter:description" content="Une dictée vocale qui tourne sur ta machine, sans internet et sans envoyer ta voix à un serveur. Français, hébreu, anglais.">
+<meta name="twitter:image" content="https://arielbaz.github.io/assets/img/og.png">
+<meta name="author" content="ARIBAZ">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="ARIBAZ — Flux RSS" href="/feed.xml">
+<link rel="stylesheet" href="/assets/css/style.css">
+<script>(function(){try{var t=localStorage.getItem('aribaz-theme');if(t){document.documentElement.setAttribute('data-theme',t);document.documentElement.style.colorScheme=t;}}catch(e){}})();</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Handy : dicte ton texte, l'IA s'occupe du reste (et en local)","description":"Une dictée vocale qui tourne sur ta machine, sans internet et sans envoyer ta voix à un serveur. Français, hébreu, anglais.","datePublished":"2026-09-29","dateModified":"2026-09-29","author":{"@type":"Person","name":"ARIBAZ"},"publisher":{"@type":"Organization","name":"ARIBAZ"},"mainEntityOfPage":"https://arielbaz.github.io/articles/handy.html","articleSection":"Productivité","keywords":"dictée, ia, open source, accessibilité"}</script>
+</head><a class="skip-link" href="#contenu">Aller au contenu</a>
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="/" aria-label="ARIBAZ — accueil">
+      <span class="brand-mark" aria-hidden="true">A</span>
+      <span>ARIBAZ</span>
+    </a>
+    <nav class="nav-links" id="menu" aria-label="Navigation principale">
+      <a href="/articles/" aria-current="page">Actus</a>
+      <a href="/apropos.html">À propos</a>
+      <a href="https://whatsapp.com/channel/0029VavhmewLtOjKNl2a3f1S" target="_blank" rel="noopener">WhatsApp <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </nav>
+    <div class="nav-actions">
+      <a class="icon-btn" href="/feed.xml" aria-label="Flux RSS" title="Flux RSS"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19a1 1 0 1 0 0-.01" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.5 11.5A8 8 0 0 1 12.5 19.5M4.5 5a14.5 14.5 0 0 1 14.5 14.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="Changer de thème"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 2.6v2M12 19.4v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M2.6 12h2M19.4 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="progress" aria-hidden="true"></div>
+<main id="contenu">
+  <article>
+    <header class="article-hero">
+      <div class="wrap wrap-narrow">
+        <div class="meta">
+          <a class="pill" data-cat="Productivité" href="/articles/#productivite">Productivité</a>
+          <span>29 septembre 2026</span>
+          <span>·</span>
+          <span>2 min de lecture</span>
+        </div>
+        <h1>Handy : dicte ton texte, l'IA s'occupe du reste (et en local)</h1>
+        <p class="dek">Une dictée vocale qui tourne sur ta machine, sans internet et sans envoyer ta voix à un serveur. Français, hébreu, anglais.</p>
+      </div>
+      <div class="wrap">
+        <div class="article-art art-produ"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3.2" width="6" height="11" rx="3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3M9 21h6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      </div>
+    </header>
+
+    <div class="wrap">
+      <div class="article-body">
+        <p class="lead">Taper un long mail, c'est trois minutes de clavier et deux fautes de frappe. Parler, c'est quinze secondes. <strong>Handy</strong> transforme la seconde option en outil sérieux.</p>
+<p>C'est une application de dictée open source, basée sur la technologie <strong>Whisper</strong> d'OpenAI, mais qui tourne <strong>en local</strong> : ta voix ne part pas sur un serveur.</p>
+<h2>Ce qui le distingue</h2>
+<ul><li><strong>Reconnaissance vocale locale</strong>, sans connexion internet.</li><li><strong>Multilingue</strong> : français, anglais, hébreu et bien d'autres.</li><li><strong>Dictionnaire personnel</strong> : tu ajoutes tes noms propres, ton jargon, tes sigles — et la transcription les respecte.</li><li><strong>Multiplateforme</strong> : Windows, macOS, Linux.</li><li><strong>Gratuit et open source</strong>, sans compte.</li></ul>
+<h2>Mise en place</h2>
+<ol><li>Télécharge Handy depuis <a href="https://handy.computer/" target="_blank" rel="noopener">handy.computer</a> et installe-le.</li><li>Au premier lancement, choisis la langue et télécharge le modèle (quelques centaines de Mo).</li><li>Définis un raccourci clavier de déclenchement — idéalement « maintenir pour parler », comme un talkie-walkie.</li><li>Dicte, relâche : le texte s'insère dans le champ actif.</li></ol>
+<div class="protip"><div class="label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Le Pro-Tip ARIBAZ — dictionnaire + raccourci, le duo gagnant</div><p>Deux réglages font toute la différence au quotidien.</p><p>Le <strong>dictionnaire personnalisé</strong> : ajoute les mots que la dictée écorche systématiquement (noms de marques, prénoms, termes techniques). C'est ce qui sépare une dictée amusante d'un outil qu'on utilise vraiment.</p><p>Le <strong>mode « maintenir pour parler »</strong> : plus fiable que le déclenchement automatique, il évite que l'outil se lance pendant une conversation. Et comme tout se passe en local, tu peux dicter des notes sensibles sans crainte.</p></div>
+<h2>Verdict</h2>
+<p>Pour les longs textes, les personnes qui tapent lentement ou celles qui pensent mieux à l'oral, c'est un changement d'usage, pas juste un gadget. La contrepartie : il faut accepter de télécharger un modèle et de relire — l'IA se trompe encore sur les noms propres.</p>
+<p><strong>À découvrir :</strong> <a href="https://handy.computer/" target="_blank" rel="noopener">handy.computer</a></p>
+      </div>
+
+      <div class="source-box">
+        <div>
+          <div class="k">Site officiel</div>
+          <div class="v">handy.computer</div>
+        </div>
+        <a class="btn btn-primary" href="https://handy.computer/" target="_blank" rel="noopener">Ouvrir le site <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+
+      <div class="article-footer">
+        <div class="tags">
+          <span class="tag">#dictée</span><span class="tag">#ia</span><span class="tag">#open source</span><span class="tag">#accessibilité</span>
+        </div>
+        <div class="share">
+          <span class="muted" style="font-size:13px">Partager</span>
+          <a class="icon-btn" href="https://wa.me/?text=Handy%20%3A%20dicte%20ton%20texte%2C%20l'IA%20s'occupe%20du%20reste%20(et%20en%20local)%20https%3A%2F%2Farielbaz.github.io%2Farticles%2Fhandy.html" target="_blank" rel="noopener" aria-label="Partager sur WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.6a8.4 8.4 0 0 1-12.4 7.4L3.5 20.5l1.6-4.4A8.4 8.4 0 1 1 20.5 11.6Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.8 8.1c-.3.1-.8.5-.8 1.4 0 2 2.6 5 5.5 5.6 1.3.3 1.9-.1 2.3-.5.3-.4.5-1 .3-1.2l-1.3-.7c-.2-.1-.5 0-.7.2l-.5.6c-.2.2-.4.2-.6.1-.7-.3-2.3-1.6-2.7-2.4-.1-.2 0-.4.2-.5l.6-.5c.2-.2.2-.4.1-.6l-.7-1.4c-.2-.3-.5-.3-.8-.2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <button class="icon-btn" type="button" data-share="https://arielbaz.github.io/articles/handy.html" aria-label="Copier le lien"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13.8a4.2 4.2 0 0 0 6 0l2.6-2.6a4.2 4.2 0 0 0-6-6l-1.5 1.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 10.2a4.2 4.2 0 0 0-6 0L5.4 12.8a4.2 4.2 0 0 0 6 6l1.5-1.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+      </div>
+
+      <nav class="post-nav" aria-label="Articles voisins">
+        <a href="/articles/onlyoffice.html"><span class="dir">← Plus récent</span><span class="t">OnlyOffice : la suite bureautique gratuite qui n'abîme pas tes fichiers Word</span></a>
+        <a class="next" href="/articles/notebooklm.html"><span class="dir">Plus ancien →</span><span class="t">NotebookLM : transforme tes PDF en podcast pour réviser partout</span></a>
+      </nav>
+    </div>
+  </article>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div><h2>À lire ensuite</h2><p>Dans le même esprit.</p></div>
+        <a class="link-arrow" href="/articles/">Toutes les actus <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <div class="card-grid"><a class="post-card" href="/articles/sharex.html" data-post data-cat="Productivité" data-search="ShareX : l'outil de capture d'écran le plus complet, et il est gratuit Capture, annotation, GIF, OCR et envoi automatique. ShareX fait le travail de cinq logiciels payants, sous Windows. windows capture d'écran open source productivité Productivité" style="transition-delay:0ms">
+  <div class="card-art art-produ"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.2" y="6.8" width="17.6" height="12.4" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="13" r="3.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.5 6.8 9.8 4.6h4.4l1.3 2.2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="pill" data-cat="Productivité">Productivité</span><span>16 octobre 2026</span></div>
+    <h3>ShareX : l'outil de capture d'écran le plus complet, et il est gratuit</h3>
+    <p>Capture, annotation, GIF, OCR et envoi automatique. ShareX fait le travail de cinq logiciels payants, sous Windows.</p>
+    <div class="card-foot"><span>2 min de lecture</span><span class="go">Lire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+  </div>
+</a><a class="post-card" href="/articles/onlyoffice.html" data-post data-cat="Productivité" data-search="OnlyOffice : la suite bureautique gratuite qui n'abîme pas tes fichiers Word Sans abonnement, sans crack, sans bidouille. Et surtout : une compatibilité OOXML qui tient la mise en page de tes .docx. bureautique office gratuit compatibilité Productivité" style="transition-delay:0ms">
+  <div class="card-art art-produ"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4.5h12M12 4.5v15M8.5 19.5h7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="pill" data-cat="Productivité">Productivité</span><span>7 octobre 2026</span></div>
+    <h3>OnlyOffice : la suite bureautique gratuite qui n'abîme pas tes fichiers Word</h3>
+    <p>Sans abonnement, sans crack, sans bidouille. Et surtout : une compatibilité OOXML qui tient la mise en page de tes .docx.</p>
+    <div class="card-foot"><span>2 min de lecture</span><span class="go">Lire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+  </div>
+</a><a class="post-card" href="/articles/notebooklm.html" data-post data-cat="Productivité" data-search="NotebookLM : transforme tes PDF en podcast pour réviser partout Tes cours, tes rapports, tes documents : deux voix synthétiques en font une conversation audio. Idéal pour réviser en marchant. ia étude google podcast Productivité" style="transition-delay:0ms">
+  <div class="card-art art-produ"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.2A1.7 1.7 0 0 1 5.7 3.5H11v16.8H5.7A1.7 1.7 0 0 0 4 22V5.2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 5.2a1.7 1.7 0 0 0-1.7-1.7H13v16.8h5.3A1.7 1.7 0 0 1 20 22V5.2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 8h1.6M15.4 8H17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="pill" data-cat="Productivité">Productivité</span><span>17 septembre 2026</span></div>
+    <h3>NotebookLM : transforme tes PDF en podcast pour réviser partout</h3>
+    <p>Tes cours, tes rapports, tes documents : deux voix synthétiques en font une conversation audio. Idéal pour réviser en marchant.</p>
+    <div class="card-foot"><span>2 min de lecture</span><span class="go">Lire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+  </div>
+</a></div>
+    </div>
+  </section>
+
+  <section class="section-tight"><div class="wrap">
+  <div class="cta-band reveal">
+    <h2>Les actus arrivent d'abord sur WhatsApp.</h2>
+    <p>Deux à quatre publications par mois, sans spam : des outils gratuits, des réglages utiles et des astuces testées. Le site garde tout, la chaîne te prévient.</p>
+    <div class="hero-actions" style="margin-bottom:0">
+      <a class="btn btn-wa" href="https://whatsapp.com/channel/0029VavhmewLtOjKNl2a3f1S" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.6a8.4 8.4 0 0 1-12.4 7.4L3.5 20.5l1.6-4.4A8.4 8.4 0 1 1 20.5 11.6Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.8 8.1c-.3.1-.8.5-.8 1.4 0 2 2.6 5 5.5 5.6 1.3.3 1.9-.1 2.3-.5.3-.4.5-1 .3-1.2l-1.3-.7c-.2-.1-.5 0-.7.2l-.5.6c-.2.2-.4.2-.6.1-.7-.3-2.3-1.6-2.7-2.4-.1-.2 0-.4.2-.5l.6-.5c.2-.2.2-.4.1-.6l-.7-1.4c-.2-.3-.5-.3-.8-.2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Rejoindre la chaîne ARIBAZ</a>
+      <a class="btn btn-ghost" href="/feed.xml"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19a1 1 0 1 0 0-.01" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.5 11.5A8 8 0 0 1 12.5 19.5M4.5 5a14.5 14.5 0 0 1 14.5 14.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> S'abonner par RSS</a>
+    </div>
+  </div>
+</div></section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">A</span><span>ARIBAZ</span></a>
+        <p>La tech utile, propre et sans blabla. Une sélection d'outils, de réglages et d'astuces testés, expliqués simplement, publiés deux à quatre fois par mois.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Explorer</h4>
+          <a href="/articles/">Toutes les actus</a>
+          <a href="/apropos.html">À propos</a>
+          <a href="/feed.xml">Flux RSS</a>
+        </div>
+        <div class="footer-col">
+          <h4>Thèmes</h4>
+          <a href="/articles/#productivite">Productivité</a><a href="/articles/#securite">Sécurité</a><a href="/articles/#filtrage">Filtrage</a><a href="/articles/#alternatives">Alternatives</a><a href="/articles/#mobile">Mobile</a>
+        </div>
+        <div class="footer-col">
+          <h4>Suivre</h4>
+          <a href="https://whatsapp.com/channel/0029VavhmewLtOjKNl2a3f1S" target="_blank" rel="noopener">Chaîne WhatsApp</a>
+          <a href="https://github.com/arielbaz" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ARIBAZ. Écrit et testé à la main.</span>
+      <span><a href="/feed.xml">RSS</a> · <a href="https://github.com/arielbaz" target="_blank" rel="noopener">Code source</a></span>
+    </div>
+  </div>
+</footer>
+<script src="/assets/js/app.js" defer></script>
+</body>
+</html>

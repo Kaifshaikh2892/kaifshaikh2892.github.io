@@ -1,0 +1,258 @@
+[
+  {
+    "title": "uBlock Origin : le bloqueur de pubs qui mérite encore sa place",
+    "slug": "ublock-origin",
+    "date": "2026-11-09",
+    "category": "Sécurité",
+    "tags": [
+      "navigateur",
+      "publicité",
+      "open source",
+      "vie privée"
+    ],
+    "excerpt": "Gratuit, open source et redoutablement efficace. Mais depuis Manifest V3, le navigateur que tu choisis compte autant que l'extension elle-même.",
+    "readTime": 2,
+    "url": "/articles/ublock-origin.html"
+  },
+  {
+    "title": "Brave : le navigateur qui bloque les pubs même quand Google ne veut pas",
+    "slug": "brave",
+    "date": "2026-11-06",
+    "category": "Alternatives",
+    "tags": [
+      "navigateur",
+      "publicité",
+      "vie privée",
+      "mobile"
+    ],
+    "excerpt": "Zéro pub, YouTube en arrière-plan écran éteint, et un bloqueur intégré au cœur du navigateur. Le remplaçant le plus crédible de Chrome et Safari.",
+    "readTime": 2,
+    "url": "/articles/brave.html"
+  },
+  {
+    "title": "Signal : la messagerie la plus sûre, et la plus simple à adopter",
+    "slug": "signal",
+    "date": "2026-11-03",
+    "category": "Sécurité",
+    "tags": [
+      "messagerie",
+      "chiffrement",
+      "open source",
+      "mobile"
+    ],
+    "excerpt": "Zéro pub, zéro suggestion, zéro Meta. Signal fait la même chose que WhatsApp, mais sans monétiser ta vie privée.",
+    "readTime": 2,
+    "url": "/articles/signal.html"
+  },
+  {
+    "title": "LocalSend : l'AirDrop universel qui marche entre tous tes appareils",
+    "slug": "localsend",
+    "date": "2026-10-26",
+    "category": "Alternatives",
+    "tags": [
+      "partage",
+      "open source",
+      "réseau",
+      "multiplateforme"
+    ],
+    "excerpt": "iPhone vers Android, Windows vers Mac, sans cloud, sans compte et sans connexion internet. Juste le même Wi-Fi.",
+    "readTime": 2,
+    "url": "/articles/localsend.html"
+  },
+  {
+    "title": "ShareX : l'outil de capture d'écran le plus complet, et il est gratuit",
+    "slug": "sharex",
+    "date": "2026-10-16",
+    "category": "Productivité",
+    "tags": [
+      "windows",
+      "capture d'écran",
+      "open source",
+      "productivité"
+    ],
+    "excerpt": "Capture, annotation, GIF, OCR et envoi automatique. ShareX fait le travail de cinq logiciels payants, sous Windows.",
+    "readTime": 2,
+    "url": "/articles/sharex.html"
+  },
+  {
+    "title": "OnlyOffice : la suite bureautique gratuite qui n'abîme pas tes fichiers Word",
+    "slug": "onlyoffice",
+    "date": "2026-10-07",
+    "category": "Productivité",
+    "tags": [
+      "bureautique",
+      "office",
+      "gratuit",
+      "compatibilité"
+    ],
+    "excerpt": "Sans abonnement, sans crack, sans bidouille. Et surtout : une compatibilité OOXML qui tient la mise en page de tes .docx.",
+    "readTime": 2,
+    "url": "/articles/onlyoffice.html"
+  },
+  {
+    "title": "Handy : dicte ton texte, l'IA s'occupe du reste (et en local)",
+    "slug": "handy",
+    "date": "2026-09-29",
+    "category": "Productivité",
+    "tags": [
+      "dictée",
+      "ia",
+      "open source",
+      "accessibilité"
+    ],
+    "excerpt": "Une dictée vocale qui tourne sur ta machine, sans internet et sans envoyer ta voix à un serveur. Français, hébreu, anglais.",
+    "readTime": 2,
+    "url": "/articles/handy.html"
+  },
+  {
+    "title": "NotebookLM : transforme tes PDF en podcast pour réviser partout",
+    "slug": "notebooklm",
+    "date": "2026-09-17",
+    "category": "Productivité",
+    "tags": [
+      "ia",
+      "étude",
+      "google",
+      "podcast"
+    ],
+    "excerpt": "Tes cours, tes rapports, tes documents : deux voix synthétiques en font une conversation audio. Idéal pour réviser en marchant.",
+    "readTime": 2,
+    "url": "/articles/notebooklm.html"
+  },
+  {
+    "title": "OWC Copy That : sauvegarde ta galerie iPhone sans payer iCloud",
+    "slug": "owc-copy-that",
+    "date": "2026-09-08",
+    "category": "Mobile",
+    "tags": [
+      "iphone",
+      "sauvegarde",
+      "stockage",
+      "usb-c"
+    ],
+    "excerpt": "Copie automatiquement tes photos et vidéos vers une clé USB ou un disque externe. Uniquement les nouveaux fichiers, sans doublons.",
+    "readTime": 2,
+    "url": "/articles/owc-copy-that.html"
+  },
+  {
+    "title": "Family Link : reprendre le contrôle d'un smartphone Android",
+    "slug": "family-link",
+    "date": "2026-08-27",
+    "category": "Filtrage",
+    "tags": [
+      "android",
+      "contrôle parental",
+      "google",
+      "famille"
+    ],
+    "excerpt": "Filtrage web, validation des applis, limites de temps et localisation. Le socle gratuit pour un Android supervisé.",
+    "readTime": 2,
+    "url": "/articles/family-link.html"
+  },
+  {
+    "title": "Le DNS 1.1.1.3 : un internet plus propre pour toute la maison",
+    "slug": "dns-cloudflare",
+    "date": "2026-08-18",
+    "category": "Filtrage",
+    "tags": [
+      "dns",
+      "réseau",
+      "cloudflare",
+      "famille"
+    ],
+    "excerpt": "Deux adresses à changer, deux minutes, et tous tes appareils sont filtrés. Sans logiciel, sans compte, sans abonnement.",
+    "readTime": 2,
+    "url": "/articles/dns-cloudflare.html"
+  },
+  {
+    "title": "Appels Wi-Fi : reste joignable sans réseau mobile (et sans surcoût à l'étranger)",
+    "slug": "appels-wifi",
+    "date": "2026-08-05",
+    "category": "Mobile",
+    "tags": [
+      "vowifi",
+      "mobile",
+      "voyage",
+      "forfait"
+    ],
+    "excerpt": "Le Wi-Fi passe, le réseau non ? Les appels Wi-Fi prennent le relais — y compris depuis l'étranger, avec un forfait à 2 €.",
+    "readTime": 2,
+    "url": "/articles/appels-wifi.html"
+  },
+  {
+    "title": "Wizmage : naviguer sans voir les images qui traînent",
+    "slug": "wizmage",
+    "date": "2026-07-28",
+    "category": "Filtrage",
+    "tags": [
+      "navigateur",
+      "images",
+      "filtre",
+      "famille"
+    ],
+    "excerpt": "Une extension qui floute toutes les images d'un site, avec un clic pour les afficher si besoin. Utile au bureau comme à la maison.",
+    "readTime": 2,
+    "url": "/articles/wizmage.html"
+  },
+  {
+    "title": "NSFW Filter : une IA locale qui masque les images inappropriées",
+    "slug": "nsfw-filter",
+    "date": "2026-07-15",
+    "category": "Filtrage",
+    "tags": [
+      "navigateur",
+      "ia",
+      "filtre",
+      "famille",
+      "vie privée"
+    ],
+    "excerpt": "Détection automatique, réglage de la sensibilité, liste blanche. Et surtout : l'analyse se fait dans le navigateur, pas sur un serveur.",
+    "readTime": 2,
+    "url": "/articles/nsfw-filter.html"
+  },
+  {
+    "title": "Have I Been Pwned : ton adresse mail a-t-elle fuité ?",
+    "slug": "have-i-been-pwned",
+    "date": "2026-07-06",
+    "category": "Sécurité",
+    "tags": [
+      "fuite",
+      "mots de passe",
+      "2fa",
+      "sécurité"
+    ],
+    "excerpt": "Deux secondes pour savoir si ton adresse figure dans une fuite de données. Puis deux actions concrètes si c'est le cas.",
+    "readTime": 2,
+    "url": "/articles/have-i-been-pwned.html"
+  },
+  {
+    "title": "Presse-papiers : l'historique caché de Windows et de macOS",
+    "slug": "presse-papiers",
+    "date": "2026-06-24",
+    "category": "Productivité",
+    "tags": [
+      "raccourcis",
+      "windows",
+      "macos",
+      "productivité"
+    ],
+    "excerpt": "Tu copies, tu colles, et tu écrases. Windows a un historique natif depuis des années — sur Mac, il faut une petite aide.",
+    "readTime": 2,
+    "url": "/articles/presse-papiers.html"
+  },
+  {
+    "title": "eSIM : activer une ligne en 3 étapes, sans carte à découper",
+    "slug": "esim",
+    "date": "2026-06-12",
+    "category": "Mobile",
+    "tags": [
+      "esim",
+      "mobile",
+      "voyage",
+      "opérateur"
+    ],
+    "excerpt": "Un QR code, deux validations, et ta ligne est active. Le guide pas-à-pas pour installer une eSIM proprement.",
+    "readTime": 2,
+    "url": "/articles/esim.html"
+  }
+]

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ARIBAZ — La tech utile, propre et sans blabla.</title>
+    <link>https://arielbaz.github.io/</link>
+    <description>Des astuces concrètes pour un numérique plus simple, plus sûr et plus propre : outils gratuits, vie privée, filtrage familial et productivité.</description>
+    <language>fr-FR</language>
+    <lastBuildDate>Mon, 09 Nov 2026 09:00:00 GMT</lastBuildDate>
+    <atom:link href="https://arielbaz.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>uBlock Origin : le bloqueur de pubs qui mérite encore sa place</title>
+      <link>https://arielbaz.github.io/articles/ublock-origin.html</link>
+      <guid isPermaLink="true">https://arielbaz.github.io/articles/ublock-origin.html</guid>
+      <pubDate>Mon, 09 Nov 2026 09:00:00 GMT</pubDate>
+      <category>Sécurité</category>
+      <description>Gratuit, open source et redoutablement efficace. Mais depuis Manifest V3, le navigateur que tu choisis compte autant que l'extension elle-même.</description>
+      <content:encoded><![CDATA[<p class="lead">Tu ouvres un site d'actu et trois pop-ups te sautent au visage avant même la première ligne de texte. Ce n'est pas une fatalité : c'est juste que ton navigateur n'a pas de garde-fou.</p>
+<p><strong>uBlock Origin</strong> en est un, et probablement le meilleur. Gratuit, open source, sans compte, sans télémétrie — et surtout sans programme commercial caché.</p>
+<h2>Ce qu'il fait vraiment</h2>
+<ul><li><strong>Bloque les publicités</strong> sur les sites les plus saturés, y compris les formats vidéo intrusifs.</li><li><strong>Neutralise les traqueurs</strong> publicitaires et analytiques avant qu'ils ne chargent.</li><li><strong>Allège la page</strong> : moins de scripts, moins de données, donc un web plus rapide et une batterie qui souffre moins.</li><li><strong>Reste discret</strong> : aucun onglet « premium », aucune relance pour faire un don.</li></ul>
+<h2>Pourquoi il n'est pas interchangeable</h2>
+<p>Beaucoup d'extensions portent un nom proche, mais toutes ne jouent pas le même jeu. <strong>AdBlock Plus</strong>, par exemple, est bien open source — ce qui lui est reproché, c'est son programme <em>Acceptable Ads</em> : des publicités sont autorisées à passer… contre rémunération.</p>
+<p>uBlock Origin, lui, ne négocie pas : par défaut, tout ce qui est pub est bloqué. C'est cette absence de compromis qui en fait la référence technique depuis des années.</p>
+<div class="protip"><div class="label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Le Pro-Tip ARIBAZ — le piège de Manifest V3</div><p>Depuis le passage de Chrome au standard <strong>Manifest V3</strong>, la version historique d'uBlock Origin est bridée sur les navigateurs Chromium : Google limite l'accès aux API réseau qui la rendaient si puissante. Sur le Chrome Web Store, c'est donc <strong>uBlock Origin Lite</strong> qui est poussé — efficace, mais moins complet.</p><p>La version pleine et entière continue de tourner à 100 % sur <strong>Firefox</strong>. Si le blocage de publicités est important pour toi, c'est un argument sérieux en faveur du renard roux (ou de Brave, qui intègre son propre bloqueur directement dans le code du navigateur).</p></div>
+<h2>Mise en place (2 minutes)</h2>
+<ol><li>Installe l'extension depuis le store de ton navigateur (Chrome Web Store, ou addons.mozilla.org pour Firefox).</li><li>Épingle l'icône dans la barre d'outils pour garder un œil sur le compteur de requêtes bloquées.</li><li>En cas de site cassé, clique sur l'icône puis sur le gros bouton d'alimentation : le blocage se désactive <strong>uniquement pour ce site</strong>.</li></ol>
+<h2>Verdict</h2>
+<p>C'est le premier geste à faire sur un ordinateur neuf, avant même d'installer un antivirus. Gratuit, léger, sans contrepartie : difficile de trouver une raison de s'en passer.</p>
+<p><strong>À installer :</strong> <a href="https://ublockorigin.com/fr" target="_blank" rel="noopener">ublockorigin.com/fr</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Brave : le navigateur qui bloque les pubs même quand Google ne veut pas</title>
+      <link>https://arielbaz.github.io/articles/brave.html</link>
+      <guid isPermaLink="true">https://arielbaz.github.io/articles/brave.html</guid>
+      <pubDate>Fri, 06 Nov 2026 09:00:00 GMT</pubDate>
+      <category>Alternatives</category>
+      <description>Zéro pub, YouTube en arrière-plan écran éteint, et un bloqueur intégré au cœur du navigateur. Le remplaçant le plus crédible de Chrome et Safari.</description>
+      <content:encoded><![CDATA[<p class="lead">Marre des publicités dès l'ouverture d'un site ? Marre de payer un abonnement juste pour écouter YouTube sans être coupé toutes les trois minutes ?</p>
+<p><strong>Brave</strong> répond aux deux, gratuitement, sur ordinateur comme sur mobile. Et son approche du blocage est techniquement plus solide que celle d'une simple extension.</p>
+<h2>Ce que tu gagnes</h2>
+<ul><li><strong>Zéro publicité</strong>, y compris sur YouTube, sans extension à installer.</li><li><strong>YouTube en arrière-plan</strong> : le son continue même écran éteint ou application en veille.</li><li><strong>Un web plus rapide</strong> : les scripts publicitaires ne sont jamais téléchargés.</li><li><strong>Une navigation plus sécurisée</strong> : HTTPS automatique, antibalayage, protection anti-empreinte numérique.</li><li><strong>Plus d'autonomie</strong> sur mobile, parce qu'un script qui ne tourne pas ne consomme pas de batterie.</li></ul>
+<h2>Pourquoi c'est plus qu'un Chrome repeint</h2>
+<p>Brave est basé sur Chromium, comme Chrome et Edge — tes extensions et tes favoris suivent. Mais son bloqueur, <strong>Brave Shields</strong>, est écrit en Rust et en C++ directement dans le navigateur : il ne dépend pas du système d'extensions de Google.</p>
+<div class="protip"><div class="label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Le Pro-Tip ARIBAZ — pourquoi ça change tout</div><p>C'est précisément là que Brave prend l'avantage sur uBlock Origin sur Chrome. Avec Manifest V3, Google restreint les extensions de blocage. Brave, lui, n'est pas concerné : son bloqueur fait partie du logiciel. Même si Google ferme complètement le robinet des extensions, Brave continuera de bloquer les pubs YouTube sans broncher.</p><p>Autre réglage à connaître : les <strong>Brave Rewards</strong> (la contrepartie publicitaire optionnelle) peuvent être désactivées en un clic dans les paramètres. Le blocage, lui, reste actif.</p></div>
+<h2>Mise en place</h2>
+<ol><li>Télécharge Brave sur <a href="https://brave.com/fr" target="_blank" rel="noopener">brave.com/fr</a> — iPhone, Android, Windows, macOS, Linux.</li><li>À l'installation, importe tes favoris et mots de passe depuis Chrome ou Safari.</li><li>Vérifie que les Shields sont bien sur « Aggressif » dans les réglages.</li><li>Sur mobile, active la lecture en arrière-plan dans les paramètres du navigateur.</li></ol>
+<h2>Verdict</h2>
+<p>C'est le changement le plus rentable que tu peux faire en cinq minutes : moins de pubs, plus de vitesse, et un « YouTube Premium gratuit » qui n'en est pas un mais qui y ressemble beaucoup.</p>
+<p><strong>À télécharger :</strong> <a href="https://brave.com/fr" target="_blank" rel="noopener">brave.com/fr</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Signal : la messagerie la plus sûre, et la plus simple à adopter</title>
+      <link>https://arielbaz.github.io/articles/signal.html</link>
+      <guid isPermaLink="true">https://arielbaz.github.io/articles/signal.html</guid>
+      <pubDate>Tue, 03 Nov 2026 09:00:00 GMT</pubDate>
+      <category>Sécurité</category>
+      <description>Zéro pub, zéro suggestion, zéro Meta. Signal fait la même chose que WhatsApp, mais sans monétiser ta vie privée.</description>
+      <content:encoded><![CDATA[<p class="lead">Tu veux une messagerie qui ne lit pas tes conversations, qui ne suggère pas de chaînes douteuses et qui ne revend pas ton carnet d'adresses ? <strong>Signal</strong> est la réponse, et elle est gratuite.</p>
+<p>Créée par <strong>Brian Acton</strong>, l'un des cofondateurs de WhatsApp, la fondation Signal est à but non lucratif. Pas d'actionnaires, pas de publicité, pas de modèle économique à défendre.</p>
+<h2>Ce qui change vraiment</h2>
+<ul><li><strong>Chiffrement de bout en bout par défaut</strong> sur les messages, les appels audio et vidéo, les groupes et les pièces jointes.</li><li><strong>Aucune collecte de métadonnées</strong> : Signal ne sait pas qui tu contactes, ni quand.</li><li><strong>Pas de publicité, pas de suggestions</strong>, pas de fil algorithmique.</li><li><strong>Open source</strong>, audité publiquement, avec des fonctions de confidentialité en avance sur le reste du marché (messages éphémères, numéro de téléphone masqué, verrouillage par code).</li></ul>
+<h2>La migration en pratique</h2>
+<p>Signal reprend l'essentiel de l'interface de WhatsApp. Messages, appels, groupes, photos, notes vocales : rien à réapprendre. On installe, on vérifie son numéro, et on invite ses proches — c'est le seul vrai frein, et il est social, pas technique.</p>
+<h2>Le Pro-Tip ARIBAZ — le détail qui compte pour cette chaîne</h2>
+<p>Signal n'a <strong>pas de fonctionnalité « Chaînes »</strong> comparable à WhatsApp ou Telegram. C'est une messagerie strictement pair-à-pair et groupes privés.</p>
+<p>Traduction : si toute ta communauté migre vers Signal, tu ne pourras plus diffuser tes actus via un canal ARIBAZ. Signal est excellent pour discuter, pas pour broadcaster.</p>
+<p>La bonne stratégie, c'est donc un usage complémentaire : <strong>WhatsApp pour la diffusion</strong>, <strong>Signal pour les échanges privés sensibles</strong>. Et pour ceux qui veulent aller plus loin, Telegram reste la seule alternative crédible côté canaux.</p>
+<h2>Verdict</h2>
+<p>Sur le plan de la sécurité, il n'y a pas débat : c'est la messagerie la plus solide du marché grand public. Sur le plan de la diffusion, ce n'est pas un remplaçant de ta chaîne — c'est un complément.</p>
+<p><strong>À télécharger :</strong> <a href="https://signal.org/fr/" target="_blank" rel="noopener">signal.org/fr</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>LocalSend : l'AirDrop universel qui marche entre tous tes appareils</title>
+      <link>https://arielbaz.github.io/articles/localsend.html</link>
+      <guid isPermaLink="true">https://arielbaz.github.io/articles/localsend.html</guid>
+      <pubDate>Mon, 26 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Alternatives</category>
+      <description>iPhone vers Android, Windows vers Mac, sans cloud, sans compte et sans connexion internet. Juste le même Wi-Fi.</description>
+      <content:encoded><![CDATA[<p class="lead">Envoyer une photo de ton iPhone vers le PC Windows de la maison ne devrait pas être un parcours du combattant. Entre le mail à soi-même, le câble introuvable et les applis qui réclament un compte, la friction est réelle.</p>
+<p><strong>LocalSend</strong> supprime le problème : un transfert direct, en local, entre pratiquement n'importe quels appareils.</p>
+<h2>Ce qu'il fait</h2>
+<ul><li><strong>Transfert de fichiers et de photos</strong> sans passer par un serveur tiers.</li><li><strong>Compatible iOS, Android, Windows, macOS, Linux</strong> — et même ChromeOS.</li><li><strong>Aucune inscription, aucun compte, aucune publicité.</strong></li><li><strong>Open source</strong>, chiffré en local, sans limite de taille de fichier.</li><li><strong>Ultra rapide</strong>, puisque le débit dépend de ton Wi-Fi et non de ta connexion internet.</li></ul>
+<h2>Comment ça marche</h2>
+<ol><li>Installe l'application sur les deux appareils depuis <a href="https://localsend.org" target="_blank" rel="noopener">localsend.org</a>.</li><li>Ouvre-la des deux côtés : les appareils se détectent automatiquement.</li><li>Sélectionne le fichier, choisis la destination, accepte la demande de réception.</li></ol>
+<div class="protip"><div class="label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Le Pro-Tip ARIBAZ — la seule condition à respecter</div><p>Les deux appareils doivent être <strong>sur le même réseau local</strong>. Même Wi-Fi, même switch, ou partage de connexion si tu es en déplacement. Un iPhone en 4G et un PC sur le Wi-Fi de la maison ne se verront jamais : c'est la cause n°1 des « ça ne marche pas ».</p><p>Bonus confidentialité : comme rien ne transite par internet, aucune copie ne traîne sur un serveur inconnu. Pour des documents sensibles, c'est exactement ce qu'on veut.</p></div>
+<h2>Verdict</h2>
+<p>C'est l'un des outils les plus utiles de cette sélection, et l'un des plus simples : deux appareils, un réseau, zéro compte. Une fois qu'on y a goûté, on ne revient pas au mail à soi-même.</p>
+<p><strong>À télécharger :</strong> <a href="https://localsend.org" target="_blank" rel="noopener">localsend.org</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>ShareX : l'outil de capture d'écran le plus complet, et il est gratuit</title>
+      <link>https://arielbaz.github.io/articles/sharex.html</link>
+      <guid isPermaLink="true">https://arielbaz.github.io/articles/sharex.html</guid>
+      <pubDate>Fri, 16 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Productivité</category>
+      <description>Capture, annotation, GIF, OCR et envoi automatique. ShareX fait le travail de cinq logiciels payants, sous Windows.</description>
+      <content:encoded><![CDATA[<p class="lead">Besoin de montrer un bug à un collègue, d'illustrer un cours ou de capturer une portion d'écran en trois secondes ? L'outil intégré de Windows dépanne, mais s'arrête vite.</p>
+<p><strong>ShareX</strong> est le couteau suisse de la capture d'écran sous Windows. Gratuit, open source, sans publicité, sans version « pro » bridée.</p>
+<h2>Ce qu'il sait faire</h2>
+<ul><li><strong>Capturer</strong> tout l'écran, une fenêtre, une zone libre, une fenêtre défilante.</li><li><strong>Annoter</strong> immédiatement : flèches, surlignage, texte, numérotation, floutage.</li><li><strong>Enregistrer en vidéo</strong> ou créer des <strong>GIF animés</strong> pour les démonstrations courtes.</li><li><strong>Générer un lien de partage</strong> automatiquement à la fin de la capture.</li><li><strong>Automatiser</strong> : nommage, dossier de destination, action après capture.</li></ul>
+<h2>Pourquoi il écrase la concurrence</h2>
+<p>Parce qu'il ne s'arrête pas à la capture. C'est un pipeline complet : tu appuies sur un raccourci, tu cadres, tu annotes, tu partages. Pas de logiciel intermédiaire, pas d'abonnement.</p>
+<div class="protip"><div class="label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Le Pro-Tip ARIBAZ — l'OCR, la fonction que personne ne connaît</div><p>ShareX intègre la <strong>reconnaissance optique de caractères</strong>. En un raccourci, il capture une zone de l'écran, extrait le texte et le copie dans le presse-papiers.</p><p>Résultat : tu récupères le texte d'un PDF verrouillé, d'une vidéo de cours ou d'une capture d'application sans avoir à tout retaper. C'est le gain de temps le plus spectaculaire de l'outil.</p><p>Second réglage à connaître : par défaut, ShareX peut envoyer tes captures vers un hébergeur public (Imgur). Si tes écrans contiennent des informations sensibles, désactive l'envoi automatique dans <em>Destinations</em> pour que tout reste <strong>en local sur ton disque</strong>.</p></div>
+<h2>Verdict</h2>
+<p>Gratuit, complet, maintenu, sans piège. Si tu es sous Windows, c'est l'un des premiers logiciels à installer.</p>
+<p><strong>À télécharger :</strong> <a href="https://getsharex.com" target="_blank" rel="noopener">getsharex.com</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>OnlyOffice : la suite bureautique gratuite qui n'abîme pas tes fichiers Word</title>
+      <link>https://arielbaz.github.io/articles/onlyoffice.html</link>
+      <guid isPermaLink="true">https://arielbaz.github.io/articles/onlyoffice.html</guid>
+      <pubDate>Wed, 07 Oct 2026 09:00:00 GMT</pubDate>
+      <category>Productivité</category>
+      <description>Sans abonnement, sans crack, sans bidouille. Et surtout : une compatibilité OOXML qui tient la mise en page de tes .docx.</description>
+      <content:encoded><![CDATA[<p class="lead">Tu as besoin de Word, Excel et PowerPoint, mais tu ne veux pas payer un abonnement à vie, ni chercher une version piratée qui installe trois mineurs au passage ?</p>
+<p><strong>OnlyOffice</strong> est la réponse la plus solide : une suite bureautique complète, gratuite, et surtout remarquablement compatible avec les formats Microsoft.</p>
+<h2>Ce que tu obtiens</h2>
+<ul><li><strong>Éditeurs de texte, tableur et présentations</strong> avec une interface moderne et familière.</li><li><strong>Gestion des PDF</strong> : lecture, annotation, formulaires, conversion.</li><li><strong>Connexion aux clouds</strong> : Google Drive, Dropbox, OneDrive, iCloud.</li><li><strong>Travail collaboratif en temps réel</strong> sur les documents partagés.</li><li><strong>Disponible sur Windows, macOS, Linux</strong>, mais aussi Android et iOS.</li></ul>
+<h2>La vraie différence avec LibreOffice</h2>
+<p>C'est le point que personne ne mentionne : la plupart des gens connaissent LibreOffice, mais beaucoup se plaignent que la mise en page de leurs <code>.docx</code> explose à l'ouverture.</p>
+<p>OnlyOffice utilise <strong>OOXML comme format natif</strong> — le format de Microsoft. Résultat : un document créé dans Word s'ouvre avec la même mise en page, les mêmes tableaux, les mêmes polices. En entreprise, ça change tout.</p>
+<div class="protip"><div class="label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Le Pro-Tip ARIBAZ — l'IA, oui, mais avec ta clé</div><p>OnlyOffice propose des fonctions IA (résumé, traduction, reformulation), mais elles passent par des <strong>plugins</strong>. Pour le plugin OpenAI/ChatGPT, il faut généralement connecter sa <strong>propre clé API</strong> — donc un compte et un peu de configuration.</p><p>Autrement dit : ce n'est pas de l'IA « incluse », c'est de l'IA « branchable ». Une fois installé, tu as une suite gratuite qui couvre 95 % des usages quotidiens.</p></div>
+<h2>Verdict</h2>
+<p>Pour un usage personnel, étudiant ou une petite structure, c'est le meilleur compromis gratuit / compatible du marché. LibreOffice reste une valeur sûre, mais OnlyOffice gagne sur la fidélité des documents.</p>
+<p><strong>À télécharger :</strong> <a href="https://www.onlyoffice.com/download-desktop.aspx" target="_blank" rel="noopener">onlyoffice.com</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Handy : dicte ton texte, l'IA s'occupe du reste (et en local)</title>
+      <link>https://arielbaz.github.io/articles/handy.html</link>
+      <guid isPermaLink="true">https://arielbaz.github.io/articles/handy.html</guid>
+      <pubDate>Tue, 29 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Productivité</category>
+      <description>Une dictée vocale qui tourne sur ta machine, sans internet et sans envoyer ta voix à un serveur. Français, hébreu, anglais.</description>
+      <content:encoded><![CDATA[<p class="lead">Taper un long mail, c'est trois minutes de clavier et deux fautes de frappe. Parler, c'est quinze secondes. <strong>Handy</strong> transforme la seconde option en outil sérieux.</p>
+<p>C'est une application de dictée open source, basée sur la technologie <strong>Whisper</strong> d'OpenAI, mais qui tourne <strong>en local</strong> : ta voix ne part pas sur un serveur.</p>
+<h2>Ce qui le distingue</h2>
+<ul><li><strong>Reconnaissance vocale locale</strong>, sans connexion internet.</li><li><strong>Multilingue</strong> : français, anglais, hébreu et bien d'autres.</li><li><strong>Dictionnaire personnel</strong> : tu ajoutes tes noms propres, ton jargon, tes sigles — et la transcription les respecte.</li><li><strong>Multiplateforme</strong> : Windows, macOS, Linux.</li><li><strong>Gratuit et open source</strong>, sans compte.</li></ul>
+<h2>Mise en place</h2>
+<ol><li>Télécharge Handy depuis <a href="https://handy.computer/" target="_blank" rel="noopener">handy.computer</a> et installe-le.</li><li>Au premier lancement, choisis la langue et télécharge le modèle (quelques centaines de Mo).</li><li>Définis un raccourci clavier de déclenchement — idéalement « maintenir pour parler », comme un talkie-walkie.</li><li>Dicte, relâche : le texte s'insère dans le champ actif.</li></ol>
+<div class="protip"><div class="label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Le Pro-Tip ARIBAZ — dictionnaire + raccourci, le duo gagnant</div><p>Deux réglages font toute la différence au quotidien.</p><p>Le <strong>dictionnaire personnalisé</strong> : ajoute les mots que la dictée écorche systématiquement (noms de marques, prénoms, termes techniques). C'est ce qui sépare une dictée amusante d'un outil qu'on utilise vraiment.</p><p>Le <strong>mode « maintenir pour parler »</strong> : plus fiable que le déclenchement automatique, il évite que l'outil se lance pendant une conversation. Et comme tout se passe en local, tu peux dicter des notes sensibles sans crainte.</p></div>
+<h2>Verdict</h2>
+<p>Pour les longs textes, les personnes qui tapent lentement ou celles qui pensent mieux à l'oral, c'est un changement d'usage, pas juste un gadget. La contrepartie : il faut accepter de télécharger un modèle et de relire — l'IA se trompe encore sur les noms propres.</p>
+<p><strong>À découvrir :</strong> <a href="https://handy.computer/" target="_blank" rel="noopener">handy.computer</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>NotebookLM : transforme tes PDF en podcast pour réviser partout</title>
+      <link>https://arielbaz.github.io/articles/notebooklm.html</link>
+      <guid isPermaLink="true">https://arielbaz.github.io/articles/notebooklm.html</guid>
+      <pubDate>Thu, 17 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Productivité</category>
+      <description>Tes cours, tes rapports, tes documents : deux voix synthétiques en font une conversation audio. Idéal pour réviser en marchant.</description>
+      <content:encoded><![CDATA[<p class="lead">Tu as quarante pages de PDF à assimiler et zéro envie de les relire ? <strong>NotebookLM</strong> les transforme en conversation audio à deux voix, façon podcast.</p>
+<p>L'outil de Google n'invente rien : il travaille <strong>uniquement sur les documents que tu lui donnes</strong>, ce qui limite fortement les hallucinations.</p>
+<h2>Ce que tu peux faire</h2>
+<ul><li><strong>Importer</strong> des PDF, documents, pages web, vidéos YouTube, textes copiés.</li><li><strong>Générer un « Audio Overview »</strong> : un dialogue naturel entre deux voix qui résume, explique et discute tes documents.</li><li><strong>Poser des questions</strong> et obtenir des réponses sourcées, avec renvoi vers le passage exact du document.</li><li><strong>Créer des fiches de révision</strong>, des plans, des FAQ à partir de tes sources.</li><li><strong>Télécharger l'audio</strong> pour l'écouter hors connexion.</li></ul>
+<div class="protip"><div class="label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Le Pro-Tip ARIBAZ — la nuance « hors-ligne »</div><p>Attention à une promesse trop belle : NotebookLM fait tourner les modèles Gemini <strong>dans le cloud</strong>. Générer un résumé, poser une question ou créer un podcast nécessite donc une connexion internet active.</p><p>Ce qui fonctionne hors-ligne, c'est <strong>l'écoute</strong> : une fois le podcast généré, tu télécharges le fichier audio et tu l'écoutes dans le métro ou en voiture. La bonne formule, c'est donc « télécharge tes podcasts pour les écouter partout », pas « NotebookLM fonctionne sans internet ».</p></div>
+<h2>Verdict</h2>
+<p>C'est l'un des meilleurs usages pédagogiques de l'IA : transformer une masse de documents en explication dialoguée. Gratuit, avec des limites d'usage, et particulièrement efficace pour les étudiants et les curieux.</p>
+<p><strong>À essayer :</strong> <a href="https://notebooklm.google" target="_blank" rel="noopener">notebooklm.google</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>OWC Copy That : sauvegarde ta galerie iPhone sans payer iCloud</title>
+      <link>https://arielbaz.github.io/articles/owc-copy-that.html</link>
+      <guid isPermaLink="true">https://arielbaz.github.io/articles/owc-copy-that.html</guid>
+      <pubDate>Tue, 08 Sep 2026 09:00:00 GMT</pubDate>
+      <category>Mobile</category>
+      <description>Copie automatiquement tes photos et vidéos vers une clé USB ou un disque externe. Uniquement les nouveaux fichiers, sans doublons.</description>
+      <content:encoded><![CDATA[<p class="lead">Ton iCloud est plein, Apple te propose gentiment de passer au forfait supérieur, et tes 40 000 photos dorment dans un format que tu ne contrôles pas.</p>
+<p><strong>OWC Copy That</strong> propose une autre voie : sauvegarder ta galerie iPhone <strong>directement sur un support externe</strong>, sans passer par le cloud.</p>
+<h2>Son fonctionnement</h2>
+<ul><li><strong>Copie automatiquement</strong> photos et vidéos vers une clé USB, un SSD ou n'importe quel stockage externe.</li><li><strong>Détecte les fichiers déjà copiés</strong> et ne transfère que les nouveaux : pas de doublons, pas de transfert inutile.</li><li><strong>Peut supprimer les fichiers déjà sauvegardés</strong> de l'iPhone pour libérer de l'espace.</li><li><strong>Fonctionne avec les iPhone et iPad récents en USB-C</strong>, ou via un simple adaptateur pour les anciens modèles.</li><li><strong>Aucun abonnement</strong> : tu paies l'application une fois, tes photos restent chez toi.</li></ul>
+<div class="protip"><div class="label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Le Pro-Tip ARIBAZ — la règle des trois copies</div><p>Une sauvegarde qui n'existe qu'à un seul endroit n'est pas une sauvegarde. Avant d'activer la suppression automatique après copie, fais ce test :</p><p>1. Copie une petite série de photos sur le disque externe. 2. Débranche, rebranche, et vérifie que les fichiers s'ouvrent bien depuis l'ordinateur. 3. Seulement ensuite, laisse l'app supprimer les originaux.</p><p>Et garde une deuxième copie ailleurs (disque différent, autre lieu) : un SSD qui tombe, et tout disparaît.</p></div>
+<h2>Verdict</h2>
+<p>Un excellent outil pour reprendre la main sur ses photos sans payer 10 € par mois à vie. L'idéal : une sauvegarde locale régulière sur disque externe, et iCloud en secours pour les photos du quotidien.</p>
+<p><strong>Sur l'App Store :</strong> <a href="https://apps.apple.com/app/id1536830655" target="_blank" rel="noopener">OWC Copy That</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Family Link : reprendre le contrôle d'un smartphone Android</title>
+      <link>https://arielbaz.github.io/articles/family-link.html</link>
+      <guid isPermaLink="true">https://arielbaz.github.io/articles/family-link.html</guid>
+      <pubDate>Thu, 27 Aug 2026 09:00:00 GMT</pubDate>
+      <category>Filtrage</category>
+      <description>Filtrage web, validation des applis, limites de temps et localisation. Le socle gratuit pour un Android supervisé.</description>
+      <content:encoded><![CDATA[<p class="lead">Un smartphone Android dans les mains d'un enfant ou d'un adolescent, sans garde-fou, c'est un accès libre à tout internet. <strong>Google Family Link</strong> est la première brique à poser — gratuite, native, et plutôt bien faite.</p>
+<h2>Les fonctions clés</h2>
+<ul><li><strong>Filtrage web</strong> : active SafeSearch sur Google et YouTube et bloque les sites inappropriés.</li><li><strong>Validation des applis</strong> : toute nouvelle installation doit être approuvée par le parent.</li><li><strong>Limites de temps</strong> : quotas d'heures par jour et couvre-feu automatique le soir.</li><li><strong>Localisation</strong> : position de l'appareil en temps réel.</li><li><strong>Pilotage à distance</strong> : verrouiller le téléphone ou une application en un clic.</li></ul>
+<h2>Mise en place</h2>
+<ol><li><strong>Côté parent</strong> : installe l'application <em>Google Family Link</em> (iOS, Android ou web).</li><li><strong>Côté appareil</strong> : Paramètres → Google → Contrôle parental, puis suis les étapes.</li><li>Crée un compte Google dédié à l'enfant — c'est lui qui sera supervisé, pas ton compte principal.</li></ol>
+<div class="protip"><div class="label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Le Pro-Tip ARIBAZ — les deux pièges de la configuration</div><p><strong>Premier piège : l'âge du compte.</strong> Pour créer un compte supervisé, l'âge renseigné doit être inférieur à 18 ans. Utilise un compte Gmail <strong>unique</strong> pour l'enfant, et garde ton compte parent séparé. Pour consulter les autres boîtes mail de l'appareil, passe par une application tierce comme Outlook.</p><p><strong>Second piège : Family Link n'est pas un filtre d'images.</strong> Il filtre par domaine et par application, pas le contenu visuel d'une page autorisée. Pour un filtrage d'images sérieux, une solution complémentaire (type NetSpark) reste fortement conseillée. Family Link est la base, pas la totalité.</p></div>
+<h2>Verdict</h2>
+<p>Gratuit, intégré, efficace sur l'essentiel : temps d'écran, installations, localisation. À compléter par un filtrage réseau (DNS) et, si besoin, un filtre d'images dans le navigateur.</p>
+<p><strong>En savoir plus :</strong> <a href="https://families.google.com/familylink" target="_blank" rel="noopener">families.google.com/familylink</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Le DNS 1.1.1.3 : un internet plus propre pour toute la maison</title>
+      <link>https://arielbaz.github.io/articles/dns-cloudflare.html</link>
+      <guid isPermaLink="true">https://arielbaz.github.io/articles/dns-cloudflare.html</guid>
+      <pubDate>Tue, 18 Aug 2026 09:00:00 GMT</pubDate>
+      <category>Filtrage</category>
+      <description>Deux adresses à changer, deux minutes, et tous tes appareils sont filtrés. Sans logiciel, sans compte, sans abonnement.</description>
+      <content:encoded><![CDATA[<p class="lead">Pas de filtre à la maison ? Tu veux au minimum bloquer les sites douteux et activer SafeSearch partout, sans installer quoi que ce soit sur chaque appareil ?</p>
+<p>La méthode la plus simple tient en deux adresses IP : <strong>1.1.1.3</strong> et <strong>1.0.0.3</strong>, les DNS « Families » de Cloudflare.</p>
+<h2>Comment ça marche</h2>
+<p>Le DNS est l'annuaire d'internet : il traduit un nom de site en adresse. En utilisant un annuaire qui refuse les domaines indésirables, tu bloques <strong>en amont</strong>, pour tous les appareils du réseau.</p>
+<ul><li><strong>Sites non adaptés bloqués</strong> (contenus adultes, jeux en ligne, etc.).</li><li><strong>SafeSearch forcé</strong> sur Google, YouTube, Bing.</li><li><strong>Tous les appareils protégés</strong> : ordinateurs, téléphones, tablettes, consoles.</li><li><strong>Aucune inscription</strong>, aucun logiciel, et un bonus de rapidité.</li></ul>
+<h2>Mise en place</h2>
+<ul><li><strong>Sur ta box</strong> : remplace les DNS par <code>1.1.1.3</code> et <code>1.0.0.3</code> dans les réglages réseau.</li><li><strong>Sur un ordinateur</strong> : modifie les DNS de la connexion active.</li><li><strong>Sur smartphone</strong> : installe l'application <em>1.1.1.1</em> et choisis le mode « Famille ».</li></ul>
+<div class="protip"><div class="label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Le Pro-Tip ARIBAZ — le piège IPv6 qui annule tout</div><p>Ta configuration IPv4 peut être parfaite et le filtrage <strong>totalement contourné</strong>. De plus en plus de box (Orange, Bouygues, SFR) et d'appareils récents privilégient <strong>IPv6</strong>. Si tu ne changes que les DNS IPv4, l'appareil interroge le DNS IPv6 de la box… et passe à travers le filtre sans que tu le saches.</p><p>Ajoute donc les adresses IPv6 de Cloudflare Families :</p><p>- <code>2606:4700:4700::1113</code> - <code>2606:4700:4700::1003</code></p><p>Dernier point : le DNS filtre <strong>par domaine</strong>, pas le contenu d'une page. Une image problématique sur un site autorisé passera. C'est un premier rempart, pas un filtre complet.</p></div>
+<h2>Verdict</h2>
+<p>Le meilleur rapport protection / effort de toute cette sélection. Deux minutes, zéro euro, et toute la maison est filtrée.</p>
+<p><strong>Documentation :</strong> <a href="https://one.one.one.one/fr-FR/family/" target="_blank" rel="noopener">one.one.one.one/fr-FR/family</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Appels Wi-Fi : reste joignable sans réseau mobile (et sans surcoût à l'étranger)</title>
+      <link>https://arielbaz.github.io/articles/appels-wifi.html</link>
+      <guid isPermaLink="true">https://arielbaz.github.io/articles/appels-wifi.html</guid>
+      <pubDate>Wed, 05 Aug 2026 09:00:00 GMT</pubDate>
+      <category>Mobile</category>
+      <description>Le Wi-Fi passe, le réseau non ? Les appels Wi-Fi prennent le relais — y compris depuis l'étranger, avec un forfait à 2 €.</description>
+      <content:encoded><![CDATA[<p class="lead">Cave, sous-sol, zone blanche, hôtel à l'étranger : le réseau mobile manque, mais le Wi-Fi est là. Les <strong>appels Wi-Fi</strong> (VoWiFi) utilisent cette connexion pour passer et recevoir tes appels, comme si tu étais chez toi.</p>
+<h2>Ce que ça change</h2>
+<ul><li><strong>Appels et SMS même sans réseau mobile</strong>, tant que le Wi-Fi est disponible.</li><li><strong>Aucun frais supplémentaire à l'étranger</strong> avec un forfait français : l'appel passe par internet, comme depuis la France.</li><li><strong>Activation en deux clics</strong> dans les réglages du téléphone.</li><li><strong>Compatible iPhone et Android</strong>, chez la plupart des opérateurs.</li></ul>
+<h2>Mise en place</h2>
+<ul><li><strong>iPhone</strong> : Réglages → Données cellulaires → Appels Wi-Fi.</li><li><strong>Android</strong> : Réglages → Réseau et internet → Appels Wi-Fi.</li></ul>
+<p>L'opérateur doit avoir activé l'option sur ta ligne. Chez certains, c'est automatique ; chez d'autres, il faut l'activer dans l'espace client.</p>
+<div class="protip"><div class="label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Le Pro-Tip ARIBAZ — le mode avion, pas le mode « débrouille »</div><p>L'exemple classique : un forfait Free à 2 €, utilisé depuis Israël pour appeler la France sans surcoût. Ça fonctionne… tant que le téléphone reste sur le Wi-Fi.</p><p>Le piège : si le Wi-Fi faiblit une seconde, le smartphone bascule silencieusement sur le réseau mobile local, en roaming. Sur un petit forfait, la facture peut exploser en quelques minutes.</p><p>La parade : active le <strong>mode avion</strong>, puis réactive <strong>uniquement le Wi-Fi</strong>. Le téléphone ne peut plus s'accrocher aux antennes locales, et tous les appels passent par internet. Zéro risque de hors-forfait.</p></div>
+<h2>Verdict</h2>
+<p>Une fonction discrète, gratuite, et souvent ignorée alors qu'elle règle un paquet de situations. À activer une fois pour toutes — et à combiner avec le mode avion en voyage.</p>
+<p><strong>Chez Free :</strong> <a href="https://www.free.fr" target="_blank" rel="noopener">free.fr</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Wizmage : naviguer sans voir les images qui traînent</title>
+      <link>https://arielbaz.github.io/articles/wizmage.html</link>
+      <guid isPermaLink="true">https://arielbaz.github.io/articles/wizmage.html</guid>
+      <pubDate>Tue, 28 Jul 2026 09:00:00 GMT</pubDate>
+      <category>Filtrage</category>
+      <description>Une extension qui floute toutes les images d'un site, avec un clic pour les afficher si besoin. Utile au bureau comme à la maison.</description>
+      <content:encoded><![CDATA[<p class="lead">Tu veux un internet plus propre, sans tomber sur des images que tu n'as pas demandées ? <strong>Wizmage</strong> masque automatiquement toutes les images de ton navigateur, et te laisse les afficher une par une.</p>
+<h2>Comment ça marche</h2>
+<ul><li><strong>Toutes les images sont floutées</strong> dès l'activation.</li><li><strong>La structure de la page est conservée</strong> : rien n'est cassé, les textes restent lisibles.</li><li><strong>Un clic</strong> sur le bouton (ou <code>ALT + A</code>) affiche une image précise.</li><li><strong>Personnalisable</strong> : choisis les sites où le filtre reste actif en permanence, ou seulement temporairement.</li></ul>
+<h2>Installation</h2>
+<ol><li>Ouvre la fiche de l'extension sur le Chrome Web Store.</li><li>Clique sur « Ajouter à Chrome » (ou au navigateur Chromium équivalent).</li><li>C'est prêt : les images apparaissent floutées à la prochaine page chargée.</li></ol>
+<div class="protip"><div class="label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Le Pro-Tip ARIBAZ — deux corrections utiles</div><p><strong>Le vocabulaire</strong> : on écrit « les images sont <strong>floutées</strong> ». « Flouer » veut dire escroquer — ce n'est pas tout à fait le même programme.</p><p><strong>Firefox</strong> : le lien officiel mène au Chrome Web Store, qui ne fonctionne pas sur Firefox. Les utilisateurs du navigateur de Mozilla doivent chercher <strong>Wizmage</strong> directement sur <a href="https://addons.mozilla.org" target="_blank" rel="noopener">addons.mozilla.org</a> ou dans les modules complémentaires.</p><p>Enfin, garde en tête ce que l'outil <strong>ne fait pas</strong> : il ne filtre pas les contenus, il les cache. Ce n'est pas un substitut à un vrai filtre, et l'extension peut être désinstallée en deux clics — ce qui la rend utile contre les images surprises, pas contre un utilisateur déterminé.</p></div>
+<h2>Verdict</h2>
+<p>Pratique au travail, dans les transports ou sur un écran partagé. Un outil de confort visuel, à compléter par un filtrage réseau si l'enjeu est familial.</p>
+<p><strong>À installer :</strong> <a href="https://chromewebstore.google.com/detail/wizmage-image-hider/ifoggbfaoakkojipahnplnbfnhhhnmlp" target="_blank" rel="noopener">Chrome Web Store</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>NSFW Filter : une IA locale qui masque les images inappropriées</title>
+      <link>https://arielbaz.github.io/articles/nsfw-filter.html</link>
+      <guid isPermaLink="true">https://arielbaz.github.io/articles/nsfw-filter.html</guid>
+      <pubDate>Wed, 15 Jul 2026 09:00:00 GMT</pubDate>
+      <category>Filtrage</category>
+      <description>Détection automatique, réglage de la sensibilité, liste blanche. Et surtout : l'analyse se fait dans le navigateur, pas sur un serveur.</description>
+      <content:encoded><![CDATA[<p class="lead">Marre des images inappropriées qui s'affichent sans prévenir, à la maison comme au bureau ? <strong>NSFW Filter</strong> utilise l'IA pour les détecter et les masquer automatiquement, dans le navigateur.</p>
+<h2>Les fonctions clés</h2>
+<ul><li><strong>Floute ou masque automatiquement</strong> les images et vidéos indésirables sur Chrome, Edge et Brave.</li><li><strong>Réglage de précision par IA</strong> : ajuste le niveau de filtrage selon tes besoins.</li><li><strong>Liste blanche</strong> : exclus les sites de confiance pour ne pas bloquer ce que tu veux voir.</li><li><strong>Léger et gratuit</strong>, sans compte.</li></ul>
+<h2>Le point que tout le monde ignore</h2>
+<p>L'analyse ne se fait pas sur un serveur distant : le modèle tourne <strong>en local</strong>, dans ton navigateur, via TensorFlow.js. Aucune image n'est envoyée à un tiers pour être classée.</p>
+<p>Pour une extension qui voit passer toutes tes images, cette architecture change complètement la donne côté vie privée.</p>
+<div class="protip"><div class="label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Le Pro-Tip ARIBAZ — précise ta compatibilité</div><p>L'extension est souvent présentée comme « Windows et Mac uniquement ». En réalité, puisqu'il s'agit d'une extension de navigateur, elle fonctionne de la même manière sous <strong>Linux</strong>, via Chrome, Chromium, Edge ou Brave.</p><p>La bonne formulation : « PC, Mac et Linux, sur Chrome, Edge ou Brave ».</p><p>Et comme toujours : ne remplace pas un vrai filtre, et peut être désinstallée. C'est un filtre de confort, pas un contrôle parental verrouillé.</p></div>
+<h2>Verdict</h2>
+<p>Le meilleur compromis entre efficacité et respect de la vie privée pour masquer les images indésirables. À combiner avec un filtrage DNS et, sur mobile, Family Link.</p>
+<p><strong>À installer :</strong> <a href="https://chromewebstore.google.com/detail/nsfw-filter/kmgagnlkckiamnenbpigfaljmanlbbhh" target="_blank" rel="noopener">Chrome Web Store</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Have I Been Pwned : ton adresse mail a-t-elle fuité ?</title>
+      <link>https://arielbaz.github.io/articles/have-i-been-pwned.html</link>
+      <guid isPermaLink="true">https://arielbaz.github.io/articles/have-i-been-pwned.html</guid>
+      <pubDate>Mon, 06 Jul 2026 09:00:00 GMT</pubDate>
+      <category>Sécurité</category>
+      <description>Deux secondes pour savoir si ton adresse figure dans une fuite de données. Puis deux actions concrètes si c'est le cas.</description>
+      <content:encoded><![CDATA[<p class="lead">Tu te demandes si tes mots de passe ont fuité ? Il existe un moyen simple, gratuit et fiable de le savoir : <strong>Have I Been Pwned</strong>.</p>
+<p>Tu entres ton adresse mail, le site te répond si elle apparaît dans une fuite de données publique connue — et dans lesquelles.</p>
+<h2>Pourquoi c'est fiable</h2>
+<ul><li>Le site est géré par <strong>Troy Hunt</strong>, expert en sécurité reconnu.</li><li><strong>Gratuit, sans publicité, sans inscription.</strong></li><li>Utilisé par les professionnels de la cybersécurité et intégré directement dans de nombreux gestionnaires de mots de passe (Bitwarden, 1Password, Dashlane).</li></ul>
+<h2>Si ton adresse est concernée</h2>
+<ol><li><strong>Change le mot de passe</strong> du service touché — et de tous ceux où tu réutilises le même.</li><li><strong>Active la double authentification</strong> (2FA) partout où c'est proposé.</li><li>Vérifie si d'autres comptes partagent la même combinaison mail / mot de passe.</li></ol>
+<div class="protip"><div class="label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Le Pro-Tip ARIBAZ — teste aussi tes mots de passe, anonymement</div><p>Le site a un second usage méconnu : l'onglet <strong>Passwords</strong> (<a href="https://haveibeenpwned.com/Passwords" target="_blank" rel="noopener">pwnedpasswords.com</a>). Il permet de tester un mot de passe directement, sans donner d'adresse mail, pour voir combien de fois il apparaît dans les bases piratées.</p><p>Le fonctionnement est astucieux : ton mot de passe n'est jamais transmis en clair, seul un fragment de son empreinte est envoyé. Tu peux donc vérifier sans risque.</p><p>Un mot de passe retrouvé dans des millions de fuites ? C'est la définition d'un mot de passe à changer immédiatement.</p></div>
+<h2>Verdict</h2>
+<p>Le réflexe à avoir une fois par an, en deux minutes. Et une bonne raison d'abandonner la réutilisation de mots de passe — ou mieux, d'adopter un gestionnaire.</p>
+<p><strong>À tester :</strong> <a href="https://haveibeenpwned.com" target="_blank" rel="noopener">haveibeenpwned.com</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Presse-papiers : l'historique caché de Windows et de macOS</title>
+      <link>https://arielbaz.github.io/articles/presse-papiers.html</link>
+      <guid isPermaLink="true">https://arielbaz.github.io/articles/presse-papiers.html</guid>
+      <pubDate>Wed, 24 Jun 2026 09:00:00 GMT</pubDate>
+      <category>Productivité</category>
+      <description>Tu copies, tu colles, et tu écrases. Windows a un historique natif depuis des années — sur Mac, il faut une petite aide.</description>
+      <content:encoded><![CDATA[<p class="lead">Tu copies souvent du texte ou des images sur ton ordinateur ? Une fonctionnalité discrète change le quotidien : l'historique du presse-papiers.</p>
+<p>Sans elle, copier deux éléments de suite revient à écraser le premier. Avec elle, tu retrouves tes dernières copies et tu colles celle que tu veux.</p>
+<h2>Windows (10 et 11)</h2>
+<ul><li><code>Ctrl + C</code> / <code>Ctrl + V</code> : copier et coller, comme toujours.</li><li><strong><code>Win + V</code></strong> : ouvre l'historique de tes copies récentes.</li><li>Un clic sur une entrée la colle immédiatement.</li><li>La synchronisation entre tes PC est possible si tu te connectes avec le même compte Microsoft.</li><li>L'historique se conserve après redémarrage si tu l'épingles.</li></ul>
+<h2>macOS</h2>
+<ul><li><code>Cmd + C</code> / <code>Cmd + V</code> : copier et coller.</li><li>macOS <strong>n'a pas d'historique de presse-papiers natif multi-éléments</strong>. Le menu du Finder ne montre que le dernier élément copié.</li></ul>
+<div class="protip"><div class="label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Le Pro-Tip ARIBAZ — la vérité sur les raccourcis Mac</div><p>Beaucoup de tutoriels circulent avec des raccourcis qui n'existent pas, du genre <code>⌘ + Espace + 4</code> pour ouvrir un historique. Sur un Mac, <code>⌘ + Maj + 4</code> fait une capture d'écran, pas un historique de presse-papiers.</p><p>Pour obtenir un vrai historique sur macOS, il faut une application tierce. Les valeurs sûres :</p><p>- <strong>Maccy</strong> : gratuit, open source, léger, exactement ce qu'il faut. - <strong>Raycast</strong> : bien plus qu'un presse-papiers, gratuit dans sa version de base. - <strong>Alfred</strong> ou <strong>Paste</strong> : des alternatives plus complètes, parfois payantes.</p><p>Une fois Maccy installé, tu définis un raccourci et tu retrouves tes copies triées par application source — le comportement que Windows offre nativement.</p></div>
+<h2>Verdict</h2>
+<p>Sur Windows, active <code>Win + V</code> aujourd'hui : c'est gratuit et immédiat. Sur Mac, installe Maccy : deux minutes, et tu ne pourras plus t'en passer.</p>
+<p><strong>Documentation Microsoft :</strong> <a href="https://support.microsoft.com/fr-fr/windows" target="_blank" rel="noopener">support.microsoft.com</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>eSIM : activer une ligne en 3 étapes, sans carte à découper</title>
+      <link>https://arielbaz.github.io/articles/esim.html</link>
+      <guid isPermaLink="true">https://arielbaz.github.io/articles/esim.html</guid>
+      <pubDate>Fri, 12 Jun 2026 09:00:00 GMT</pubDate>
+      <category>Mobile</category>
+      <description>Un QR code, deux validations, et ta ligne est active. Le guide pas-à-pas pour installer une eSIM proprement.</description>
+      <content:encoded><![CDATA[<p class="lead">L'eSIM remplace la petite carte plastique par un profil numérique téléchargé dans le téléphone. Plus de carte à découper, plus d'attente en boutique, et la possibilité de garder sa ligne principale tout en ajoutant un forfait local à l'étranger.</p>
+<h2>Le principe</h2>
+<p>Ton opérateur te fournit un <strong>QR code</strong> (ou une application dédiée). Le téléphone le lit, télécharge le profil, et la ligne est active en quelques minutes.</p>
+<h2>Mise en place, étape par étape</h2>
+<ol><li><strong>Scanner le QR code</strong> fourni par l'opérateur, depuis <em>Réglages → Données cellulaires → Ajouter une eSIM</em>.</li><li><strong>Télécharger et valider</strong> le profil : le téléphone demande confirmation, puis affiche un message de succès du type « Votre eSIM est installée ».</li><li><strong>Nommer et choisir l'usage</strong> : ligne principale, secondaire, données uniquement. C'est cette étape qui évite de se retrouver avec des data qui partent sur la mauvaise ligne.</li></ol>
+<div class="protip"><div class="label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Le Pro-Tip ARIBAZ — trois précautions avant de voyager</div><p><strong>Vérifie la compatibilité</strong> : tous les téléphones ne gèrent pas l'eSIM, et certains opérateurs ne la proposent pas. À contrôler avant d'acheter un forfait.</p><p><strong>Ne supprime pas le profil</strong>, désactive-le. Une eSIM supprimée peut être difficile à réinstaller, selon l'opérateur — parfois il faut redemander un QR code.</p><p><strong>Garde le QR code</strong> ou la capture d'écran quelque part de sûr : c'est ta preuve d'achat et ta clé de réinstallation.</p><p>Dernier réflexe à l'étranger : désactive l'<strong>itinérance des données</strong> sur ta ligne principale, et laisse les données sur l'eSIM locale. Sinon, la facture fait mal au retour.</p></div>
+<h2>Verdict</h2>
+<p>C'est plus simple qu'une carte SIM, plus rapide, et particulièrement pratique en voyage. La seule vraie difficulté, c'est de bien choisir la ligne qui porte les données.</p>
+<p><strong>Pour comprendre la norme :</strong> <a href="https://www.gsma.com/esim/" target="_blank" rel="noopener">gsma.com/esim</a></p>]]></content:encoded>
+    </item>
+  </channel>
+</rss>
