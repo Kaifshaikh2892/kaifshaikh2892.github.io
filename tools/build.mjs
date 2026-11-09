@@ -259,7 +259,8 @@ function head({ title, description, url, image = '/assets/img/og.png', type = 'w
 <meta name="twitter:description" content="${esc(description)}">
 <meta name="twitter:image" content="${ogImage}">
 <meta name="author" content="${SITE.author}">
-<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/img/favicon.png" type="image/png" sizes="64x64">
+<link rel="icon" href="/assets/img/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <link rel="alternate" type="application/rss+xml" title="${SITE.name} — Flux RSS" href="/feed.xml">
 <link rel="stylesheet" href="/assets/css/style.css">
@@ -277,12 +278,11 @@ function nav(active) {
 <header class="nav">
   <div class="nav-inner">
     <a class="brand" href="/" aria-label="${SITE.name} — accueil">
-      <span class="brand-mark" aria-hidden="true">A</span>
-      <span>${SITE.name}</span>
+      <img src="/assets/img/logo.png" alt="${SITE.name}" width="86" height="27">
     </a>
     <nav class="nav-links" id="menu" aria-label="Navigation principale">
       ${links.map(([href, label, key]) => `<a href="${href}"${active === key ? ' aria-current="page"' : ''}>${label}</a>`).join('\n      ')}
-      <a href="${SITE.whatsapp}" target="_blank" rel="noopener">WhatsApp ${icon('arrow-up-right')}</a>
+      <a class="nav-cta" href="${SITE.whatsapp}" target="_blank" rel="noopener"><span>WhatsApp</span> ${icon('arrow-up-right', 'ico-inline')}</a>
     </nav>
     <div class="nav-actions">
       <a class="icon-btn" href="/feed.xml" aria-label="Flux RSS" title="Flux RSS">${icon('rss')}</a>
@@ -301,7 +301,7 @@ function footer() {
   <div class="wrap">
     <div class="footer-top">
       <div class="footer-brand">
-        <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">A</span><span>${SITE.name}</span></a>
+        <a class="brand" href="/"><img src="/assets/img/logo.png" alt="${SITE.name}" width="104" height="32"></a>
         <p>${SITE.tagline} Une sélection d'outils, de réglages et d'astuces testés, expliqués simplement, publiés deux à quatre fois par mois.</p>
       </div>
       <div class="footer-cols">
