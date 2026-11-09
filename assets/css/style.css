@@ -781,7 +781,7 @@ body::after {
 }
 
 /* Titre ligne par ligne */
-.display .line { display: block; overflow: hidden; padding-bottom: 0.06em; }
+.display .line { display: block; overflow: hidden; padding-bottom: 0.14em; margin-bottom: -0.14em; }
 .display .line > span { display: block; transform: translateY(112%); animation: lineUp 1.05s cubic-bezier(0.22, 0.9, 0.28, 1) forwards; }
 .display .line:nth-of-type(2) > span { animation-delay: 0.13s; }
 @keyframes lineUp { to { transform: translateY(0); } }
