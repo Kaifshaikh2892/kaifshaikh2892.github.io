@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bitchat : la messagerie qui marche même quand tout le réseau tombe — ARIBAZ</title>
+<meta name="description" content="Zéro internet, zéro compte, zéro numéro. Tes messages passent de téléphone en téléphone par Bluetooth, et personne ne peut couper la conversation.">
+<link rel="canonical" href="https://arielbaz.github.io/articles/bitchat.html">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ARIBAZ">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Bitchat : la messagerie qui marche même quand tout le réseau tombe — ARIBAZ">
+<meta property="og:description" content="Zéro internet, zéro compte, zéro numéro. Tes messages passent de téléphone en téléphone par Bluetooth, et personne ne peut couper la conversation.">
+<meta property="og:url" content="https://arielbaz.github.io/articles/bitchat.html">
+<meta property="og:image" content="https://arielbaz.github.io/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bitchat : la messagerie qui marche même quand tout le réseau tombe — ARIBAZ">
+<meta name="twitter:description" content="Zéro internet, zéro compte, zéro numéro. Tes messages passent de téléphone en téléphone par Bluetooth, et personne ne peut couper la conversation.">
+<meta name="twitter:image" content="https://arielbaz.github.io/assets/img/og.png">
+<meta name="author" content="ARIBAZ">
+<link rel="icon" href="/assets/img/favicon.png" type="image/png" sizes="64x64">
+<link rel="icon" href="/assets/img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="ARIBAZ — Flux RSS" href="/feed.xml">
+<link rel="stylesheet" href="/assets/css/style.css?v=ceaa9706e4">
+<script>(function(){try{var t=localStorage.getItem('aribaz-theme');if(t){document.documentElement.setAttribute('data-theme',t);document.documentElement.style.colorScheme=t;}}catch(e){}})();</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Bitchat : la messagerie qui marche même quand tout le réseau tombe","description":"Zéro internet, zéro compte, zéro numéro. Tes messages passent de téléphone en téléphone par Bluetooth, et personne ne peut couper la conversation.","datePublished":"2026-11-10","dateModified":"2026-11-10","author":{"@type":"Person","name":"ARIBAZ"},"publisher":{"@type":"Organization","name":"ARIBAZ"},"mainEntityOfPage":"https://arielbaz.github.io/articles/bitchat.html","articleSection":"Sécurité","keywords":"messagerie, bluetooth, chiffrement, hors-ligne"}</script>
+</head><a class="skip-link" href="#contenu">Aller au contenu</a>
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="/" aria-label="ARIBAZ — accueil">
+      <img src="/assets/img/logo.png" alt="ARIBAZ" width="86" height="27">
+    </a>
+    <nav class="nav-links" id="menu" aria-label="Navigation principale">
+      <a href="/">Actus</a>
+      <a href="/services.html">Services</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/apropos.html">À propos</a>
+      <a class="nav-cta" href="https://whatsapp.com/channel/0029VavhmewLtOjKNl2a3f1S" target="_blank" rel="noopener"><span>WhatsApp</span> <svg viewBox="0 0 24 24" aria-hidden="true" class="ico-inline"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </nav>
+    <div class="nav-actions">
+      <a class="icon-btn" href="/feed.xml" aria-label="Flux RSS" title="Flux RSS"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19a1 1 0 1 0 0-.01" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.5 11.5A8 8 0 0 1 12.5 19.5M4.5 5a14.5 14.5 0 0 1 14.5 14.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="Changer de thème"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 2.6v2M12 19.4v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M2.6 12h2M19.4 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="progress" aria-hidden="true"></div>
+<main id="contenu">
+  <article>
+    <header class="article-hero">
+      <div class="wrap wrap-narrow">
+        <div class="meta">
+          <a class="pill" data-cat="Sécurité" href="/articles/#securite">Sécurité</a>
+          <span>10 novembre 2026</span>
+          <span>·</span>
+          <span>2 min de lecture</span>
+        </div>
+        <h1>Bitchat : la messagerie qui marche même quand tout le réseau tombe</h1>
+        <p class="dek">Zéro internet, zéro compte, zéro numéro. Tes messages passent de téléphone en téléphone par Bluetooth, et personne ne peut couper la conversation.</p>
+      </div>
+      <div class="wrap">
+        <div class="article-art art-secu"><span class="app-tile full"><img src="/assets/img/logos/bitchat.png" alt="" loading="lazy" width="256" height="256"></span></div>
+      </div>
+    </header>
+
+    <div class="wrap">
+      <div class="article-body">
+        <p class="lead">Stade bondé où le réseau sature, panne d'internet, coupure pendant une manifestation, avion ou voyage hors couverture : dans ces moments-là, WhatsApp et Signal deviennent muets.</p>
+<p><strong>Bitchat</strong> est la messagerie qui continue de fonctionner quand tout le reste s'éteint. Elle envoie tes messages directement de téléphone en téléphone, par Bluetooth. Pas d'internet, pas de forfait, pas de compte, pas de serveur central à éteindre.</p>
+<h2>Ce que tu gagnes</h2>
+<ul><li><strong>Discuter sans internet</strong> : chaque téléphone relaie les messages vers les appareils voisins, jusqu'à 7 sauts de distance.</li><li><strong>Zéro compte, zéro numéro</strong> : un pseudo, et c'est tout. Rien à créer, rien à valider.</li><li><strong>Chiffré de bout en bout</strong> : les messages privés passent par le protocole Noise — même les téléphones qui relaient ne peuvent pas les lire.</li><li><strong>Un canal public et des messages privés</strong> : le canal <code>#mesh</strong> est ouvert à tous les appareils à portée, les MP sont réservés à ton destinataire.</li><li><strong>Un mode panique</strong> : trois taps sur le logo effacent tout, immédiatement.</li></ul>
+<h2>Pourquoi tout le monde en parle</h2>
+<p>Créée par <strong>Jack Dorsey</strong>, le cofondateur de Twitter, et publiée en open source, Bitchat a été adoptée massivement lors de coupures internet : manifestations à Madagascar et en Inde, zones sinistrées, réseaux saturés. À ce point que certains gouvernements ont tenté de faire retirer son code de GitHub — la meilleure preuve que l'outil fonctionne.</p>
+<p>Sur internet, elle complète le maillage avec le protocole <strong>Nostr</strong> : quand le Bluetooth ne suffit plus, les messages continuent par les relais Nostr, et des canaux géolocalisés permettent de discuter avec les gens de son quartier.</p>
+<div class="protip"><div class="label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Le Pro-Tip ARIBAZ — les trois limites à connaître</div><p><strong>Le maillage n'existe que si les autres ont l'app.</strong> Chaque saut Bluetooth couvre une dizaine de mètres : sans relais humains autour de toi, Bitchat ne parle qu'à voisinage direct. C'est une messagerie de foule, pas de salon.</p><p><strong>Sur iPhone, garde l'app ouverte.</strong> iOS bride le Bluetooth en arrière-plan : l'application doit rester affichée pour émettre et recevoir. Côté Android, c'est beaucoup plus souple.</p><p><strong>Sois honnête avec toi-même : l'app est jeune.</strong> Lancée en juillet 2025, elle n'a pas encore passé d'audit de sécurité indépendant complet, et son créateur le dit lui-même. Pour les conversations sensibles du quotidien, Signal reste la référence. Bitchat, c'est l'assurance pour le jour où le réseau tombe.</p></div>
+<h2>Mise en place</h2>
+<ol><li>Installe <strong>Bitchat Mesh</strong> depuis l'App Store (iPhone, macOS) ou le Play Store (Android). Sur Android, tu peux aussi prendre l'APK officiel sur GitHub — méfie-toi des imitations.</li><li>Active le Bluetooth, ouvre l'app et choisis un pseudo.</li><li>Rejoins le canal <code>#mesh</code> pour discuter avec tous les appareils à portée, ou envoie un message privé à quelqu'un à proximité.</li><li>Fais un vrai test avec un proche à côté de toi, avant d'en avoir besoin.</li></ol>
+<h2>Verdict</h2>
+<p>C'est une trousse de secours numérique : tu l'installes avant d'en avoir besoin, parce qu'au moment où internet tombe, il est trop tard pour la télécharger. Deux minutes aujourd'hui, une conversation possible demain.</p>
+<p><strong>À télécharger :</strong> <a href="https://bitchat.free" target="_blank" rel="noopener">bitchat.free</a></p>
+      </div>
+
+      <div class="source-box">
+        <div>
+          <div class="k">Site officiel</div>
+          <div class="v">bitchat.free</div>
+        </div>
+        <a class="btn btn-primary" href="https://bitchat.free" target="_blank" rel="noopener">Ouvrir le site <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+
+      <div class="article-footer">
+        <div class="tags">
+          <span class="tag">#messagerie</span><span class="tag">#bluetooth</span><span class="tag">#chiffrement</span><span class="tag">#hors-ligne</span>
+        </div>
+        <div class="share">
+          <span class="muted" style="font-size:13px">Partager</span>
+          <a class="icon-btn" href="https://wa.me/?text=Bitchat%20%3A%20la%20messagerie%20qui%20marche%20m%C3%AAme%20quand%20tout%20le%20r%C3%A9seau%20tombe%20https%3A%2F%2Farielbaz.github.io%2Farticles%2Fbitchat.html" target="_blank" rel="noopener" aria-label="Partager sur WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.6a8.4 8.4 0 0 1-12.4 7.4L3.5 20.5l1.6-4.4A8.4 8.4 0 1 1 20.5 11.6Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.8 8.1c-.3.1-.8.5-.8 1.4 0 2 2.6 5 5.5 5.6 1.3.3 1.9-.1 2.3-.5.3-.4.5-1 .3-1.2l-1.3-.7c-.2-.1-.5 0-.7.2l-.5.6c-.2.2-.4.2-.6.1-.7-.3-2.3-1.6-2.7-2.4-.1-.2 0-.4.2-.5l.6-.5c.2-.2.2-.4.1-.6l-.7-1.4c-.2-.3-.5-.3-.8-.2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <button class="icon-btn" type="button" data-share="https://arielbaz.github.io/articles/bitchat.html" aria-label="Copier le lien"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13.8a4.2 4.2 0 0 0 6 0l2.6-2.6a4.2 4.2 0 0 0-6-6l-1.5 1.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 10.2a4.2 4.2 0 0 0-6 0L5.4 12.8a4.2 4.2 0 0 0 6 6l1.5-1.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+      </div>
+
+      <nav class="post-nav" aria-label="Articles voisins">
+        <span></span>
+        <a class="next" href="/articles/ublock-origin.html"><span class="dir">Plus ancien →</span><span class="t">uBlock Origin : le bloqueur de pubs qui mérite encore sa place</span></a>
+      </nav>
+    </div>
+  </article>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div><h2>À lire ensuite</h2><p>Dans le même esprit.</p></div>
+        <a class="link-arrow" href="/">Toutes les actus <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <div class="card-grid"><a class="post-card" href="/articles/signal.html" data-post data-cat="Sécurité" data-search="Signal : la messagerie la plus sûre, et la plus simple à adopter La messagerie la plus sûre du marché. Le seul problème : elle ne fait pas chaîne de diffusion. Donc on garde WhatsApp pour ça. messagerie chiffrement open source mobile Sécurité" style="transition-delay:0ms">
+  <div class="card-art art-secu"><span class="app-tile full"><img src="/assets/img/logos/signal.png" alt="" loading="lazy" width="256" height="256"></span></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="pill" data-cat="Sécurité">Sécurité</span><span>3 novembre 2026</span></div>
+    <h3>Signal : la messagerie la plus sûre, et la plus simple à adopter</h3>
+    <p>La messagerie la plus sûre du marché. Le seul problème : elle ne fait pas chaîne de diffusion. Donc on garde WhatsApp pour ça.</p>
+    <div class="card-foot"><span>2 min de lecture</span><span class="go">Lire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+  </div>
+</a><a class="post-card" href="/articles/have-i-been-pwned.html" data-post data-cat="Sécurité" data-search="Have I Been Pwned : ton adresse mail a-t-elle fuité ? Ton adresse a peut-être fuité. Deux secondes pour le savoir, deux actions pour limiter les dégâts. fuite mots de passe 2fa sécurité Sécurité" style="transition-delay:0ms">
+  <div class="card-art art-secu"><span class="app-tile"><img src="/assets/img/logos/have-i-been-pwned.png" alt="" loading="lazy" width="256" height="256"></span></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="pill" data-cat="Sécurité">Sécurité</span><span>6 juillet 2026</span></div>
+    <h3>Have I Been Pwned : ton adresse mail a-t-elle fuité ?</h3>
+    <p>Ton adresse a peut-être fuité. Deux secondes pour le savoir, deux actions pour limiter les dégâts.</p>
+    <div class="card-foot"><span>2 min de lecture</span><span class="go">Lire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+  </div>
+</a><a class="post-card" href="/articles/localsend.html" data-post data-cat="Alternatives" data-search="LocalSend : l'AirDrop universel qui marche entre tous tes appareils AirDrop pour tout le monde. Sans compte, sans cloud, sans « envoie-toi un mail ». partage open source réseau multiplateforme Alternatives" style="transition-delay:0ms">
+  <div class="card-art art-alter"><span class="app-tile"><img src="/assets/img/logos/localsend.png" alt="" loading="lazy" width="256" height="256"></span></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="pill" data-cat="Alternatives">Alternatives</span><span>26 octobre 2026</span></div>
+    <h3>LocalSend : l'AirDrop universel qui marche entre tous tes appareils</h3>
+    <p>AirDrop pour tout le monde. Sans compte, sans cloud, sans « envoie-toi un mail ».</p>
+    <div class="card-foot"><span>2 min de lecture</span><span class="go">Lire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+  </div>
+</a></div>
+    </div>
+  </section>
+
+  <section class="section-tight"><div class="wrap">
+  <div class="cta-band reveal">
+    <h2>Les actus arrivent d'abord sur WhatsApp.</h2>
+    <p>Deux à quatre publications par mois, sans spam : des outils gratuits, des réglages utiles et des astuces testées. Le site garde tout, la chaîne te prévient.</p>
+    <div class="hero-actions" style="margin-bottom:0">
+      <a class="btn btn-wa" href="https://whatsapp.com/channel/0029VavhmewLtOjKNl2a3f1S" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.6a8.4 8.4 0 0 1-12.4 7.4L3.5 20.5l1.6-4.4A8.4 8.4 0 1 1 20.5 11.6Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.8 8.1c-.3.1-.8.5-.8 1.4 0 2 2.6 5 5.5 5.6 1.3.3 1.9-.1 2.3-.5.3-.4.5-1 .3-1.2l-1.3-.7c-.2-.1-.5 0-.7.2l-.5.6c-.2.2-.4.2-.6.1-.7-.3-2.3-1.6-2.7-2.4-.1-.2 0-.4.2-.5l.6-.5c.2-.2.2-.4.1-.6l-.7-1.4c-.2-.3-.5-.3-.8-.2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Rejoindre la chaîne ARIBAZ</a>
+      <a class="btn btn-ghost" href="/feed.xml"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19a1 1 0 1 0 0-.01" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.5 11.5A8 8 0 0 1 12.5 19.5M4.5 5a14.5 14.5 0 0 1 14.5 14.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> S'abonner par RSS</a>
+    </div>
+  </div>
+</div></section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="brand" href="/"><img src="/assets/img/logo.png" alt="ARIBAZ" width="104" height="32"></a>
+        <p>La tech utile, propre et sans blabla. Une sélection d'outils, de réglages et d'astuces testés, expliqués simplement, publiés deux à quatre fois par mois.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Explorer</h4>
+          <a href="/">Toutes les actus</a>
+          <a href="/services.html">Services</a>
+          <a href="/apropos.html">À propos</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/feed.xml">Flux RSS</a>
+        </div>
+        <div class="footer-col">
+          <h4>Thèmes</h4>
+          <a href="/articles/#productivite">Productivité</a><a href="/articles/#securite">Sécurité</a><a href="/articles/#filtrage">Filtrage</a><a href="/articles/#alternatives">Alternatives</a><a href="/articles/#mobile">Mobile</a>
+        </div>
+        <div class="footer-col">
+          <h4>Suivre</h4>
+          <a href="https://whatsapp.com/channel/0029VavhmewLtOjKNl2a3f1S" target="_blank" rel="noopener">Chaîne WhatsApp</a>
+          <a href="https://wa.me/972557731349" target="_blank" rel="noopener">WhatsApp direct</a>
+          <a href="mailto:arielelbaz20@gmail.com">arielelbaz20@gmail.com</a>
+          <a href="https://github.com/arielbaz" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ARIBAZ. Écrit et testé à la main.</span>
+      <span><a href="/feed.xml">RSS</a> · <a href="https://github.com/arielbaz" target="_blank" rel="noopener">Code source</a></span>
+    </div>
+  </div>
+</footer>
+<script src="/assets/js/app.js?v=6d50e3b2eb" defer></script>
+</body>
+</html>
