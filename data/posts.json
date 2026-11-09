@@ -10,7 +10,7 @@
       "open source",
       "vie privée"
     ],
-    "excerpt": "Gratuit, open source et redoutablement efficace. Mais depuis Manifest V3, le navigateur que tu choisis compte autant que l'extension elle-même.",
+    "excerpt": "Le bloqueur de pubs qui ne négocie pas. Gratuit, open source — et toujours imbattable, à condition de ne pas l'enfermer dans Chrome.",
     "readTime": 2,
     "url": "/articles/ublock-origin.html"
   },
@@ -25,7 +25,7 @@
       "vie privée",
       "mobile"
     ],
-    "excerpt": "Zéro pub, YouTube en arrière-plan écran éteint, et un bloqueur intégré au cœur du navigateur. Le remplaçant le plus crédible de Chrome et Safari.",
+    "excerpt": "Pubs bloquées, YouTube qui continue écran éteint, zéro abonnement. Le navigateur qui fait regretter Chrome.",
     "readTime": 2,
     "url": "/articles/brave.html"
   },
@@ -40,7 +40,7 @@
       "open source",
       "mobile"
     ],
-    "excerpt": "Zéro pub, zéro suggestion, zéro Meta. Signal fait la même chose que WhatsApp, mais sans monétiser ta vie privée.",
+    "excerpt": "La messagerie la plus sûre du marché. Le seul problème : elle ne fait pas chaîne de diffusion. Donc on garde WhatsApp pour ça.",
     "readTime": 2,
     "url": "/articles/signal.html"
   },
@@ -55,7 +55,7 @@
       "réseau",
       "multiplateforme"
     ],
-    "excerpt": "iPhone vers Android, Windows vers Mac, sans cloud, sans compte et sans connexion internet. Juste le même Wi-Fi.",
+    "excerpt": "AirDrop pour tout le monde. Sans compte, sans cloud, sans « envoie-toi un mail ».",
     "readTime": 2,
     "url": "/articles/localsend.html"
   },
@@ -70,7 +70,7 @@
       "open source",
       "productivité"
     ],
-    "excerpt": "Capture, annotation, GIF, OCR et envoi automatique. ShareX fait le travail de cinq logiciels payants, sous Windows.",
+    "excerpt": "Capture, annotation, GIF, OCR. Cinq logiciels en un, et la facture reste à zéro euro.",
     "readTime": 2,
     "url": "/articles/sharex.html"
   },
@@ -85,7 +85,7 @@
       "gratuit",
       "compatibilité"
     ],
-    "excerpt": "Sans abonnement, sans crack, sans bidouille. Et surtout : une compatibilité OOXML qui tient la mise en page de tes .docx.",
+    "excerpt": "Word, Excel, PowerPoint sans abonnement. Et surtout : tes .docx gardent leur mise en page.",
     "readTime": 2,
     "url": "/articles/onlyoffice.html"
   },
@@ -100,7 +100,7 @@
       "open source",
       "accessibilité"
     ],
-    "excerpt": "Une dictée vocale qui tourne sur ta machine, sans internet et sans envoyer ta voix à un serveur. Français, hébreu, anglais.",
+    "excerpt": "Dicte, arrête de taper. L'IA transcrit ta voix en local, sans envoyer un mot à un serveur.",
     "readTime": 2,
     "url": "/articles/handy.html"
   },
@@ -115,7 +115,7 @@
       "google",
       "podcast"
     ],
-    "excerpt": "Tes cours, tes rapports, tes documents : deux voix synthétiques en font une conversation audio. Idéal pour réviser en marchant.",
+    "excerpt": "Quarante pages de PDF transformées en podcast à deux voix. La révision la plus confortable de ta vie.",
     "readTime": 2,
     "url": "/articles/notebooklm.html"
   },
@@ -130,7 +130,7 @@
       "stockage",
       "usb-c"
     ],
-    "excerpt": "Copie automatiquement tes photos et vidéos vers une clé USB ou un disque externe. Uniquement les nouveaux fichiers, sans doublons.",
+    "excerpt": "Tes photos quittent iCloud sans payer un centime de plus. Direction : une clé USB, chez toi.",
     "readTime": 2,
     "url": "/articles/owc-copy-that.html"
   },
@@ -145,7 +145,7 @@
       "google",
       "famille"
     ],
-    "excerpt": "Filtrage web, validation des applis, limites de temps et localisation. Le socle gratuit pour un Android supervisé.",
+    "excerpt": "Temps d'écran, installations validées, localisation. Le socle gratuit pour un Android qui n'échappe pas des mains.",
     "readTime": 2,
     "url": "/articles/family-link.html"
   },
@@ -160,7 +160,7 @@
       "cloudflare",
       "famille"
     ],
-    "excerpt": "Deux adresses à changer, deux minutes, et tous tes appareils sont filtrés. Sans logiciel, sans compte, sans abonnement.",
+    "excerpt": "Deux adresses IP, deux minutes, et toute la maison est filtrée. Le meilleur rapport effort/résultat du web.",
     "readTime": 2,
     "url": "/articles/dns-cloudflare.html"
   },
@@ -175,7 +175,7 @@
       "voyage",
       "forfait"
     ],
-    "excerpt": "Le Wi-Fi passe, le réseau non ? Les appels Wi-Fi prennent le relais — y compris depuis l'étranger, avec un forfait à 2 €.",
+    "excerpt": "Le réseau manque, le Wi-Fi est là. À l'étranger, la différence entre 2 € et 200 € de facture.",
     "readTime": 2,
     "url": "/articles/appels-wifi.html"
   },
@@ -190,7 +190,7 @@
       "filtre",
       "famille"
     ],
-    "excerpt": "Une extension qui floute toutes les images d'un site, avec un clic pour les afficher si besoin. Utile au bureau comme à la maison.",
+    "excerpt": "Toutes les images floutées, un clic pour voir. Pour surfer sans les surprises que personne n'a demandées.",
     "readTime": 2,
     "url": "/articles/wizmage.html"
   },
@@ -206,7 +206,7 @@
       "famille",
       "vie privée"
     ],
-    "excerpt": "Détection automatique, réglage de la sensibilité, liste blanche. Et surtout : l'analyse se fait dans le navigateur, pas sur un serveur.",
+    "excerpt": "Une IA qui masque l'indésirable sans envoyer une seule image à un serveur.",
     "readTime": 2,
     "url": "/articles/nsfw-filter.html"
   },
@@ -221,7 +221,7 @@
       "2fa",
       "sécurité"
     ],
-    "excerpt": "Deux secondes pour savoir si ton adresse figure dans une fuite de données. Puis deux actions concrètes si c'est le cas.",
+    "excerpt": "Ton adresse a peut-être fuité. Deux secondes pour le savoir, deux actions pour limiter les dégâts.",
     "readTime": 2,
     "url": "/articles/have-i-been-pwned.html"
   },
@@ -236,7 +236,7 @@
       "macos",
       "productivité"
     ],
-    "excerpt": "Tu copies, tu colles, et tu écrases. Windows a un historique natif depuis des années — sur Mac, il faut une petite aide.",
+    "excerpt": "Win + V : le raccourci que la moitié des gens ignore. Côté Mac, la vérité est moins glamour.",
     "readTime": 2,
     "url": "/articles/presse-papiers.html"
   },
@@ -251,7 +251,7 @@
       "voyage",
       "opérateur"
     ],
-    "excerpt": "Un QR code, deux validations, et ta ligne est active. Le guide pas-à-pas pour installer une eSIM proprement.",
+    "excerpt": "Un QR code, deux validations, zéro carte à découper. Et trois pièges à éviter avant de partir.",
     "readTime": 2,
     "url": "/articles/esim.html"
   }

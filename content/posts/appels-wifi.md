@@ -4,7 +4,7 @@ slug: appels-wifi
 date: 2026-08-05
 category: Mobile
 tags: [vowifi, mobile, voyage, forfait]
-excerpt: "Le Wi-Fi passe, le réseau non ? Les appels Wi-Fi prennent le relais — y compris depuis l'étranger, avec un forfait à 2 €."
+excerpt: "Le réseau manque, le Wi-Fi est là. À l'étranger, la différence entre 2 € et 200 € de facture."
 icon: phone
 source: https://www.free.fr
 sourceLabel: free.fr

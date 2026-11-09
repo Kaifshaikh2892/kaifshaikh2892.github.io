@@ -4,7 +4,7 @@ slug: wizmage
 date: 2026-07-28
 category: Filtrage
 tags: [navigateur, images, filtre, famille]
-excerpt: "Une extension qui floute toutes les images d'un site, avec un clic pour les afficher si besoin. Utile au bureau comme à la maison."
+excerpt: "Toutes les images floutées, un clic pour voir. Pour surfer sans les surprises que personne n'a demandées."
 icon: image
 source: https://chromewebstore.google.com/detail/wizmage-image-hider/ifoggbfaoakkojipahnplnbfnhhhnmlp
 sourceLabel: Chrome Web Store

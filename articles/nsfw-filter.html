@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>NSFW Filter : une IA locale qui masque les images inappropriées — ARIBAZ</title>
-<meta name="description" content="Détection automatique, réglage de la sensibilité, liste blanche. Et surtout : l'analyse se fait dans le navigateur, pas sur un serveur.">
+<meta name="description" content="Une IA qui masque l'indésirable sans envoyer une seule image à un serveur.">
 <link rel="canonical" href="https://arielbaz.github.io/articles/nsfw-filter.html">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
@@ -12,14 +12,14 @@
 <meta property="og:site_name" content="ARIBAZ">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:title" content="NSFW Filter : une IA locale qui masque les images inappropriées — ARIBAZ">
-<meta property="og:description" content="Détection automatique, réglage de la sensibilité, liste blanche. Et surtout : l'analyse se fait dans le navigateur, pas sur un serveur.">
+<meta property="og:description" content="Une IA qui masque l'indésirable sans envoyer une seule image à un serveur.">
 <meta property="og:url" content="https://arielbaz.github.io/articles/nsfw-filter.html">
 <meta property="og:image" content="https://arielbaz.github.io/assets/img/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="NSFW Filter : une IA locale qui masque les images inappropriées — ARIBAZ">
-<meta name="twitter:description" content="Détection automatique, réglage de la sensibilité, liste blanche. Et surtout : l'analyse se fait dans le navigateur, pas sur un serveur.">
+<meta name="twitter:description" content="Une IA qui masque l'indésirable sans envoyer une seule image à un serveur.">
 <meta name="twitter:image" content="https://arielbaz.github.io/assets/img/og.png">
 <meta name="author" content="ARIBAZ">
 <link rel="icon" href="/assets/img/favicon.png" type="image/png" sizes="64x64">
@@ -28,7 +28,7 @@
 <link rel="alternate" type="application/rss+xml" title="ARIBAZ — Flux RSS" href="/feed.xml">
 <link rel="stylesheet" href="/assets/css/style.css">
 <script>(function(){try{var t=localStorage.getItem('aribaz-theme');if(t){document.documentElement.setAttribute('data-theme',t);document.documentElement.style.colorScheme=t;}}catch(e){}})();</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"NSFW Filter : une IA locale qui masque les images inappropriées","description":"Détection automatique, réglage de la sensibilité, liste blanche. Et surtout : l'analyse se fait dans le navigateur, pas sur un serveur.","datePublished":"2026-07-15","dateModified":"2026-07-15","author":{"@type":"Person","name":"ARIBAZ"},"publisher":{"@type":"Organization","name":"ARIBAZ"},"mainEntityOfPage":"https://arielbaz.github.io/articles/nsfw-filter.html","articleSection":"Filtrage","keywords":"navigateur, ia, filtre, famille, vie privée"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"NSFW Filter : une IA locale qui masque les images inappropriées","description":"Une IA qui masque l'indésirable sans envoyer une seule image à un serveur.","datePublished":"2026-07-15","dateModified":"2026-07-15","author":{"@type":"Person","name":"ARIBAZ"},"publisher":{"@type":"Organization","name":"ARIBAZ"},"mainEntityOfPage":"https://arielbaz.github.io/articles/nsfw-filter.html","articleSection":"Filtrage","keywords":"navigateur, ia, filtre, famille, vie privée"}</script>
 </head><a class="skip-link" href="#contenu">Aller au contenu</a>
 <header class="nav">
   <div class="nav-inner">
@@ -36,7 +36,8 @@
       <img src="/assets/img/logo.png" alt="ARIBAZ" width="86" height="27">
     </a>
     <nav class="nav-links" id="menu" aria-label="Navigation principale">
-      <a href="/articles/" aria-current="page">Actus</a>
+      <a href="/">Actus</a>
+      <a href="/services.html">Services</a>
       <a href="/apropos.html">À propos</a>
       <a class="nav-cta" href="https://whatsapp.com/channel/0029VavhmewLtOjKNl2a3f1S" target="_blank" rel="noopener"><span>WhatsApp</span> <svg viewBox="0 0 24 24" aria-hidden="true" class="ico-inline"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </nav>
@@ -61,10 +62,10 @@
           <span>2 min de lecture</span>
         </div>
         <h1>NSFW Filter : une IA locale qui masque les images inappropriées</h1>
-        <p class="dek">Détection automatique, réglage de la sensibilité, liste blanche. Et surtout : l'analyse se fait dans le navigateur, pas sur un serveur.</p>
+        <p class="dek">Une IA qui masque l'indésirable sans envoyer une seule image à un serveur.</p>
       </div>
       <div class="wrap">
-        <div class="article-art art-filtre"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M10.6 6.1A9.9 9.9 0 0 1 12 6c6 0 9.4 6 9.4 6a17 17 0 0 1-3 3.6M6.4 7.5A16.6 16.6 0 0 0 2.6 12S6 18 12 18a9.7 9.7 0 0 0 4.1-.9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.9 10a3 3 0 0 0 4.2 4.2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="article-art art-filtre"><span class="app-tile full"><img src="/assets/img/logos/nsfw-filter.png" alt="" loading="lazy" width="256" height="256"></span></div>
       </div>
     </header>
 
@@ -112,30 +113,30 @@
     <div class="wrap">
       <div class="section-head">
         <div><h2>À lire ensuite</h2><p>Dans le même esprit.</p></div>
-        <a class="link-arrow" href="/articles/">Toutes les actus <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="link-arrow" href="/">Toutes les actus <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </div>
-      <div class="card-grid"><a class="post-card" href="/articles/family-link.html" data-post data-cat="Filtrage" data-search="Family Link : reprendre le contrôle d'un smartphone Android Filtrage web, validation des applis, limites de temps et localisation. Le socle gratuit pour un Android supervisé. android contrôle parental google famille Filtrage" style="transition-delay:0ms">
-  <div class="card-art art-filtre"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.6 12S6 5.8 12 5.8 21.4 12 21.4 12 18 18.2 12 18.2 2.6 12 2.6 12Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="3.1" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="card-grid"><a class="post-card" href="/articles/family-link.html" data-post data-cat="Filtrage" data-search="Family Link : reprendre le contrôle d'un smartphone Android Temps d'écran, installations validées, localisation. Le socle gratuit pour un Android qui n'échappe pas des mains. android contrôle parental google famille Filtrage" style="transition-delay:0ms">
+  <div class="card-art art-filtre"><span class="app-tile full"><img src="/assets/img/logos/family-link.png" alt="" loading="lazy" width="256" height="256"></span></div>
   <div class="card-body">
     <div class="card-meta"><span class="pill" data-cat="Filtrage">Filtrage</span><span>27 août 2026</span></div>
     <h3>Family Link : reprendre le contrôle d'un smartphone Android</h3>
-    <p>Filtrage web, validation des applis, limites de temps et localisation. Le socle gratuit pour un Android supervisé.</p>
+    <p>Temps d'écran, installations validées, localisation. Le socle gratuit pour un Android qui n'échappe pas des mains.</p>
     <div class="card-foot"><span>2 min de lecture</span><span class="go">Lire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
   </div>
-</a><a class="post-card" href="/articles/dns-cloudflare.html" data-post data-cat="Filtrage" data-search="Le DNS 1.1.1.3 : un internet plus propre pour toute la maison Deux adresses à changer, deux minutes, et tous tes appareils sont filtrés. Sans logiciel, sans compte, sans abonnement. dns réseau cloudflare famille Filtrage" style="transition-delay:0ms">
-  <div class="card-art art-filtre"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 9.2a14 14 0 0 1 19 0M5.8 12.6a9.4 9.4 0 0 1 12.4 0M9 16a4.7 4.7 0 0 1 6 0" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="19.2" r="1.1" fill="currentColor" stroke="none"/></svg></div>
+</a><a class="post-card" href="/articles/dns-cloudflare.html" data-post data-cat="Filtrage" data-search="Le DNS 1.1.1.3 : un internet plus propre pour toute la maison Deux adresses IP, deux minutes, et toute la maison est filtrée. Le meilleur rapport effort/résultat du web. dns réseau cloudflare famille Filtrage" style="transition-delay:0ms">
+  <div class="card-art art-filtre"><span class="app-tile full"><img src="/assets/img/logos/dns-cloudflare.png" alt="" loading="lazy" width="256" height="256"></span></div>
   <div class="card-body">
     <div class="card-meta"><span class="pill" data-cat="Filtrage">Filtrage</span><span>18 août 2026</span></div>
     <h3>Le DNS 1.1.1.3 : un internet plus propre pour toute la maison</h3>
-    <p>Deux adresses à changer, deux minutes, et tous tes appareils sont filtrés. Sans logiciel, sans compte, sans abonnement.</p>
+    <p>Deux adresses IP, deux minutes, et toute la maison est filtrée. Le meilleur rapport effort/résultat du web.</p>
     <div class="card-foot"><span>2 min de lecture</span><span class="go">Lire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
   </div>
-</a><a class="post-card" href="/articles/wizmage.html" data-post data-cat="Filtrage" data-search="Wizmage : naviguer sans voir les images qui traînent Une extension qui floute toutes les images d'un site, avec un clic pour les afficher si besoin. Utile au bureau comme à la maison. navigateur images filtre famille Filtrage" style="transition-delay:0ms">
+</a><a class="post-card" href="/articles/wizmage.html" data-post data-cat="Filtrage" data-search="Wizmage : naviguer sans voir les images qui traînent Toutes les images floutées, un clic pour voir. Pour surfer sans les surprises que personne n'a demandées. navigateur images filtre famille Filtrage" style="transition-delay:0ms">
   <div class="card-art art-filtre"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.2" y="4.8" width="17.6" height="14.4" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8.6" cy="9.8" r="1.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="m4.4 17 4.6-4.4 3.3 3 2.5-2.2 4.2 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
   <div class="card-body">
     <div class="card-meta"><span class="pill" data-cat="Filtrage">Filtrage</span><span>28 juillet 2026</span></div>
     <h3>Wizmage : naviguer sans voir les images qui traînent</h3>
-    <p>Une extension qui floute toutes les images d'un site, avec un clic pour les afficher si besoin. Utile au bureau comme à la maison.</p>
+    <p>Toutes les images floutées, un clic pour voir. Pour surfer sans les surprises que personne n'a demandées.</p>
     <div class="card-foot"><span>2 min de lecture</span><span class="go">Lire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
   </div>
 </a></div>
@@ -163,7 +164,7 @@
       <div class="footer-cols">
         <div class="footer-col">
           <h4>Explorer</h4>
-          <a href="/articles/">Toutes les actus</a>
+          <a href="/">Toutes les actus</a>
           <a href="/apropos.html">À propos</a>
           <a href="/feed.xml">Flux RSS</a>
         </div>

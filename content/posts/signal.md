@@ -4,7 +4,8 @@ slug: signal
 date: 2026-11-03
 category: Sécurité
 tags: [messagerie, chiffrement, open source, mobile]
-excerpt: "Zéro pub, zéro suggestion, zéro Meta. Signal fait la même chose que WhatsApp, mais sans monétiser ta vie privée."
+excerpt: "La messagerie la plus sûre du marché. Le seul problème : elle ne fait pas chaîne de diffusion. Donc on garde WhatsApp pour ça."
+logo: signal
 icon: lock
 source: https://signal.org/fr/
 sourceLabel: signal.org

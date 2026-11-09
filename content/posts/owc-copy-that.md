@@ -4,7 +4,8 @@ slug: owc-copy-that
 date: 2026-09-08
 category: Mobile
 tags: [iphone, sauvegarde, stockage, usb-c]
-excerpt: "Copie automatiquement tes photos et vidéos vers une clé USB ou un disque externe. Uniquement les nouveaux fichiers, sans doublons."
+excerpt: "Tes photos quittent iCloud sans payer un centime de plus. Direction : une clé USB, chez toi."
+logo: owc-copy-that
 icon: usb
 source: https://apps.apple.com/app/id1536830655
 sourceLabel: App Store

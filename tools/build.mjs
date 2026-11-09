@@ -14,6 +14,7 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const POSTS_DIR = path.join(ROOT, 'content', 'posts');
+const LOGO_MANIFEST = JSON.parse(fs.readFileSync(path.join(ROOT, 'assets', 'img', 'logos', 'manifest.json'), 'utf8'));
 
 const SITE = {
   name: 'ARIBAZ',
@@ -68,6 +69,12 @@ const ICONS = {
   clock: `<circle cx="12" cy="12" r="8.4" ${STROKE}/><path d="M12 7.6V12l3 1.8" ${STROKE}/>`,
   sun: `<circle cx="12" cy="12" r="4.2" ${STROKE}/><path d="M12 2.6v2M12 19.4v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M2.6 12h2M19.4 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" ${STROKE}/>`,
   plus: `<path d="M12 5v14M5 12h14" ${STROKE}/>`,
+  wrench: `<path d="M15.2 4.8a4 4 0 0 0 4 6.9L9.6 21.3a2.3 2.3 0 1 1-3.3-3.3L16 8.4a4 4 0 0 0-0.8-3.6Z" ${STROKE}/>`,
+  chip: `<rect x="7" y="7" width="10" height="10" rx="2" ${STROKE}/><path d="M10 3.5v3M14 3.5v3M10 17.5v3M14 17.5v3M3.5 10h3M3.5 14h3M17.5 10h3M17.5 14h3" ${STROKE}/>`,
+  bike: `<circle cx="6" cy="17" r="3.2" ${STROKE}/><circle cx="18" cy="17" r="3.2" ${STROKE}/><path d="m9 17 3-7h4M12 10l3.5 7M14 7h3" ${STROKE}/>`,
+  music: `<path d="M9 18V5l10-2v13" ${STROKE}/><circle cx="6.5" cy="18" r="2.6" ${STROKE}/><circle cx="16.5" cy="16" r="2.6" ${STROKE}/>`,
+  code: `<path d="m8.5 8-4.5 4 4.5 4M15.5 8l4.5 4-4.5 4M13.5 5l-3 14" ${STROKE}/>`,
+  heart: `<path d="M12 20s-7.5-4.4-7.5-9.6A4.4 4.4 0 0 1 12 7.6a4.4 4.4 0 0 1 7.5 2.8C19.5 15.6 12 20 12 20Z" ${STROKE}/>`,
   check: `<path d="m5 12.5 4.5 4.5L19 7" ${STROKE}/>`,
 };
 
@@ -271,7 +278,8 @@ ${extra}
 
 function nav(active) {
   const links = [
-    ['/articles/', 'Actus', 'articles'],
+    ['/', 'Actus', 'home'],
+    ['/services.html', 'Services', 'services'],
     ['/apropos.html', 'À propos', 'apropos'],
   ];
   return `<a class="skip-link" href="#contenu">Aller au contenu</a>
@@ -307,7 +315,7 @@ function footer() {
       <div class="footer-cols">
         <div class="footer-col">
           <h4>Explorer</h4>
-          <a href="/articles/">Toutes les actus</a>
+          <a href="/">Toutes les actus</a>
           <a href="/apropos.html">À propos</a>
           <a href="/feed.xml">Flux RSS</a>
         </div>
@@ -330,9 +338,15 @@ function footer() {
 </footer>`;
 }
 
+function artVisual(post) {
+  if (!post.logo) return icon(post.icon);
+  const full = LOGO_MANIFEST[post.logo] && LOGO_MANIFEST[post.logo].full;
+  return `<span class="app-tile${full ? ' full' : ''}"><img src="/assets/img/logos/${post.logo}.png" alt="" loading="lazy" width="256" height="256"></span>`;
+}
+
 function card(post, { reveal = true, delay = 0 } = {}) {
   return `<a class="post-card${reveal ? ' reveal' : ''}" href="/articles/${post.slug}.html" data-post data-cat="${esc(post.category)}" data-search="${esc([post.title, post.excerpt, post.tags.join(' '), post.category].join(' '))}" style="transition-delay:${delay}ms">
-  <div class="card-art ${post.cat.art}">${icon(post.icon)}</div>
+  <div class="card-art ${post.cat.art}">${artVisual(post)}</div>
   <div class="card-body">
     <div class="card-meta"><span class="pill" data-cat="${esc(post.category)}">${esc(post.category)}</span><span>${fmtDate(post.date)}</span></div>
     <h3>${esc(post.title)}</h3>
@@ -361,37 +375,46 @@ function ctaBand() {
 const latest = posts.slice(0, 6);
 const featured = posts.find((p) => p.featured === true || p.featured === 'true') || posts[0];
 const others = latest.filter((p) => p !== featured).slice(0, 5);
+const others_all = posts.filter((p) => p !== featured);
 
 function homePage() {
   const title = `${SITE.name} — ${SITE.tagline}`;
   const desc = SITE.description;
+  const ticker = ['Productivité', 'Sécurité', 'Filtrage', 'Alternatives', 'Mobile', 'Zéro pub', 'Zéro cookie', 'Open source', 'Sans abonnement'];
+  const tickerHtml = ticker.map((t) => `<span>${t}</span><span class="sep">✦</span>`).join('');
   const body = `${nav('home')}
 <main id="contenu">
   <section class="hero">
+    <div class="hero-bg" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span></div>
     <div class="wrap">
-      <span class="eyebrow"><span class="dot"></span>Nouvelle actu · ${fmtDate(posts[0].date)}</span>
-      <h1 class="display">La tech qui rend service, <span class="gradient-text">vraiment.</span></h1>
-      <p class="lede">Des outils gratuits, des réglages précis et des astuces testées pour un numérique plus simple, plus sûr et plus propre. Pas de hype : juste ce qui marche.</p>
+      <a class="eyebrow" href="/articles/${posts[0].slug}.html"><span class="dot"></span>Nouvelle actu · ${fmtDate(posts[0].date)}<svg viewBox="0 0 24 24" aria-hidden="true" class="eyebrow-arrow"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <h1 class="display">
+        <span class="line"><span>La tech qui sert</span></span>
+        <span class="line"><span>à <span class="gradient-text">quelque chose.</span></span></span>
+      </h1>
+      <p class="lede">Des outils gratuits, des réglages précis et les pièges évités. Zéro abonnement, zéro blabla, zéro « leader du marché ».</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#dernieres">Lire les dernières actus ${icon('arrow')}</a>
+        <a class="btn btn-primary" href="#dernieres">Voir ce qui vient de sortir ${icon('arrow')}</a>
         <a class="btn btn-ghost" href="${SITE.whatsapp}" target="_blank" rel="noopener">${icon('whatsapp')} La chaîne WhatsApp</a>
       </div>
       <div class="hero-meta">
-        <span>${icon('layers')} ${posts.length} actus publiées</span>
-        <span>${icon('clock')} 2 à 4 par mois</span>
-        <span>${icon('check')} Gratuit, open source, sans pub</span>
+        <span>${icon('layers')} <b data-count-to="${posts.length}">0</b>&nbsp;actus publiées</span>
+        <span>${icon('clock')} <b>2 à 4</b>&nbsp;par mois</span>
+        <span>${icon('check')} <b>0</b>&nbsp;cookie, <b>0</b>&nbsp;pub</span>
       </div>
     </div>
   </section>
 
-  <section class="section" style="padding-top:16px">
+  <div class="marquee" aria-hidden="true"><div class="marquee-track">${tickerHtml}${tickerHtml}</div></div>
+
+  <section class="section" data-featured-section>
     <div class="wrap">
       <div class="section-head">
-        <div><h2>À la une</h2><p>Le dossier du moment, à lire en premier.</p></div>
-        <a class="link-arrow" href="/articles/">Tout voir ${icon('arrow')}</a>
+        <div><h2>Le dossier <span class="accent">du moment</span></h2><p>Si tu ne lis qu'une chose cette semaine, prends celle-là.</p></div>
+        <a class="link-arrow" href="#journal">Parcourir ${icon('arrow')}</a>
       </div>
       <a class="featured reveal" href="/articles/${featured.slug}.html">
-        <div class="card-art ${featured.cat.art}">${icon(featured.icon)}</div>
+        <div class="card-art ${featured.cat.art}">${artVisual(featured)}</div>
         <div class="featured-body">
           <div class="card-meta"><span class="pill" data-cat="${esc(featured.category)}">${esc(featured.category)}</span><span>${fmtDate(featured.date)}</span><span>${featured.readTime} min</span></div>
           <h3>${esc(featured.title)}</h3>
@@ -402,22 +425,33 @@ function homePage() {
     </div>
   </section>
 
-  <section class="section" id="dernieres" style="padding-top:0">
+  <section class="section" id="journal" style="padding-top:0">
     <div class="wrap">
       <div class="section-head">
-        <div><h2>Les dernières actus</h2><p>Un problème du quotidien, une solution concrète.</p></div>
-        <a class="link-arrow" href="/articles/">Toutes les actus ${icon('arrow')}</a>
+        <div><h2>Toutes les <span class="accent">actus</span></h2><p>${posts.length} fiches pratiques. Un problème du quotidien, une réponse en cinq minutes.</p></div>
+        <span class="result-count" data-count>${posts.length} articles</span>
+      </div>
+      <div class="toolbar">
+        <div class="search">
+          ${icon('search')}
+          <input type="search" data-search placeholder="Rechercher un outil, un thème…" aria-label="Rechercher un article" autocomplete="off">
+        </div>
+        <div class="chips" role="group" aria-label="Filtrer par thème">
+          <button class="chip" type="button" data-filter="Tous" data-slug="tous" aria-pressed="true">Tous</button>
+          ${CATEGORIES.map((c) => `<button class="chip" type="button" data-filter="${esc(c.name)}" data-slug="${c.slug}" aria-pressed="false">${esc(c.name)}</button>`).join('')}
+        </div>
       </div>
       <div class="card-grid">
-        ${others.map((p, i) => card(p, { delay: i * 40 })).join('\n        ')}
+        ${others_all.map((p, i) => card(p, { delay: i * 30 })).join('\n        ')}
       </div>
+      <div class="empty-state" data-empty hidden>Aucun article ne correspond à cette recherche. Essaie un autre mot-clé.</div>
     </div>
   </section>
 
   <section class="section section-soft">
     <div class="wrap">
       <div class="section-head">
-        <div><h2>Parcourir par thème</h2><p>Cinq angles, une même idée : moins de friction, plus de maîtrise.</p></div>
+        <div><h2>Cinq tiroirs, <span class="accent">pas un de plus.</span></h2><p>Gagner du temps, fermer la porte, filtrer la maison, quitter les géants, régler ton téléphone.</p></div>
       </div>
       <div class="value-grid">
         ${CATEGORIES.map((c) => {
@@ -429,6 +463,19 @@ function homePage() {
             <p style="margin-top:12px;font-size:12.5px;color:var(--ink-faint)">${n} article${n > 1 ? 's' : ''}</p>
           </a>`;
         }).join('\n        ')}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="cta-band reveal" style="background:linear-gradient(120deg,#0a1220,#131b33 55%,#1b1030)">
+        <h2>Un truc cassé ? Un site à lancer ?</h2>
+        <p>Réparation, micro-soudure, sites web, cartes de mariage, filtrage, DevOps. Le même soin que dans les articles, appliqué à ton matériel.</p>
+        <div class="hero-actions" style="margin-bottom:0">
+          <a class="btn btn-primary" href="/services.html">Voir les services ${icon('arrow')}</a>
+          <a class="btn btn-ghost" href="/services.html#contact">Demander un devis</a>
+        </div>
       </div>
     </div>
   </section>
@@ -449,45 +496,29 @@ function iconForCat(name) {
 }
 
 function articlesPage() {
-  const title = `Toutes les actus — ${SITE.name}`;
-  const desc = `Le journal complet : ${posts.length} fiches pratiques sur la productivité, la sécurité, le filtrage et les alternatives libres.`;
-  const chips = ['Tous', ...CATEGORIES.map((c) => c.name)]
-    .map((c, i) => {
-      const slug = c === 'Tous' ? 'tous' : CATEGORIES.find((x) => x.name === c).slug;
-      return `<button class="chip" type="button" data-filter="${esc(c)}" data-slug="${slug}" aria-pressed="${i === 0}">${esc(c)}</button>`;
-    })
-    .join('');
-  return head({ title, description: desc, url: '/articles/' }) + `${nav('articles')}
-<main id="contenu">
-  <section class="page-hero">
-    <div class="wrap">
-      <span class="eyebrow"><span class="dot"></span>Le journal</span>
-      <h1 class="display" style="font-size:clamp(38px,6vw,64px);max-width:16ch;margin-inline:0">Toutes les actus,<br><span class="gradient-text">classées, filtrables.</span></h1>
-      <p class="lede" style="margin-inline:0">${posts.length} fiches pratiques, écrites pour être lues en trois minutes et appliquées tout de suite.</p>
-    </div>
-  </section>
-
-  <section class="section" style="padding-top:20px">
-    <div class="wrap">
-      <div class="toolbar">
-        <div class="search">
-          ${icon('search')}
-          <input type="search" data-search placeholder="Rechercher un outil, un thème…" aria-label="Rechercher un article" autocomplete="off">
-        </div>
-        <div class="chips" role="group" aria-label="Filtrer par thème">${chips}</div>
-        <span class="result-count" data-count>${posts.length} articles</span>
-      </div>
-      <div class="card-grid">
-        ${posts.map((p) => card(p, { reveal: false })).join('\n        ')}
-      </div>
-      <div class="empty-state" data-empty hidden>Aucun article ne correspond à cette recherche. Essaie un autre mot-clé.</div>
-    </div>
-  </section>
-
-  ${ctaBand()}
-</main>
-${footer()}
-<script src="/assets/js/app.js" defer></script>
+  return `<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toutes les actus — ${SITE.name}</title>
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="${SITE.url}/">
+<meta http-equiv="refresh" content="0; url=/">
+<style>
+  body { margin:0; min-height:100vh; display:grid; place-items:center; font-family:ui-sans-serif,-apple-system,"SF Pro Text",Helvetica,Arial,sans-serif; background:#fff; color:#1d1d1f; text-align:center; padding:24px; }
+  @media (prefers-color-scheme: dark) { body { background:#000; color:#f5f5f7; } }
+  img { height:38px; margin:0 auto 28px; }
+  p { color:#6e6e73; font-size:15px; }
+  a { color:#0071e3; }
+</style>
+</head>
+<body>
+  <div>
+    <img src="/assets/img/logo.png" alt="${SITE.name}">
+    <p>Toutes les actus sont maintenant sur la page d'accueil.</p>
+    <p><a href="/">Continuer vers ${SITE.name}</a></p>
+  </div>
 </body>
 </html>`;
 }
@@ -527,7 +558,7 @@ function articlePage(post, prev, next) {
         <p class="dek">${esc(post.excerpt)}</p>
       </div>
       <div class="wrap">
-        <div class="article-art ${post.cat.art}">${icon(post.icon)}</div>
+        <div class="article-art ${post.cat.art}">${artVisual(post)}</div>
       </div>
     </header>
 
@@ -566,7 +597,7 @@ function articlePage(post, prev, next) {
     <div class="wrap">
       <div class="section-head">
         <div><h2>À lire ensuite</h2><p>Dans le même esprit.</p></div>
-        <a class="link-arrow" href="/articles/">Toutes les actus ${icon('arrow')}</a>
+        <a class="link-arrow" href="/">Toutes les actus ${icon('arrow')}</a>
       </div>
       <div class="card-grid">${rel.map((p) => card(p, { reveal: false })).join('')}</div>
     </div>
@@ -580,47 +611,194 @@ ${footer()}
 </html>`;
 }
 
+
+/* -------------------------------------------------------------------------- */
+/* Services                                                                    */
+/* -------------------------------------------------------------------------- */
+const SERVICES = [
+  {
+    num: '01', title: 'Réparer', sub: 'Le matériel avant la poubelle.',
+    desc: 'Un portable qui chauffe, un disque qui claque, une carte mère que le fabricant a déclarée morte : on regarde avant de remplacer.',
+    items: [
+      { icon: 'wrench', title: 'Réparation ordinateur & Mac', text: 'Diagnostic complet, SSD, RAM, batterie, écran, nappes. Sauvegarde des données incluse quand c\u2019est possible.', bullets: ['Diagnostic honnête, pas de devis à l\u2019aveugle', 'Récupération de données', 'Nettoyage & pâte thermique'] },
+      { icon: 'chip', title: 'Micro-soudure & carte mère', text: 'Quand le devis officiel dit « irréparable », il reste souvent quelque chose à tenter.', bullets: ['Diagnostic au composant', 'Remplacement de connecteurs', 'Réparation d\u2019alimentations'] },
+      { icon: 'bike', title: 'Électronique & mobilité électrique', text: 'Vélos électriques, contrôleurs, batteries, affichages : le même métier, avec du couple en plus.', bullets: ['Contrôleurs 48V', 'Double batterie & autonomie', 'Diagnostic de capteurs'] },
+    ],
+  },
+  {
+    num: '02', title: 'Construire', sub: 'Du code, du son et du papier qu\u2019on ne jette pas.',
+    desc: 'Des sites qui chargent vite, des cartes de mariage qu\u2019on a envie d\u2019ouvrir, du son qui ne grésille pas.',
+    items: [
+      { icon: 'globe', title: 'Sites web & e-commerce', text: 'Vitrine, boutique, multilingue. Conçu pour être rapide, lisible et modifiable sans moi.', bullets: ['WordPress / WooCommerce', 'Paiement Stripe & facturation', 'Performance & SEO de base'] },
+      { icon: 'heart', title: 'Cartes de mariage numériques', text: 'Un lien élégant, avec les infos, le plan et les réponses — plutôt qu\u2019un PDF illisible sur téléphone.', bullets: ['Design sur mesure', 'RSVP en ligne', 'Compte à rebours & plan'] },
+      { icon: 'music', title: 'Ingénieur du son', text: 'Sonorisation d\u2019événement, captation, nettoyage et mixage de voix.', bullets: ['Sonorisation événement', 'Enregistrement & montage', 'Restauration audio'] },
+      { icon: 'code', title: 'Automatisation & scripts', text: 'Tout ce que tu fais trois fois par semaine peut être fait par une machine.', bullets: ['Bash / zsh / cron', 'Sauvegardes automatiques', 'Synchronisation de fichiers'] },
+    ],
+  },
+  {
+    num: '03', title: 'Protéger', sub: 'Un internet propre, et des données chez toi.',
+    desc: 'Filtrage, sauvegardes, réseau : ce qui doit tourner sans toi, et sans dépendre d\u2019un géant.',
+    items: [
+      { icon: 'layers', title: 'DevOps & auto-hébergement', text: 'Proxmox, NAS, Docker, sauvegardes : une infrastructure qui tient debout et se répare toute seule.', bullets: ['Proxmox / OMV / Docker', 'Sauvegardes 3-2-1 vérifiées', 'Monitoring & alertes'] },
+      { icon: 'eye', title: 'Filtrage internet & contrôle parental', text: 'DNS, filtres d\u2019images, contrôle parental : un web plus sain, sans transformer la maison en prison.', bullets: ['DNS filtrants', 'Family Link & co.', 'Filtres navigateur'] },
+      { icon: 'wifi', title: 'Réseau & Wi-Fi', text: 'Du câble, du 10 GbE, du PoE, et un Wi-Fi qui couvre vraiment la pièce du fond.', bullets: ['Câblage & baie', 'SFP+ / PoE', 'Wi-Fi maillé'] },
+      { icon: 'shield', title: 'Conseil & audit', text: 'Avant d\u2019acheter, demande. Ça coûte moins cher que de se tromper.', bullets: ['Choix de matériel', 'Audit sécurité & sauvegardes', 'Détection d\u2019arnaques'] },
+    ],
+  },
+];
+
+function servicesPage() {
+  const title = `Services — ${SITE.name}`;
+  const desc = "Réparation, micro-soudure, sites web, cartes de mariage, sonorisation, DevOps, filtrage internet. Du travail propre, expliqué sans jargon.";
+  const body = `${nav('services')}
+<main id="contenu">
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow"><span class="dot"></span>Services</span>
+      <h1 class="display" style="font-size:clamp(36px,6vw,64px);max-width:18ch">Ce que je sais faire <span class="gradient-text">de mes dix doigts.</span></h1>
+      <p class="lede" style="margin-inline:0;max-width:52ch">Réparer plutôt que remplacer, construire plutôt que sous-traiter. Si ton besoin n'est pas dans la liste, écris quand même : c'est souvent là que ça devient intéressant.</p>
+      <div class="hero-meta" style="justify-content:flex-start">
+        <span>${icon('check')} Jérusalem & à distance</span>
+        <span>${icon('clock')} Réponse sous 24 h</span>
+        <span>${icon('shield')} Devis gratuit</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:26px">
+    <div class="wrap">
+      ${SERVICES.map((f) => `<div class="family">
+        <div class="family-head"><span class="family-num">${f.num}</span><h2>${f.title}</h2></div>
+        <p>${f.sub} ${f.desc}</p>
+        <div class="svc-grid">
+          ${f.items.map((it) => `<article class="svc">
+            <div class="ico">${icon(it.icon)}</div>
+            <h3>${it.title}</h3>
+            <p>${it.text}</p>
+            <ul>${it.bullets.map((b) => `<li>${b}</li>`).join('')}</ul>
+            <div class="svc-foot"><span>Sur devis</span><strong>${icon('arrow')}</strong></div>
+          </article>`).join('')}
+        </div>
+      </div>`).join('\n      ')}
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="wrap">
+      <div class="section-head"><div><h2>Comment ça se passe</h2><p>Quatre étapes, aucune surprise.</p></div></div>
+      <div class="steps">
+        <div class="step"><h3>Tu racontes</h3><p>Une photo, un symptôme, une idée. Pas besoin de vocabulaire technique.</p></div>
+        <div class="step"><h3>Je diagnostique</h3><p>Réponse rapide, devis clair, et la vérité si ce n'est pas réparable.</p></div>
+        <div class="step"><h3>On avance</h3><p>Intervention, livraison, mise en ligne. Tu suis l'avancement.</p></div>
+        <div class="step"><h3>Je reste là</h3><p>Les questions arrivent après. C'est normal, je réponds.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap wrap-narrow">
+      <div class="section-head"><div><h2>Ce que je ne fais pas</h2><p>Autant le dire tout de suite.</p></div></div>
+      <ul class="dont" style="padding:0">
+        <li>${icon('check')}<span><b>Réparer à l'aveugle.</b> Pas de « ça sera la carte mère » sans test.</span></li>
+        <li>${icon('check')}<span><b>Un devis surprise.</b> Le prix annoncé est le prix payé.</span></li>
+        <li>${icon('check')}<span><b>Vendre du vent.</b> Si un antivirus suffit, je le dis.</span></li>
+        <li>${icon('check')}<span><b>Te rendre dépendant.</b> Je documente ce que je fais.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="contact" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head"><div><h2>Parlons de ton projet</h2><p>Décris-moi le problème en deux lignes, je te dis si je peux aider.</p></div></div>
+      <div class="contact-grid">
+        <div class="contact-card wa">
+          <h3>${icon('whatsapp')} La chaîne WhatsApp</h3>
+          <p>Les actus, les coulisses, et le moyen le plus rapide de me joindre. Deux à quatre messages par mois.</p>
+          <a class="btn btn-wa" href="${SITE.whatsapp}" target="_blank" rel="noopener">Rejoindre la chaîne ${icon('arrow-up-right')}</a>
+        </div>
+        <div class="contact-card">
+          <h3>Demander un devis</h3>
+          <p>Réparation, site, carte de mariage, filtrage, réseau. Explique ton besoin, je réponds sous 24 h ouvrées.</p>
+          <a class="btn btn-primary" href="mailto:?subject=${encodeURIComponent('Demande de devis — ARIBAZ')}&body=${encodeURIComponent('Bonjour ARIBAZ,\n\nVoici mon besoin :\n\n\n\nMon matériel / contexte :\n\n\n\nMerci !')}">Écrire le message ${icon('arrow')}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  ${ctaBand()}
+</main>
+${footer()}
+<script src="/assets/js/app.js" defer></script>
+</body>
+</html>`;
+  return head({ title, description: desc, url: '/services.html' }) + body;
+}
+
+
 function aboutPage() {
   const title = `À propos — ${SITE.name}`;
-  const desc = "ARIBAZ, c'est un guide de survie numérique : des outils gratuits, des réglages utiles et des astuces testées, publiés deux à quatre fois par mois.";
+  const desc = "Ariel, artisan du numérique à Jérusalem : réparation, micro-soudure, Linux, développement, filtrage. Linux, fer à souder et sainte horreur du gaspillage.";
   const body = `${nav('apropos')}
 <main id="contenu">
   <section class="page-hero">
     <div class="wrap">
       <span class="eyebrow"><span class="dot"></span>À propos</span>
-      <h1 class="display" style="max-width:20ch">Un guide de survie numérique, sans blabla.</h1>
-      <p class="lede" style="margin-inline:0">${SITE.name} rassemble les outils et les réglages qui rendent un ordinateur, un téléphone et une connexion internet plus simples, plus sûrs et plus agréables à utiliser.</p>
+      <h1 class="display" style="max-width:22ch">Je répare des machines, je code des trucs, et je soude ce que les autres <span class="gradient-text">jettent.</span></h1>
+      <p class="lede" style="margin-inline:0">Ariel. Jérusalem, avec un pied en France. Linux, fer à souder, Rust — et une sainte horreur du gaspillage.</p>
     </div>
   </section>
 
-  <section class="section" style="padding-top:10px">
-    <div class="wrap wrap-narrow">
-      <div class="prose">
-        <p class="lead">Tout part d'une chaîne WhatsApp : des astuces courtes, concrètes, testées, partagées avec quelques centaines de personnes. Ce site est l'endroit où tout reste rangé, cherchable et lisible — sans faire défiler deux ans de messages.</p>
+  <section class="section" style="padding-top:12px">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="prose">
+          <p class="lead">Il y a deux façons de vivre avec la technologie : la subir, ou la comprendre. J'ai choisi la deuxième, et ça m'occupe à plein temps.</p>
 
-        <h2>Ce que tu trouveras ici</h2>
-        <p><strong>De la tech pratique.</strong> Des raccourcis, des logiciels gratuits, des alternatives open source, des réglages qu'on oublie de mentionner dans les notices.</p>
-        <p><strong>De l'hygiène numérique.</strong> Bloqueurs de publicité, gestionnaires de mots de passe, vérification de fuites de données : ce qui protège vraiment, sans discours anxiogène.</p>
-        <p><strong>Du filtrage utile.</strong> DNS familiaux, contrôle parental, filtres d'images : pour un internet plus propre à la maison, à l'école ou au bureau.</p>
+          <h2>Le parcours en trois lignes</h2>
+          <p>Ingénierie système, développement logiciel, artisanat hardware. Un parcours entre la France et Israël, beaucoup d'autodidaxie, et une conviction : celui qui comprend toutes les couches n'a besoin de demander la permission à personne.</p>
+          <p>Je ne suis pas un consommateur de technologie. Je suis de ceux qui ouvrent le capot — parfois littéralement.</p>
 
-        <h2>La règle éditoriale</h2>
-        <p>Un article = un problème réel + une solution applicable en moins de cinq minutes + le piège à éviter. Pas de comparatif interminable, pas de « top 10 » gonflé à l'IA, pas de lien sponsorisé déguisé.</p>
-        <p>Chaque fiche se termine par un <strong>Pro-Tip</strong> : le détail technique, la limite de l'outil ou la correction qui évite de se tromper. C'est la partie qui fait la différence entre un article recopié et une recommandation vécue.</p>
+          <h2>Ce que je fais de mes journées</h2>
+          <p><strong>Côté machines.</strong> Diagnostic au composant, micro-soudure, assemblages Mini-ITX compacts, stations de travail qu'on pousse dans leurs retranchements. Réparer une carte mère ou un contrôleur de vélo électrique relève du même métier : comprendre, mesurer, intervenir.</p>
+          <p><strong>Côté systèmes.</strong> Linux au quotidien, Proxmox, NAS, 10 GbE, SFP+, PoE. Virtualisation, sauvegardes versionnées, automatisation en bash et zsh. Le genre d'infrastructure qui ne fait pas de bruit et ne tombe pas.</p>
+          <p><strong>Côté code.</strong> Du full-stack, du Rust, du Next.js, du WordPress quand c'est le bon outil. GEDER-Core, mon outil de filtrage et de sécurité multiplateforme, est né de cette obsession : reprendre le contrôle de ce qui entre dans la maison.</p>
 
-        <h2>Le rythme</h2>
-        <p>Deux à quatre publications par mois, sans calendrier fixe. Les actus partent d'abord sur la chaîne WhatsApp, puis sont archivées ici, enrichies et corrigées.</p>
-        <p>Le site est statique, sans cookies, sans analytics, sans publicité. Il est hébergé sur GitHub Pages et son code est public.</p>
+          <div class="quote-block">« Le meilleur matériel, c'est celui qu'on n'a pas encore jeté. <span>Et le meilleur logiciel, c'est celui qu'on peut lire.</span> »</div>
+
+          <h2>Ma religion technique</h2>
+          <p>Open source, auto-hébergement, chiffrement, souveraineté des données. Pas par idéologie : parce que ce sont les seules options qui me laissent propriétaire de mes outils. Un abonnement cloud, c'est une location. Une sauvegarde qu'on ne peut pas restaurer, c'est une décoration.</p>
+
+          <h2>Et en dehors de la technique ?</h2>
+          <p>La psychologie humaine, la communication, l'éducation, les mécanismes du commerce. Comprendre comment les gens apprennent et décident m'aide autant à réparer un ordinateur qu'à expliquer une astuce sur WhatsApp — c'est le même problème : rendre le complexe évident.</p>
+
+          <h2>Pourquoi ce site</h2>
+          <p>Les actus partent d'abord sur une chaîne WhatsApp, parce que c'est là que les gens sont. Mais un fil de discussion n'est pas une bibliothèque : ce site range tout, corrige les coquilles, et garde les bonnes astuces trouvables deux ans plus tard.</p>
+          <p>Deux à quatre publications par mois. Aucun cookie, aucun traqueur, aucune pub. Ça aussi, c'est un choix de conception.</p>
+        </div>
+
+        <aside>
+          <div class="fact-list">
+            <div class="fact"><span class="n">2</span><span class="l">pays, un aller-retour permanent entre la France et Israël</span></div>
+            <div class="fact"><span class="n">10</span><span class="l">gigabits par seconde sur le réseau de la maison</span></div>
+            <div class="fact"><span class="n">64</span><span class="l">Go de RAM ECC, parce que les erreurs silencieuses existent</span></div>
+            <div class="fact"><span class="n">48</span><span class="l">volts, la tension préférée des vélos qu'on bricole</span></div>
+            <div class="fact"><span class="n">0</span><span class="l">abonnement cloud propriétaire pour mes données</span></div>
+          </div>
+          <div style="margin-top:18px">
+            <a class="btn btn-primary" href="/services.html" style="width:100%">Voir les services ${icon('arrow')}</a>
+          </div>
+        </aside>
       </div>
 
-      <div class="value-grid">
-        <div class="value reveal"><div class="ico">${icon('check')}</div><h3>Testé, pas recopié</h3><p>Chaque outil est installé, chaque réglage vérifié avant publication.</p></div>
-        <div class="value reveal"><div class="ico">${icon('lock')}</div><h3>Sans cookies</h3><p>Aucun traqueur, aucune bannière de consentement, aucun compte à créer.</p></div>
-        <div class="value reveal"><div class="ico">${icon('rss')}</div><h3>Ouvert</h3><p>Flux RSS complet, code source public, articles réutilisables.</p></div>
+      <div class="value-grid" style="margin-top:56px">
+        <div class="value reveal"><div class="ico">${icon('wrench')}</div><h3>Réparer d'abord</h3><p>La meilleure machine est celle qui fonctionne encore. Diagnostic avant remplacement, toujours.</p></div>
+        <div class="value reveal"><div class="ico">${icon('code')}</div><h3>Comprendre le système</h3><p>Du code bas niveau à l'architecture réseau : si on ne sait pas comment ça marche, on ne sait pas pourquoi ça casse.</p></div>
+        <div class="value reveal"><div class="ico">${icon('shield')}</div><h3>Reprendre le contrôle</h3><p>Open source, auto-hébergé, chiffré. Des outils qui t'appartiennent vraiment.</p></div>
       </div>
 
       <div class="hero-actions" style="justify-content:flex-start;margin-top:36px">
         <a class="btn btn-wa" href="${SITE.whatsapp}" target="_blank" rel="noopener">${icon('whatsapp')} Rejoindre la chaîne</a>
-        <a class="btn btn-ghost" href="/articles/">Parcourir les actus ${icon('arrow')}</a>
+        <a class="btn btn-ghost" href="/">Lire les actus ${icon('arrow')}</a>
       </div>
     </div>
   </section>
@@ -680,7 +858,7 @@ ${items}
 function sitemap() {
   const urls = [
     { loc: '/', pri: '1.0', mod: posts[0].date },
-    { loc: '/articles/', pri: '0.9', mod: posts[0].date },
+    { loc: '/services.html', pri: '0.7', mod: posts[0].date },
     { loc: '/apropos.html', pri: '0.5', mod: posts[0].date },
     ...posts.map((p) => ({ loc: `/articles/${p.slug}.html`, pri: '0.8', mod: p.date })),
   ];
@@ -709,6 +887,7 @@ posts.forEach((p, idx) => {
   write(`articles/${p.slug}.html`, articlePage(p, prev, next));
 });
 write('apropos.html', aboutPage());
+write('services.html', servicesPage());
 write('404.html', notFoundPage());
 write('feed.xml', feed());
 write('sitemap.xml', sitemap());

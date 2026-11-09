@@ -4,7 +4,8 @@ slug: family-link
 date: 2026-08-27
 category: Filtrage
 tags: [android, contrôle parental, google, famille]
-excerpt: "Filtrage web, validation des applis, limites de temps et localisation. Le socle gratuit pour un Android supervisé."
+excerpt: "Temps d'écran, installations validées, localisation. Le socle gratuit pour un Android qui n'échappe pas des mains."
+logo: family-link
 icon: eye
 source: https://families.google.com/familylink
 sourceLabel: families.google.com

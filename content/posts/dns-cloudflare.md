@@ -4,7 +4,8 @@ slug: dns-cloudflare
 date: 2026-08-18
 category: Filtrage
 tags: [dns, réseau, cloudflare, famille]
-excerpt: "Deux adresses à changer, deux minutes, et tous tes appareils sont filtrés. Sans logiciel, sans compte, sans abonnement."
+excerpt: "Deux adresses IP, deux minutes, et toute la maison est filtrée. Le meilleur rapport effort/résultat du web."
+logo: dns-cloudflare
 icon: wifi
 source: https://one.one.one.one/fr-FR/family/
 sourceLabel: one.one.one.one

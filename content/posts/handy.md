@@ -4,7 +4,8 @@ slug: handy
 date: 2026-09-29
 category: Productivité
 tags: [dictée, ia, open source, accessibilité]
-excerpt: "Une dictée vocale qui tourne sur ta machine, sans internet et sans envoyer ta voix à un serveur. Français, hébreu, anglais."
+excerpt: "Dicte, arrête de taper. L'IA transcrit ta voix en local, sans envoyer un mot à un serveur."
+logo: handy
 icon: mic
 source: https://handy.computer/
 sourceLabel: handy.computer

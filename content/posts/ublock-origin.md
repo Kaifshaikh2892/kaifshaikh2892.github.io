@@ -4,7 +4,8 @@ slug: ublock-origin
 date: 2026-11-09
 category: Sécurité
 tags: [navigateur, publicité, open source, vie privée]
-excerpt: "Gratuit, open source et redoutablement efficace. Mais depuis Manifest V3, le navigateur que tu choisis compte autant que l'extension elle-même."
+excerpt: "Le bloqueur de pubs qui ne négocie pas. Gratuit, open source — et toujours imbattable, à condition de ne pas l'enfermer dans Chrome."
+logo: ublock-origin
 icon: shield
 source: https://ublockorigin.com/fr
 sourceLabel: ublockorigin.com

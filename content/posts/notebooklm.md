@@ -4,7 +4,8 @@ slug: notebooklm
 date: 2026-09-17
 category: Productivité
 tags: [ia, étude, google, podcast]
-excerpt: "Tes cours, tes rapports, tes documents : deux voix synthétiques en font une conversation audio. Idéal pour réviser en marchant."
+excerpt: "Quarante pages de PDF transformées en podcast à deux voix. La révision la plus confortable de ta vie."
+logo: notebooklm
 icon: book
 source: https://notebooklm.google
 sourceLabel: notebooklm.google

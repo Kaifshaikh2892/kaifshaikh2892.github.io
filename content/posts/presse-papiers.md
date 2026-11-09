@@ -4,7 +4,7 @@ slug: presse-papiers
 date: 2026-06-24
 category: Productivité
 tags: [raccourcis, windows, macos, productivité]
-excerpt: "Tu copies, tu colles, et tu écrases. Windows a un historique natif depuis des années — sur Mac, il faut une petite aide."
+excerpt: "Win + V : le raccourci que la moitié des gens ignore. Côté Mac, la vérité est moins glamour."
 icon: clipboard
 source: https://support.microsoft.com/fr-fr/windows
 sourceLabel: support.microsoft.com

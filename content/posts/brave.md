@@ -4,7 +4,8 @@ slug: brave
 date: 2026-11-06
 category: Alternatives
 tags: [navigateur, publicité, vie privée, mobile]
-excerpt: "Zéro pub, YouTube en arrière-plan écran éteint, et un bloqueur intégré au cœur du navigateur. Le remplaçant le plus crédible de Chrome et Safari."
+excerpt: "Pubs bloquées, YouTube qui continue écran éteint, zéro abonnement. Le navigateur qui fait regretter Chrome."
+logo: brave
 icon: globe
 source: https://brave.com/fr
 sourceLabel: brave.com

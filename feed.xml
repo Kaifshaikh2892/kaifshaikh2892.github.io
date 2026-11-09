@@ -13,7 +13,7 @@
       <guid isPermaLink="true">https://arielbaz.github.io/articles/ublock-origin.html</guid>
       <pubDate>Mon, 09 Nov 2026 09:00:00 GMT</pubDate>
       <category>Sécurité</category>
-      <description>Gratuit, open source et redoutablement efficace. Mais depuis Manifest V3, le navigateur que tu choisis compte autant que l'extension elle-même.</description>
+      <description>Le bloqueur de pubs qui ne négocie pas. Gratuit, open source — et toujours imbattable, à condition de ne pas l'enfermer dans Chrome.</description>
       <content:encoded><![CDATA[<p class="lead">Tu ouvres un site d'actu et trois pop-ups te sautent au visage avant même la première ligne de texte. Ce n'est pas une fatalité : c'est juste que ton navigateur n'a pas de garde-fou.</p>
 <p><strong>uBlock Origin</strong> en est un, et probablement le meilleur. Gratuit, open source, sans compte, sans télémétrie — et surtout sans programme commercial caché.</p>
 <h2>Ce qu'il fait vraiment</h2>
@@ -34,7 +34,7 @@
       <guid isPermaLink="true">https://arielbaz.github.io/articles/brave.html</guid>
       <pubDate>Fri, 06 Nov 2026 09:00:00 GMT</pubDate>
       <category>Alternatives</category>
-      <description>Zéro pub, YouTube en arrière-plan écran éteint, et un bloqueur intégré au cœur du navigateur. Le remplaçant le plus crédible de Chrome et Safari.</description>
+      <description>Pubs bloquées, YouTube qui continue écran éteint, zéro abonnement. Le navigateur qui fait regretter Chrome.</description>
       <content:encoded><![CDATA[<p class="lead">Marre des publicités dès l'ouverture d'un site ? Marre de payer un abonnement juste pour écouter YouTube sans être coupé toutes les trois minutes ?</p>
 <p><strong>Brave</strong> répond aux deux, gratuitement, sur ordinateur comme sur mobile. Et son approche du blocage est techniquement plus solide que celle d'une simple extension.</p>
 <h2>Ce que tu gagnes</h2>
@@ -54,7 +54,7 @@
       <guid isPermaLink="true">https://arielbaz.github.io/articles/signal.html</guid>
       <pubDate>Tue, 03 Nov 2026 09:00:00 GMT</pubDate>
       <category>Sécurité</category>
-      <description>Zéro pub, zéro suggestion, zéro Meta. Signal fait la même chose que WhatsApp, mais sans monétiser ta vie privée.</description>
+      <description>La messagerie la plus sûre du marché. Le seul problème : elle ne fait pas chaîne de diffusion. Donc on garde WhatsApp pour ça.</description>
       <content:encoded><![CDATA[<p class="lead">Tu veux une messagerie qui ne lit pas tes conversations, qui ne suggère pas de chaînes douteuses et qui ne revend pas ton carnet d'adresses ? <strong>Signal</strong> est la réponse, et elle est gratuite.</p>
 <p>Créée par <strong>Brian Acton</strong>, l'un des cofondateurs de WhatsApp, la fondation Signal est à but non lucratif. Pas d'actionnaires, pas de publicité, pas de modèle économique à défendre.</p>
 <h2>Ce qui change vraiment</h2>
@@ -75,7 +75,7 @@
       <guid isPermaLink="true">https://arielbaz.github.io/articles/localsend.html</guid>
       <pubDate>Mon, 26 Oct 2026 09:00:00 GMT</pubDate>
       <category>Alternatives</category>
-      <description>iPhone vers Android, Windows vers Mac, sans cloud, sans compte et sans connexion internet. Juste le même Wi-Fi.</description>
+      <description>AirDrop pour tout le monde. Sans compte, sans cloud, sans « envoie-toi un mail ».</description>
       <content:encoded><![CDATA[<p class="lead">Envoyer une photo de ton iPhone vers le PC Windows de la maison ne devrait pas être un parcours du combattant. Entre le mail à soi-même, le câble introuvable et les applis qui réclament un compte, la friction est réelle.</p>
 <p><strong>LocalSend</strong> supprime le problème : un transfert direct, en local, entre pratiquement n'importe quels appareils.</p>
 <h2>Ce qu'il fait</h2>
@@ -93,7 +93,7 @@
       <guid isPermaLink="true">https://arielbaz.github.io/articles/sharex.html</guid>
       <pubDate>Fri, 16 Oct 2026 09:00:00 GMT</pubDate>
       <category>Productivité</category>
-      <description>Capture, annotation, GIF, OCR et envoi automatique. ShareX fait le travail de cinq logiciels payants, sous Windows.</description>
+      <description>Capture, annotation, GIF, OCR. Cinq logiciels en un, et la facture reste à zéro euro.</description>
       <content:encoded><![CDATA[<p class="lead">Besoin de montrer un bug à un collègue, d'illustrer un cours ou de capturer une portion d'écran en trois secondes ? L'outil intégré de Windows dépanne, mais s'arrête vite.</p>
 <p><strong>ShareX</strong> est le couteau suisse de la capture d'écran sous Windows. Gratuit, open source, sans publicité, sans version « pro » bridée.</p>
 <h2>Ce qu'il sait faire</h2>
@@ -111,7 +111,7 @@
       <guid isPermaLink="true">https://arielbaz.github.io/articles/onlyoffice.html</guid>
       <pubDate>Wed, 07 Oct 2026 09:00:00 GMT</pubDate>
       <category>Productivité</category>
-      <description>Sans abonnement, sans crack, sans bidouille. Et surtout : une compatibilité OOXML qui tient la mise en page de tes .docx.</description>
+      <description>Word, Excel, PowerPoint sans abonnement. Et surtout : tes .docx gardent leur mise en page.</description>
       <content:encoded><![CDATA[<p class="lead">Tu as besoin de Word, Excel et PowerPoint, mais tu ne veux pas payer un abonnement à vie, ni chercher une version piratée qui installe trois mineurs au passage ?</p>
 <p><strong>OnlyOffice</strong> est la réponse la plus solide : une suite bureautique complète, gratuite, et surtout remarquablement compatible avec les formats Microsoft.</p>
 <h2>Ce que tu obtiens</h2>
@@ -130,7 +130,7 @@
       <guid isPermaLink="true">https://arielbaz.github.io/articles/handy.html</guid>
       <pubDate>Tue, 29 Sep 2026 09:00:00 GMT</pubDate>
       <category>Productivité</category>
-      <description>Une dictée vocale qui tourne sur ta machine, sans internet et sans envoyer ta voix à un serveur. Français, hébreu, anglais.</description>
+      <description>Dicte, arrête de taper. L'IA transcrit ta voix en local, sans envoyer un mot à un serveur.</description>
       <content:encoded><![CDATA[<p class="lead">Taper un long mail, c'est trois minutes de clavier et deux fautes de frappe. Parler, c'est quinze secondes. <strong>Handy</strong> transforme la seconde option en outil sérieux.</p>
 <p>C'est une application de dictée open source, basée sur la technologie <strong>Whisper</strong> d'OpenAI, mais qui tourne <strong>en local</strong> : ta voix ne part pas sur un serveur.</p>
 <h2>Ce qui le distingue</h2>
@@ -148,7 +148,7 @@
       <guid isPermaLink="true">https://arielbaz.github.io/articles/notebooklm.html</guid>
       <pubDate>Thu, 17 Sep 2026 09:00:00 GMT</pubDate>
       <category>Productivité</category>
-      <description>Tes cours, tes rapports, tes documents : deux voix synthétiques en font une conversation audio. Idéal pour réviser en marchant.</description>
+      <description>Quarante pages de PDF transformées en podcast à deux voix. La révision la plus confortable de ta vie.</description>
       <content:encoded><![CDATA[<p class="lead">Tu as quarante pages de PDF à assimiler et zéro envie de les relire ? <strong>NotebookLM</strong> les transforme en conversation audio à deux voix, façon podcast.</p>
 <p>L'outil de Google n'invente rien : il travaille <strong>uniquement sur les documents que tu lui donnes</strong>, ce qui limite fortement les hallucinations.</p>
 <h2>Ce que tu peux faire</h2>
@@ -164,7 +164,7 @@
       <guid isPermaLink="true">https://arielbaz.github.io/articles/owc-copy-that.html</guid>
       <pubDate>Tue, 08 Sep 2026 09:00:00 GMT</pubDate>
       <category>Mobile</category>
-      <description>Copie automatiquement tes photos et vidéos vers une clé USB ou un disque externe. Uniquement les nouveaux fichiers, sans doublons.</description>
+      <description>Tes photos quittent iCloud sans payer un centime de plus. Direction : une clé USB, chez toi.</description>
       <content:encoded><![CDATA[<p class="lead">Ton iCloud est plein, Apple te propose gentiment de passer au forfait supérieur, et tes 40 000 photos dorment dans un format que tu ne contrôles pas.</p>
 <p><strong>OWC Copy That</strong> propose une autre voie : sauvegarder ta galerie iPhone <strong>directement sur un support externe</strong>, sans passer par le cloud.</p>
 <h2>Son fonctionnement</h2>
@@ -180,7 +180,7 @@
       <guid isPermaLink="true">https://arielbaz.github.io/articles/family-link.html</guid>
       <pubDate>Thu, 27 Aug 2026 09:00:00 GMT</pubDate>
       <category>Filtrage</category>
-      <description>Filtrage web, validation des applis, limites de temps et localisation. Le socle gratuit pour un Android supervisé.</description>
+      <description>Temps d'écran, installations validées, localisation. Le socle gratuit pour un Android qui n'échappe pas des mains.</description>
       <content:encoded><![CDATA[<p class="lead">Un smartphone Android dans les mains d'un enfant ou d'un adolescent, sans garde-fou, c'est un accès libre à tout internet. <strong>Google Family Link</strong> est la première brique à poser — gratuite, native, et plutôt bien faite.</p>
 <h2>Les fonctions clés</h2>
 <ul><li><strong>Filtrage web</strong> : active SafeSearch sur Google et YouTube et bloque les sites inappropriés.</li><li><strong>Validation des applis</strong> : toute nouvelle installation doit être approuvée par le parent.</li><li><strong>Limites de temps</strong> : quotas d'heures par jour et couvre-feu automatique le soir.</li><li><strong>Localisation</strong> : position de l'appareil en temps réel.</li><li><strong>Pilotage à distance</strong> : verrouiller le téléphone ou une application en un clic.</li></ul>
@@ -197,7 +197,7 @@
       <guid isPermaLink="true">https://arielbaz.github.io/articles/dns-cloudflare.html</guid>
       <pubDate>Tue, 18 Aug 2026 09:00:00 GMT</pubDate>
       <category>Filtrage</category>
-      <description>Deux adresses à changer, deux minutes, et tous tes appareils sont filtrés. Sans logiciel, sans compte, sans abonnement.</description>
+      <description>Deux adresses IP, deux minutes, et toute la maison est filtrée. Le meilleur rapport effort/résultat du web.</description>
       <content:encoded><![CDATA[<p class="lead">Pas de filtre à la maison ? Tu veux au minimum bloquer les sites douteux et activer SafeSearch partout, sans installer quoi que ce soit sur chaque appareil ?</p>
 <p>La méthode la plus simple tient en deux adresses IP : <strong>1.1.1.3</strong> et <strong>1.0.0.3</strong>, les DNS « Families » de Cloudflare.</p>
 <h2>Comment ça marche</h2>
@@ -216,7 +216,7 @@
       <guid isPermaLink="true">https://arielbaz.github.io/articles/appels-wifi.html</guid>
       <pubDate>Wed, 05 Aug 2026 09:00:00 GMT</pubDate>
       <category>Mobile</category>
-      <description>Le Wi-Fi passe, le réseau non ? Les appels Wi-Fi prennent le relais — y compris depuis l'étranger, avec un forfait à 2 €.</description>
+      <description>Le réseau manque, le Wi-Fi est là. À l'étranger, la différence entre 2 € et 200 € de facture.</description>
       <content:encoded><![CDATA[<p class="lead">Cave, sous-sol, zone blanche, hôtel à l'étranger : le réseau mobile manque, mais le Wi-Fi est là. Les <strong>appels Wi-Fi</strong> (VoWiFi) utilisent cette connexion pour passer et recevoir tes appels, comme si tu étais chez toi.</p>
 <h2>Ce que ça change</h2>
 <ul><li><strong>Appels et SMS même sans réseau mobile</strong>, tant que le Wi-Fi est disponible.</li><li><strong>Aucun frais supplémentaire à l'étranger</strong> avec un forfait français : l'appel passe par internet, comme depuis la France.</li><li><strong>Activation en deux clics</strong> dans les réglages du téléphone.</li><li><strong>Compatible iPhone et Android</strong>, chez la plupart des opérateurs.</li></ul>
@@ -234,7 +234,7 @@
       <guid isPermaLink="true">https://arielbaz.github.io/articles/wizmage.html</guid>
       <pubDate>Tue, 28 Jul 2026 09:00:00 GMT</pubDate>
       <category>Filtrage</category>
-      <description>Une extension qui floute toutes les images d'un site, avec un clic pour les afficher si besoin. Utile au bureau comme à la maison.</description>
+      <description>Toutes les images floutées, un clic pour voir. Pour surfer sans les surprises que personne n'a demandées.</description>
       <content:encoded><![CDATA[<p class="lead">Tu veux un internet plus propre, sans tomber sur des images que tu n'as pas demandées ? <strong>Wizmage</strong> masque automatiquement toutes les images de ton navigateur, et te laisse les afficher une par une.</p>
 <h2>Comment ça marche</h2>
 <ul><li><strong>Toutes les images sont floutées</strong> dès l'activation.</li><li><strong>La structure de la page est conservée</strong> : rien n'est cassé, les textes restent lisibles.</li><li><strong>Un clic</strong> sur le bouton (ou <code>ALT + A</code>) affiche une image précise.</li><li><strong>Personnalisable</strong> : choisis les sites où le filtre reste actif en permanence, ou seulement temporairement.</li></ul>
@@ -251,7 +251,7 @@
       <guid isPermaLink="true">https://arielbaz.github.io/articles/nsfw-filter.html</guid>
       <pubDate>Wed, 15 Jul 2026 09:00:00 GMT</pubDate>
       <category>Filtrage</category>
-      <description>Détection automatique, réglage de la sensibilité, liste blanche. Et surtout : l'analyse se fait dans le navigateur, pas sur un serveur.</description>
+      <description>Une IA qui masque l'indésirable sans envoyer une seule image à un serveur.</description>
       <content:encoded><![CDATA[<p class="lead">Marre des images inappropriées qui s'affichent sans prévenir, à la maison comme au bureau ? <strong>NSFW Filter</strong> utilise l'IA pour les détecter et les masquer automatiquement, dans le navigateur.</p>
 <h2>Les fonctions clés</h2>
 <ul><li><strong>Floute ou masque automatiquement</strong> les images et vidéos indésirables sur Chrome, Edge et Brave.</li><li><strong>Réglage de précision par IA</strong> : ajuste le niveau de filtrage selon tes besoins.</li><li><strong>Liste blanche</strong> : exclus les sites de confiance pour ne pas bloquer ce que tu veux voir.</li><li><strong>Léger et gratuit</strong>, sans compte.</li></ul>
@@ -269,7 +269,7 @@
       <guid isPermaLink="true">https://arielbaz.github.io/articles/have-i-been-pwned.html</guid>
       <pubDate>Mon, 06 Jul 2026 09:00:00 GMT</pubDate>
       <category>Sécurité</category>
-      <description>Deux secondes pour savoir si ton adresse figure dans une fuite de données. Puis deux actions concrètes si c'est le cas.</description>
+      <description>Ton adresse a peut-être fuité. Deux secondes pour le savoir, deux actions pour limiter les dégâts.</description>
       <content:encoded><![CDATA[<p class="lead">Tu te demandes si tes mots de passe ont fuité ? Il existe un moyen simple, gratuit et fiable de le savoir : <strong>Have I Been Pwned</strong>.</p>
 <p>Tu entres ton adresse mail, le site te répond si elle apparaît dans une fuite de données publique connue — et dans lesquelles.</p>
 <h2>Pourquoi c'est fiable</h2>
@@ -287,7 +287,7 @@
       <guid isPermaLink="true">https://arielbaz.github.io/articles/presse-papiers.html</guid>
       <pubDate>Wed, 24 Jun 2026 09:00:00 GMT</pubDate>
       <category>Productivité</category>
-      <description>Tu copies, tu colles, et tu écrases. Windows a un historique natif depuis des années — sur Mac, il faut une petite aide.</description>
+      <description>Win + V : le raccourci que la moitié des gens ignore. Côté Mac, la vérité est moins glamour.</description>
       <content:encoded><![CDATA[<p class="lead">Tu copies souvent du texte ou des images sur ton ordinateur ? Une fonctionnalité discrète change le quotidien : l'historique du presse-papiers.</p>
 <p>Sans elle, copier deux éléments de suite revient à écraser le premier. Avec elle, tu retrouves tes dernières copies et tu colles celle que tu veux.</p>
 <h2>Windows (10 et 11)</h2>
@@ -305,7 +305,7 @@
       <guid isPermaLink="true">https://arielbaz.github.io/articles/esim.html</guid>
       <pubDate>Fri, 12 Jun 2026 09:00:00 GMT</pubDate>
       <category>Mobile</category>
-      <description>Un QR code, deux validations, et ta ligne est active. Le guide pas-à-pas pour installer une eSIM proprement.</description>
+      <description>Un QR code, deux validations, zéro carte à découper. Et trois pièges à éviter avant de partir.</description>
       <content:encoded><![CDATA[<p class="lead">L'eSIM remplace la petite carte plastique par un profil numérique téléchargé dans le téléphone. Plus de carte à découper, plus d'attente en boutique, et la possibilité de garder sa ligne principale tout en ajoutant un forfait local à l'étranger.</p>
 <h2>Le principe</h2>
 <p>Ton opérateur te fournit un <strong>QR code</strong> (ou une application dédiée). Le téléphone le lit, télécharge le profil, et la ligne est active en quelques minutes.</p>

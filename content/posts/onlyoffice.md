@@ -4,7 +4,8 @@ slug: onlyoffice
 date: 2026-10-07
 category: Productivité
 tags: [bureautique, office, gratuit, compatibilité]
-excerpt: "Sans abonnement, sans crack, sans bidouille. Et surtout : une compatibilité OOXML qui tient la mise en page de tes .docx."
+excerpt: "Word, Excel, PowerPoint sans abonnement. Et surtout : tes .docx gardent leur mise en page."
+logo: onlyoffice
 icon: text
 source: https://www.onlyoffice.com/download-desktop.aspx
 sourceLabel: onlyoffice.com

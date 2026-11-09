@@ -1,0 +1,41 @@
+{
+  "ublock-origin": {
+    "full": true
+  },
+  "brave": {
+    "full": false
+  },
+  "signal": {
+    "full": true
+  },
+  "localsend": {
+    "full": false
+  },
+  "sharex": {
+    "full": false
+  },
+  "onlyoffice": {
+    "full": false
+  },
+  "notebooklm": {
+    "full": true
+  },
+  "owc-copy-that": {
+    "full": true
+  },
+  "family-link": {
+    "full": true
+  },
+  "dns-cloudflare": {
+    "full": true
+  },
+  "nsfw-filter": {
+    "full": true
+  },
+  "handy": {
+    "full": false
+  },
+  "have-i-been-pwned": {
+    "full": false
+  }
+}

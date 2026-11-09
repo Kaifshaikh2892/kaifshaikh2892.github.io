@@ -36,7 +36,8 @@
       <img src="/assets/img/logo.png" alt="ARIBAZ" width="86" height="27">
     </a>
     <nav class="nav-links" id="menu" aria-label="Navigation principale">
-      <a href="/articles/">Actus</a>
+      <a href="/" aria-current="page">Actus</a>
+      <a href="/services.html">Services</a>
       <a href="/apropos.html">À propos</a>
       <a class="nav-cta" href="https://whatsapp.com/channel/0029VavhmewLtOjKNl2a3f1S" target="_blank" rel="noopener"><span>WhatsApp</span> <svg viewBox="0 0 24 24" aria-hidden="true" class="ico-inline"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </nav>
@@ -51,100 +52,216 @@
 </header>
 <main id="contenu">
   <section class="hero">
+    <div class="hero-bg" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span></div>
     <div class="wrap">
-      <span class="eyebrow"><span class="dot"></span>Nouvelle actu · 9 novembre 2026</span>
-      <h1 class="display">La tech qui rend service, <span class="gradient-text">vraiment.</span></h1>
-      <p class="lede">Des outils gratuits, des réglages précis et des astuces testées pour un numérique plus simple, plus sûr et plus propre. Pas de hype : juste ce qui marche.</p>
+      <a class="eyebrow" href="/articles/ublock-origin.html"><span class="dot"></span>Nouvelle actu · 9 novembre 2026<svg viewBox="0 0 24 24" aria-hidden="true" class="eyebrow-arrow"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <h1 class="display">
+        <span class="line"><span>La tech qui sert</span></span>
+        <span class="line"><span>à <span class="gradient-text">quelque chose.</span></span></span>
+      </h1>
+      <p class="lede">Des outils gratuits, des réglages précis et les pièges évités. Zéro abonnement, zéro blabla, zéro « leader du marché ».</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#dernieres">Lire les dernières actus <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="btn btn-primary" href="#dernieres">Voir ce qui vient de sortir <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         <a class="btn btn-ghost" href="https://whatsapp.com/channel/0029VavhmewLtOjKNl2a3f1S" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.6a8.4 8.4 0 0 1-12.4 7.4L3.5 20.5l1.6-4.4A8.4 8.4 0 1 1 20.5 11.6Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.8 8.1c-.3.1-.8.5-.8 1.4 0 2 2.6 5 5.5 5.6 1.3.3 1.9-.1 2.3-.5.3-.4.5-1 .3-1.2l-1.3-.7c-.2-.1-.5 0-.7.2l-.5.6c-.2.2-.4.2-.6.1-.7-.3-2.3-1.6-2.7-2.4-.1-.2 0-.4.2-.5l.6-.5c.2-.2.2-.4.1-.6l-.7-1.4c-.2-.3-.5-.3-.8-.2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> La chaîne WhatsApp</a>
       </div>
       <div class="hero-meta">
-        <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3.4 8.4 4.4L12 12.2 3.6 7.8 12 3.4Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="m3.6 12.2 8.4 4.4 8.4-4.4M3.6 16.6l8.4 4.4 8.4-4.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> 17 actus publiées</span>
-        <span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 7.6V12l3 1.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> 2 à 4 par mois</span>
-        <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Gratuit, open source, sans pub</span>
+        <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3.4 8.4 4.4L12 12.2 3.6 7.8 12 3.4Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="m3.6 12.2 8.4 4.4 8.4-4.4M3.6 16.6l8.4 4.4 8.4-4.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> <b data-count-to="17">0</b>&nbsp;actus publiées</span>
+        <span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 7.6V12l3 1.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> <b>2 à 4</b>&nbsp;par mois</span>
+        <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> <b>0</b>&nbsp;cookie, <b>0</b>&nbsp;pub</span>
       </div>
     </div>
   </section>
 
-  <section class="section" style="padding-top:16px">
+  <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>Productivité</span><span class="sep">✦</span><span>Sécurité</span><span class="sep">✦</span><span>Filtrage</span><span class="sep">✦</span><span>Alternatives</span><span class="sep">✦</span><span>Mobile</span><span class="sep">✦</span><span>Zéro pub</span><span class="sep">✦</span><span>Zéro cookie</span><span class="sep">✦</span><span>Open source</span><span class="sep">✦</span><span>Sans abonnement</span><span class="sep">✦</span><span>Productivité</span><span class="sep">✦</span><span>Sécurité</span><span class="sep">✦</span><span>Filtrage</span><span class="sep">✦</span><span>Alternatives</span><span class="sep">✦</span><span>Mobile</span><span class="sep">✦</span><span>Zéro pub</span><span class="sep">✦</span><span>Zéro cookie</span><span class="sep">✦</span><span>Open source</span><span class="sep">✦</span><span>Sans abonnement</span><span class="sep">✦</span></div></div>
+
+  <section class="section" data-featured-section>
     <div class="wrap">
       <div class="section-head">
-        <div><h2>À la une</h2><p>Le dossier du moment, à lire en premier.</p></div>
-        <a class="link-arrow" href="/articles/">Tout voir <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div><h2>Le dossier <span class="accent">du moment</span></h2><p>Si tu ne lis qu'une chose cette semaine, prends celle-là.</p></div>
+        <a class="link-arrow" href="#journal">Parcourir <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </div>
       <a class="featured reveal" href="/articles/ublock-origin.html">
-        <div class="card-art art-secu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4.5 6v6c0 4.6 3.2 7.8 7.5 9 4.3-1.2 7.5-4.4 7.5-9V6L12 3Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="m9 12 2.2 2.2L15.5 10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="card-art art-secu"><span class="app-tile full"><img src="/assets/img/logos/ublock-origin.png" alt="" loading="lazy" width="256" height="256"></span></div>
         <div class="featured-body">
           <div class="card-meta"><span class="pill" data-cat="Sécurité">Sécurité</span><span>9 novembre 2026</span><span>2 min</span></div>
           <h3>uBlock Origin : le bloqueur de pubs qui mérite encore sa place</h3>
-          <p>Gratuit, open source et redoutablement efficace. Mais depuis Manifest V3, le navigateur que tu choisis compte autant que l'extension elle-même.</p>
+          <p>Le bloqueur de pubs qui ne négocie pas. Gratuit, open source — et toujours imbattable, à condition de ne pas l'enfermer dans Chrome.</p>
           <span class="link-arrow">Lire l'article <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
     </div>
   </section>
 
-  <section class="section" id="dernieres" style="padding-top:0">
+  <section class="section" id="journal" style="padding-top:0">
     <div class="wrap">
       <div class="section-head">
-        <div><h2>Les dernières actus</h2><p>Un problème du quotidien, une solution concrète.</p></div>
-        <a class="link-arrow" href="/articles/">Toutes les actus <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div><h2>Toutes les <span class="accent">actus</span></h2><p>17 fiches pratiques. Un problème du quotidien, une réponse en cinq minutes.</p></div>
+        <span class="result-count" data-count>17 articles</span>
+      </div>
+      <div class="toolbar">
+        <div class="search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="m20 20-4.4-4.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <input type="search" data-search placeholder="Rechercher un outil, un thème…" aria-label="Rechercher un article" autocomplete="off">
+        </div>
+        <div class="chips" role="group" aria-label="Filtrer par thème">
+          <button class="chip" type="button" data-filter="Tous" data-slug="tous" aria-pressed="true">Tous</button>
+          <button class="chip" type="button" data-filter="Productivité" data-slug="productivite" aria-pressed="false">Productivité</button><button class="chip" type="button" data-filter="Sécurité" data-slug="securite" aria-pressed="false">Sécurité</button><button class="chip" type="button" data-filter="Filtrage" data-slug="filtrage" aria-pressed="false">Filtrage</button><button class="chip" type="button" data-filter="Alternatives" data-slug="alternatives" aria-pressed="false">Alternatives</button><button class="chip" type="button" data-filter="Mobile" data-slug="mobile" aria-pressed="false">Mobile</button>
+        </div>
       </div>
       <div class="card-grid">
-        <a class="post-card reveal" href="/articles/brave.html" data-post data-cat="Alternatives" data-search="Brave : le navigateur qui bloque les pubs même quand Google ne veut pas Zéro pub, YouTube en arrière-plan écran éteint, et un bloqueur intégré au cœur du navigateur. Le remplaçant le plus crédible de Chrome et Safari. navigateur publicité vie privée mobile Alternatives" style="transition-delay:0ms">
-  <div class="card-art art-alter"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.5 12h17M12 3.5c2.4 2.4 3.6 5.3 3.6 8.5s-1.2 6.1-3.6 8.5c-2.4-2.4-3.6-5.3-3.6-8.5S9.6 5.9 12 3.5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <a class="post-card reveal" href="/articles/brave.html" data-post data-cat="Alternatives" data-search="Brave : le navigateur qui bloque les pubs même quand Google ne veut pas Pubs bloquées, YouTube qui continue écran éteint, zéro abonnement. Le navigateur qui fait regretter Chrome. navigateur publicité vie privée mobile Alternatives" style="transition-delay:0ms">
+  <div class="card-art art-alter"><span class="app-tile"><img src="/assets/img/logos/brave.png" alt="" loading="lazy" width="256" height="256"></span></div>
   <div class="card-body">
     <div class="card-meta"><span class="pill" data-cat="Alternatives">Alternatives</span><span>6 novembre 2026</span></div>
     <h3>Brave : le navigateur qui bloque les pubs même quand Google ne veut pas</h3>
-    <p>Zéro pub, YouTube en arrière-plan écran éteint, et un bloqueur intégré au cœur du navigateur. Le remplaçant le plus crédible de Chrome et Safari.</p>
+    <p>Pubs bloquées, YouTube qui continue écran éteint, zéro abonnement. Le navigateur qui fait regretter Chrome.</p>
     <div class="card-foot"><span>2 min de lecture</span><span class="go">Lire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
   </div>
 </a>
-        <a class="post-card reveal" href="/articles/signal.html" data-post data-cat="Sécurité" data-search="Signal : la messagerie la plus sûre, et la plus simple à adopter Zéro pub, zéro suggestion, zéro Meta. Signal fait la même chose que WhatsApp, mais sans monétiser ta vie privée. messagerie chiffrement open source mobile Sécurité" style="transition-delay:40ms">
-  <div class="card-art art-secu"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4.8" y="10.5" width="14.4" height="10" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.4 10.5V8a3.6 3.6 0 0 1 7.2 0v2.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="15.5" r="1.3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <a class="post-card reveal" href="/articles/signal.html" data-post data-cat="Sécurité" data-search="Signal : la messagerie la plus sûre, et la plus simple à adopter La messagerie la plus sûre du marché. Le seul problème : elle ne fait pas chaîne de diffusion. Donc on garde WhatsApp pour ça. messagerie chiffrement open source mobile Sécurité" style="transition-delay:30ms">
+  <div class="card-art art-secu"><span class="app-tile full"><img src="/assets/img/logos/signal.png" alt="" loading="lazy" width="256" height="256"></span></div>
   <div class="card-body">
     <div class="card-meta"><span class="pill" data-cat="Sécurité">Sécurité</span><span>3 novembre 2026</span></div>
     <h3>Signal : la messagerie la plus sûre, et la plus simple à adopter</h3>
-    <p>Zéro pub, zéro suggestion, zéro Meta. Signal fait la même chose que WhatsApp, mais sans monétiser ta vie privée.</p>
+    <p>La messagerie la plus sûre du marché. Le seul problème : elle ne fait pas chaîne de diffusion. Donc on garde WhatsApp pour ça.</p>
     <div class="card-foot"><span>2 min de lecture</span><span class="go">Lire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
   </div>
 </a>
-        <a class="post-card reveal" href="/articles/localsend.html" data-post data-cat="Alternatives" data-search="LocalSend : l'AirDrop universel qui marche entre tous tes appareils iPhone vers Android, Windows vers Mac, sans cloud, sans compte et sans connexion internet. Juste le même Wi-Fi. partage open source réseau multiplateforme Alternatives" style="transition-delay:80ms">
-  <div class="card-art art-alter"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 7.5A2 2 0 0 1 5.5 5.5h3.4l1.8 2.2h7.8a2 2 0 0 1 2 2V17a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2V7.5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 13.5h6M12 10.5v6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <a class="post-card reveal" href="/articles/localsend.html" data-post data-cat="Alternatives" data-search="LocalSend : l'AirDrop universel qui marche entre tous tes appareils AirDrop pour tout le monde. Sans compte, sans cloud, sans « envoie-toi un mail ». partage open source réseau multiplateforme Alternatives" style="transition-delay:60ms">
+  <div class="card-art art-alter"><span class="app-tile"><img src="/assets/img/logos/localsend.png" alt="" loading="lazy" width="256" height="256"></span></div>
   <div class="card-body">
     <div class="card-meta"><span class="pill" data-cat="Alternatives">Alternatives</span><span>26 octobre 2026</span></div>
     <h3>LocalSend : l'AirDrop universel qui marche entre tous tes appareils</h3>
-    <p>iPhone vers Android, Windows vers Mac, sans cloud, sans compte et sans connexion internet. Juste le même Wi-Fi.</p>
+    <p>AirDrop pour tout le monde. Sans compte, sans cloud, sans « envoie-toi un mail ».</p>
     <div class="card-foot"><span>2 min de lecture</span><span class="go">Lire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
   </div>
 </a>
-        <a class="post-card reveal" href="/articles/sharex.html" data-post data-cat="Productivité" data-search="ShareX : l'outil de capture d'écran le plus complet, et il est gratuit Capture, annotation, GIF, OCR et envoi automatique. ShareX fait le travail de cinq logiciels payants, sous Windows. windows capture d'écran open source productivité Productivité" style="transition-delay:120ms">
-  <div class="card-art art-produ"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.2" y="6.8" width="17.6" height="12.4" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="13" r="3.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.5 6.8 9.8 4.6h4.4l1.3 2.2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <a class="post-card reveal" href="/articles/sharex.html" data-post data-cat="Productivité" data-search="ShareX : l'outil de capture d'écran le plus complet, et il est gratuit Capture, annotation, GIF, OCR. Cinq logiciels en un, et la facture reste à zéro euro. windows capture d'écran open source productivité Productivité" style="transition-delay:90ms">
+  <div class="card-art art-produ"><span class="app-tile"><img src="/assets/img/logos/sharex.png" alt="" loading="lazy" width="256" height="256"></span></div>
   <div class="card-body">
     <div class="card-meta"><span class="pill" data-cat="Productivité">Productivité</span><span>16 octobre 2026</span></div>
     <h3>ShareX : l'outil de capture d'écran le plus complet, et il est gratuit</h3>
-    <p>Capture, annotation, GIF, OCR et envoi automatique. ShareX fait le travail de cinq logiciels payants, sous Windows.</p>
+    <p>Capture, annotation, GIF, OCR. Cinq logiciels en un, et la facture reste à zéro euro.</p>
     <div class="card-foot"><span>2 min de lecture</span><span class="go">Lire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
   </div>
 </a>
-        <a class="post-card reveal" href="/articles/onlyoffice.html" data-post data-cat="Productivité" data-search="OnlyOffice : la suite bureautique gratuite qui n'abîme pas tes fichiers Word Sans abonnement, sans crack, sans bidouille. Et surtout : une compatibilité OOXML qui tient la mise en page de tes .docx. bureautique office gratuit compatibilité Productivité" style="transition-delay:160ms">
-  <div class="card-art art-produ"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4.5h12M12 4.5v15M8.5 19.5h7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <a class="post-card reveal" href="/articles/onlyoffice.html" data-post data-cat="Productivité" data-search="OnlyOffice : la suite bureautique gratuite qui n'abîme pas tes fichiers Word Word, Excel, PowerPoint sans abonnement. Et surtout : tes .docx gardent leur mise en page. bureautique office gratuit compatibilité Productivité" style="transition-delay:120ms">
+  <div class="card-art art-produ"><span class="app-tile"><img src="/assets/img/logos/onlyoffice.png" alt="" loading="lazy" width="256" height="256"></span></div>
   <div class="card-body">
     <div class="card-meta"><span class="pill" data-cat="Productivité">Productivité</span><span>7 octobre 2026</span></div>
     <h3>OnlyOffice : la suite bureautique gratuite qui n'abîme pas tes fichiers Word</h3>
-    <p>Sans abonnement, sans crack, sans bidouille. Et surtout : une compatibilité OOXML qui tient la mise en page de tes .docx.</p>
+    <p>Word, Excel, PowerPoint sans abonnement. Et surtout : tes .docx gardent leur mise en page.</p>
+    <div class="card-foot"><span>2 min de lecture</span><span class="go">Lire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+  </div>
+</a>
+        <a class="post-card reveal" href="/articles/handy.html" data-post data-cat="Productivité" data-search="Handy : dicte ton texte, l'IA s'occupe du reste (et en local) Dicte, arrête de taper. L'IA transcrit ta voix en local, sans envoyer un mot à un serveur. dictée ia open source accessibilité Productivité" style="transition-delay:150ms">
+  <div class="card-art art-produ"><span class="app-tile"><img src="/assets/img/logos/handy.png" alt="" loading="lazy" width="256" height="256"></span></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="pill" data-cat="Productivité">Productivité</span><span>29 septembre 2026</span></div>
+    <h3>Handy : dicte ton texte, l'IA s'occupe du reste (et en local)</h3>
+    <p>Dicte, arrête de taper. L'IA transcrit ta voix en local, sans envoyer un mot à un serveur.</p>
+    <div class="card-foot"><span>2 min de lecture</span><span class="go">Lire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+  </div>
+</a>
+        <a class="post-card reveal" href="/articles/notebooklm.html" data-post data-cat="Productivité" data-search="NotebookLM : transforme tes PDF en podcast pour réviser partout Quarante pages de PDF transformées en podcast à deux voix. La révision la plus confortable de ta vie. ia étude google podcast Productivité" style="transition-delay:180ms">
+  <div class="card-art art-produ"><span class="app-tile full"><img src="/assets/img/logos/notebooklm.png" alt="" loading="lazy" width="256" height="256"></span></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="pill" data-cat="Productivité">Productivité</span><span>17 septembre 2026</span></div>
+    <h3>NotebookLM : transforme tes PDF en podcast pour réviser partout</h3>
+    <p>Quarante pages de PDF transformées en podcast à deux voix. La révision la plus confortable de ta vie.</p>
+    <div class="card-foot"><span>2 min de lecture</span><span class="go">Lire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+  </div>
+</a>
+        <a class="post-card reveal" href="/articles/owc-copy-that.html" data-post data-cat="Mobile" data-search="OWC Copy That : sauvegarde ta galerie iPhone sans payer iCloud Tes photos quittent iCloud sans payer un centime de plus. Direction : une clé USB, chez toi. iphone sauvegarde stockage usb-c Mobile" style="transition-delay:210ms">
+  <div class="card-art art-mobile"><span class="app-tile full"><img src="/assets/img/logos/owc-copy-that.png" alt="" loading="lazy" width="256" height="256"></span></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="pill" data-cat="Mobile">Mobile</span><span>8 septembre 2026</span></div>
+    <h3>OWC Copy That : sauvegarde ta galerie iPhone sans payer iCloud</h3>
+    <p>Tes photos quittent iCloud sans payer un centime de plus. Direction : une clé USB, chez toi.</p>
+    <div class="card-foot"><span>2 min de lecture</span><span class="go">Lire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+  </div>
+</a>
+        <a class="post-card reveal" href="/articles/family-link.html" data-post data-cat="Filtrage" data-search="Family Link : reprendre le contrôle d'un smartphone Android Temps d'écran, installations validées, localisation. Le socle gratuit pour un Android qui n'échappe pas des mains. android contrôle parental google famille Filtrage" style="transition-delay:240ms">
+  <div class="card-art art-filtre"><span class="app-tile full"><img src="/assets/img/logos/family-link.png" alt="" loading="lazy" width="256" height="256"></span></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="pill" data-cat="Filtrage">Filtrage</span><span>27 août 2026</span></div>
+    <h3>Family Link : reprendre le contrôle d'un smartphone Android</h3>
+    <p>Temps d'écran, installations validées, localisation. Le socle gratuit pour un Android qui n'échappe pas des mains.</p>
+    <div class="card-foot"><span>2 min de lecture</span><span class="go">Lire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+  </div>
+</a>
+        <a class="post-card reveal" href="/articles/dns-cloudflare.html" data-post data-cat="Filtrage" data-search="Le DNS 1.1.1.3 : un internet plus propre pour toute la maison Deux adresses IP, deux minutes, et toute la maison est filtrée. Le meilleur rapport effort/résultat du web. dns réseau cloudflare famille Filtrage" style="transition-delay:270ms">
+  <div class="card-art art-filtre"><span class="app-tile full"><img src="/assets/img/logos/dns-cloudflare.png" alt="" loading="lazy" width="256" height="256"></span></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="pill" data-cat="Filtrage">Filtrage</span><span>18 août 2026</span></div>
+    <h3>Le DNS 1.1.1.3 : un internet plus propre pour toute la maison</h3>
+    <p>Deux adresses IP, deux minutes, et toute la maison est filtrée. Le meilleur rapport effort/résultat du web.</p>
+    <div class="card-foot"><span>2 min de lecture</span><span class="go">Lire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+  </div>
+</a>
+        <a class="post-card reveal" href="/articles/appels-wifi.html" data-post data-cat="Mobile" data-search="Appels Wi-Fi : reste joignable sans réseau mobile (et sans surcoût à l'étranger) Le réseau manque, le Wi-Fi est là. À l'étranger, la différence entre 2 € et 200 € de facture. vowifi mobile voyage forfait Mobile" style="transition-delay:300ms">
+  <div class="card-art art-mobile"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.8" width="11" height="18.4" rx="2.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M10.6 5.6h2.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M15.6 12.4c-.5 3-3 5.2-6 5.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/></svg></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="pill" data-cat="Mobile">Mobile</span><span>5 août 2026</span></div>
+    <h3>Appels Wi-Fi : reste joignable sans réseau mobile (et sans surcoût à l'étranger)</h3>
+    <p>Le réseau manque, le Wi-Fi est là. À l'étranger, la différence entre 2 € et 200 € de facture.</p>
+    <div class="card-foot"><span>2 min de lecture</span><span class="go">Lire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+  </div>
+</a>
+        <a class="post-card reveal" href="/articles/wizmage.html" data-post data-cat="Filtrage" data-search="Wizmage : naviguer sans voir les images qui traînent Toutes les images floutées, un clic pour voir. Pour surfer sans les surprises que personne n'a demandées. navigateur images filtre famille Filtrage" style="transition-delay:330ms">
+  <div class="card-art art-filtre"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.2" y="4.8" width="17.6" height="14.4" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8.6" cy="9.8" r="1.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="m4.4 17 4.6-4.4 3.3 3 2.5-2.2 4.2 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="pill" data-cat="Filtrage">Filtrage</span><span>28 juillet 2026</span></div>
+    <h3>Wizmage : naviguer sans voir les images qui traînent</h3>
+    <p>Toutes les images floutées, un clic pour voir. Pour surfer sans les surprises que personne n'a demandées.</p>
+    <div class="card-foot"><span>2 min de lecture</span><span class="go">Lire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+  </div>
+</a>
+        <a class="post-card reveal" href="/articles/nsfw-filter.html" data-post data-cat="Filtrage" data-search="NSFW Filter : une IA locale qui masque les images inappropriées Une IA qui masque l'indésirable sans envoyer une seule image à un serveur. navigateur ia filtre famille vie privée Filtrage" style="transition-delay:360ms">
+  <div class="card-art art-filtre"><span class="app-tile full"><img src="/assets/img/logos/nsfw-filter.png" alt="" loading="lazy" width="256" height="256"></span></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="pill" data-cat="Filtrage">Filtrage</span><span>15 juillet 2026</span></div>
+    <h3>NSFW Filter : une IA locale qui masque les images inappropriées</h3>
+    <p>Une IA qui masque l'indésirable sans envoyer une seule image à un serveur.</p>
+    <div class="card-foot"><span>2 min de lecture</span><span class="go">Lire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+  </div>
+</a>
+        <a class="post-card reveal" href="/articles/have-i-been-pwned.html" data-post data-cat="Sécurité" data-search="Have I Been Pwned : ton adresse mail a-t-elle fuité ? Ton adresse a peut-être fuité. Deux secondes pour le savoir, deux actions pour limiter les dégâts. fuite mots de passe 2fa sécurité Sécurité" style="transition-delay:390ms">
+  <div class="card-art art-secu"><span class="app-tile"><img src="/assets/img/logos/have-i-been-pwned.png" alt="" loading="lazy" width="256" height="256"></span></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="pill" data-cat="Sécurité">Sécurité</span><span>6 juillet 2026</span></div>
+    <h3>Have I Been Pwned : ton adresse mail a-t-elle fuité ?</h3>
+    <p>Ton adresse a peut-être fuité. Deux secondes pour le savoir, deux actions pour limiter les dégâts.</p>
+    <div class="card-foot"><span>2 min de lecture</span><span class="go">Lire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+  </div>
+</a>
+        <a class="post-card reveal" href="/articles/presse-papiers.html" data-post data-cat="Productivité" data-search="Presse-papiers : l'historique caché de Windows et de macOS Win + V : le raccourci que la moitié des gens ignore. Côté Mac, la vérité est moins glamour. raccourcis windows macos productivité Productivité" style="transition-delay:420ms">
+  <div class="card-art art-produ"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5.6" y="4.6" width="12.8" height="16.2" rx="2.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.4 4.6V3.4h5.2v1.2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 10h6M9 13.6h6M9 17.2h3.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="pill" data-cat="Productivité">Productivité</span><span>24 juin 2026</span></div>
+    <h3>Presse-papiers : l'historique caché de Windows et de macOS</h3>
+    <p>Win + V : le raccourci que la moitié des gens ignore. Côté Mac, la vérité est moins glamour.</p>
+    <div class="card-foot"><span>2 min de lecture</span><span class="go">Lire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+  </div>
+</a>
+        <a class="post-card reveal" href="/articles/esim.html" data-post data-cat="Mobile" data-search="eSIM : activer une ligne en 3 étapes, sans carte à découper Un QR code, deux validations, zéro carte à découper. Et trois pièges à éviter avant de partir. esim mobile voyage opérateur Mobile" style="transition-delay:450ms">
+  <div class="card-art art-mobile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.4 3.6h7.2l4 4v12.8H6.4V3.6Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="9.6" y="11" width="4.8" height="5.2" rx="1" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="pill" data-cat="Mobile">Mobile</span><span>12 juin 2026</span></div>
+    <h3>eSIM : activer une ligne en 3 étapes, sans carte à découper</h3>
+    <p>Un QR code, deux validations, zéro carte à découper. Et trois pièges à éviter avant de partir.</p>
     <div class="card-foot"><span>2 min de lecture</span><span class="go">Lire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
   </div>
 </a>
       </div>
+      <div class="empty-state" data-empty hidden>Aucun article ne correspond à cette recherche. Essaie un autre mot-clé.</div>
     </div>
   </section>
 
   <section class="section section-soft">
     <div class="wrap">
       <div class="section-head">
-        <div><h2>Parcourir par thème</h2><p>Cinq angles, une même idée : moins de friction, plus de maîtrise.</p></div>
+        <div><h2>Cinq tiroirs, <span class="accent">pas un de plus.</span></h2><p>Gagner du temps, fermer la porte, filtrer la maison, quitter les géants, régler ton téléphone.</p></div>
       </div>
       <div class="value-grid">
         <a class="value reveal" href="/articles/#productivite" style="text-decoration:none;color:inherit">
@@ -181,6 +298,19 @@
     </div>
   </section>
 
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="cta-band reveal" style="background:linear-gradient(120deg,#0a1220,#131b33 55%,#1b1030)">
+        <h2>Un truc cassé ? Un site à lancer ?</h2>
+        <p>Réparation, micro-soudure, sites web, cartes de mariage, filtrage, DevOps. Le même soin que dans les articles, appliqué à ton matériel.</p>
+        <div class="hero-actions" style="margin-bottom:0">
+          <a class="btn btn-primary" href="/services.html">Voir les services <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="btn btn-ghost" href="/services.html#contact">Demander un devis</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section-tight"><div class="wrap">
   <div class="cta-band reveal">
     <h2>Les actus arrivent d'abord sur WhatsApp.</h2>
@@ -202,7 +332,7 @@
       <div class="footer-cols">
         <div class="footer-col">
           <h4>Explorer</h4>
-          <a href="/articles/">Toutes les actus</a>
+          <a href="/">Toutes les actus</a>
           <a href="/apropos.html">À propos</a>
           <a href="/feed.xml">Flux RSS</a>
         </div>

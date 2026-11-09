@@ -4,7 +4,8 @@ slug: sharex
 date: 2026-10-16
 category: Productivité
 tags: [windows, capture d'écran, open source, productivité]
-excerpt: "Capture, annotation, GIF, OCR et envoi automatique. ShareX fait le travail de cinq logiciels payants, sous Windows."
+excerpt: "Capture, annotation, GIF, OCR. Cinq logiciels en un, et la facture reste à zéro euro."
+logo: sharex
 icon: camera
 source: https://getsharex.com
 sourceLabel: getsharex.com

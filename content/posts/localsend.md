@@ -4,7 +4,8 @@ slug: localsend
 date: 2026-10-26
 category: Alternatives
 tags: [partage, open source, réseau, multiplateforme]
-excerpt: "iPhone vers Android, Windows vers Mac, sans cloud, sans compte et sans connexion internet. Juste le même Wi-Fi."
+excerpt: "AirDrop pour tout le monde. Sans compte, sans cloud, sans « envoie-toi un mail »."
+logo: localsend
 icon: folder
 source: https://localsend.org
 sourceLabel: localsend.org

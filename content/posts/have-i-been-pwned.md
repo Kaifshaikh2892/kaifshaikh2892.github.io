@@ -4,7 +4,8 @@ slug: have-i-been-pwned
 date: 2026-07-06
 category: Sécurité
 tags: [fuite, mots de passe, 2fa, sécurité]
-excerpt: "Deux secondes pour savoir si ton adresse figure dans une fuite de données. Puis deux actions concrètes si c'est le cas."
+excerpt: "Ton adresse a peut-être fuité. Deux secondes pour le savoir, deux actions pour limiter les dégâts."
+logo: have-i-been-pwned
 icon: breach
 source: https://haveibeenpwned.com
 sourceLabel: haveibeenpwned.com
