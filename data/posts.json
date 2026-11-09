@@ -1,5 +1,20 @@
 [
   {
+    "title": "Bitchat : la messagerie qui marche même quand tout le réseau tombe",
+    "slug": "bitchat",
+    "date": "2026-11-10",
+    "category": "Sécurité",
+    "tags": [
+      "messagerie",
+      "bluetooth",
+      "chiffrement",
+      "hors-ligne"
+    ],
+    "excerpt": "Zéro internet, zéro compte, zéro numéro. Tes messages passent de téléphone en téléphone par Bluetooth, et personne ne peut couper la conversation.",
+    "readTime": 2,
+    "url": "/articles/bitchat.html"
+  },
+  {
     "title": "uBlock Origin : le bloqueur de pubs qui mérite encore sa place",
     "slug": "ublock-origin",
     "date": "2026-11-09",
