@@ -5,8 +5,29 @@
     <link>https://arielbaz.github.io/</link>
     <description>Des astuces concrètes pour un numérique plus simple, plus sûr et plus propre : outils gratuits, vie privée, filtrage familial et productivité.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Mon, 09 Nov 2026 09:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 09:00:00 GMT</lastBuildDate>
     <atom:link href="https://arielbaz.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Bitchat : la messagerie qui marche même quand tout le réseau tombe</title>
+      <link>https://arielbaz.github.io/articles/bitchat.html</link>
+      <guid isPermaLink="true">https://arielbaz.github.io/articles/bitchat.html</guid>
+      <pubDate>Tue, 10 Nov 2026 09:00:00 GMT</pubDate>
+      <category>Sécurité</category>
+      <description>Zéro internet, zéro compte, zéro numéro. Tes messages passent de téléphone en téléphone par Bluetooth, et personne ne peut couper la conversation.</description>
+      <content:encoded><![CDATA[<p class="lead">Stade bondé où le réseau sature, panne d'internet, coupure pendant une manifestation, avion ou voyage hors couverture : dans ces moments-là, WhatsApp et Signal deviennent muets.</p>
+<p><strong>Bitchat</strong> est la messagerie qui continue de fonctionner quand tout le reste s'éteint. Elle envoie tes messages directement de téléphone en téléphone, par Bluetooth. Pas d'internet, pas de forfait, pas de compte, pas de serveur central à éteindre.</p>
+<h2>Ce que tu gagnes</h2>
+<ul><li><strong>Discuter sans internet</strong> : chaque téléphone relaie les messages vers les appareils voisins, jusqu'à 7 sauts de distance.</li><li><strong>Zéro compte, zéro numéro</strong> : un pseudo, et c'est tout. Rien à créer, rien à valider.</li><li><strong>Chiffré de bout en bout</strong> : les messages privés passent par le protocole Noise — même les téléphones qui relaient ne peuvent pas les lire.</li><li><strong>Un canal public et des messages privés</strong> : le canal <code>#mesh</code> est ouvert à tous les appareils à portée, les MP sont réservés à ton destinataire.</li><li><strong>Un mode panique</strong> : trois taps sur le logo effacent tout, immédiatement.</li></ul>
+<h2>Pourquoi tout le monde en parle</h2>
+<p>Créée par <strong>Jack Dorsey</strong>, le cofondateur de Twitter, et publiée en open source, Bitchat a été adoptée massivement lors de coupures internet : manifestations à Madagascar et en Inde, zones sinistrées, réseaux saturés. À ce point que certains gouvernements ont tenté de faire retirer son code de GitHub — la meilleure preuve que l'outil fonctionne.</p>
+<p>Sur internet, elle complète le maillage avec le protocole <strong>Nostr</strong> : quand le Bluetooth ne suffit plus, les messages continuent par les relais Nostr, et des canaux géolocalisés permettent de discuter avec les gens de son quartier.</p>
+<div class="protip"><div class="label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Le Pro-Tip ARIBAZ — les trois limites à connaître</div><p><strong>Le maillage n'existe que si les autres ont l'app.</strong> Chaque saut Bluetooth couvre une dizaine de mètres : sans relais humains autour de toi, Bitchat ne parle qu'à voisinage direct. C'est une messagerie de foule, pas de salon.</p><p><strong>Sur iPhone, garde l'app ouverte.</strong> iOS bride le Bluetooth en arrière-plan : l'application doit rester affichée pour émettre et recevoir. Côté Android, c'est beaucoup plus souple.</p><p><strong>Sois honnête avec toi-même : l'app est jeune.</strong> Lancée en juillet 2025, elle n'a pas encore passé d'audit de sécurité indépendant complet, et son créateur le dit lui-même. Pour les conversations sensibles du quotidien, Signal reste la référence. Bitchat, c'est l'assurance pour le jour où le réseau tombe.</p></div>
+<h2>Mise en place</h2>
+<ol><li>Installe <strong>Bitchat Mesh</strong> depuis l'App Store (iPhone, macOS) ou le Play Store (Android). Sur Android, tu peux aussi prendre l'APK officiel sur GitHub — méfie-toi des imitations.</li><li>Active le Bluetooth, ouvre l'app et choisis un pseudo.</li><li>Rejoins le canal <code>#mesh</code> pour discuter avec tous les appareils à portée, ou envoie un message privé à quelqu'un à proximité.</li><li>Fais un vrai test avec un proche à côté de toi, avant d'en avoir besoin.</li></ol>
+<h2>Verdict</h2>
+<p>C'est une trousse de secours numérique : tu l'installes avant d'en avoir besoin, parce qu'au moment où internet tombe, il est trop tard pour la télécharger. Deux minutes aujourd'hui, une conversation possible demain.</p>
+<p><strong>À télécharger :</strong> <a href="https://bitchat.free" target="_blank" rel="noopener">bitchat.free</a></p>]]></content:encoded>
+    </item>
     <item>
       <title>uBlock Origin : le bloqueur de pubs qui mérite encore sa place</title>
       <link>https://arielbaz.github.io/articles/ublock-origin.html</link>
